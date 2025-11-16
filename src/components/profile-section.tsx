@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { Github, Linkedin, Twitter, Mail, Info, Bell, Phone, Search, AtSign, Coffee, Wind, Droplets, ChevronDown, Flame } from 'lucide-react';
+import { Github, Linkedin, Instagram, Mail, Info, Bell, Phone, Search, AtSign, Coffee, Wind, Droplets, ChevronDown, Flame } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Separator } from '@/components/ui/separator';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -56,7 +56,7 @@ export function ProfileSection() {
             <Linkedin className="h-6 w-6" />
           </a>
           <a href="#" className="text-muted-foreground hover:text-primary">
-            <Twitter className="h-6 w-6" />
+            <Instagram className="h-6 w-6" />
           </a>
           <a href="#" className="text-muted-foreground hover:text-primary">
             <Mail className="h-6 w-6" />
