@@ -205,7 +205,7 @@ export function ProfileSection() {
             <li className="flex items-center gap-4">
               <Mail className="h-5 w-5 text-muted-foreground" />
               <div className="flex flex-col text-left">
-                <span className="text-foreground">support@arulfaathirweb.my.id</span>
+                <a href="mailto:support@arulfaathirweb.my.id" className="text-foreground hover:underline">support@arulfaathirweb.my.id</a>
                 <span className="text-xs text-muted-foreground">Email</span>
               </div>
             </li>
@@ -241,5 +241,3 @@ export function ProfileSection() {
     </div>
   );
 }
-
-    
