@@ -200,31 +200,31 @@
     },
     {
       "id": "journey-gayo-1",
-      "description": "Lush green coffee plantation in Gayo highlands",
+      "description": "Vast mountain landscape with a coffee cup",
       "imageUrl": "https://images.unsplash.com/photo-1610552050890-fe99536c2615?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb3VudGFpbiUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3NjMyODU1Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mountain landscape"
     },
     {
       "id": "journey-kintamani-2",
-      "description": "Scenic landscape of Kintamani, Bali with Mount Batur",
+      "description": "A person doing pour over coffee with a mountain backdrop",
       "imageUrl": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtb3VudGFpbiUyMGxha2V8ZW58MHx8fHwxNzYzMjAxODUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mountain lake"
     },
     {
       "id": "journey-toraja-3",
-      "description": "Traditional Torajan houses with coffee beans drying",
+      "description": "Coffee beans in a hand with misty mountains in the background",
       "imageUrl": "https://images.unsplash.com/photo-1490100667990-4fced8021649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtaXN0eSUyMG1vdW50YWluc3xlbnwwfHx8fDE3NjMyOTU0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "misty mountains"
     },
     {
       "id": "journey-sidamo-4",
-      "description": "An Ethiopian woman performing a traditional coffee ceremony",
+      "description": "A person reading a book about coffee on a mountain trail",
       "imageUrl": "https://images.unsplash.com/photo-1504280317859-9c6cce36bca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb3VudGFpbiUyMHRyYWlsfGVufDB8fHx8MTc2MzI1MDUxMnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mountain trail"
     },
     {
       "id": "journey-antioquia-5",
-      "description": "Vast coffee plantation in the mountains of Colombia",
+      "description": "Looking out over a mountain range at sunrise, contemplating the journey ahead.",
       "imageUrl": "https://images.unsplash.com/photo-1594329852649-012d9528deda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb3VudGFpbiUyMHN1bnJpc2V8ZW58MHx8fHwxNzYzMjI2ODE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mountain sunrise"
     }
