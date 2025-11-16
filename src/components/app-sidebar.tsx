@@ -15,7 +15,8 @@ import {
   BarChart2,
   Sparkles,
   ChevronDown,
-  Music
+  Music,
+  Guitar
 } from 'lucide-react';
 
 import {
@@ -43,7 +44,6 @@ export function AppSidebar() {
     { icon: Sparkles, label: 'Keahlian', href: '/keahlian' },
     { icon: LayoutGrid, label: 'Portofolio', href: '/portofolio' },
     { icon: Flame, label: 'Riwayat', href: '/riwayat' },
-    { icon: Music, label: 'Music Favorit', href: '/music-favorit' },
   ];
   
   const coffeeMenuItems = [
@@ -52,6 +52,11 @@ export function AppSidebar() {
     { icon: MapPin, label: 'Tempat Ngopi Favorit', href: '/tempat-ngopi-favorit' },
     { icon: Route, label: 'Coffee Journey', href: '/coffee-journey' },
     { icon: BarChart2, label: 'Kopi Mood Chart', href: '/kopi-mood-chart' },
+  ];
+
+  const musicMenuItems = [
+    { icon: Guitar, label: 'Avenged Sevenfold', href: '/music/avenged-sevenfold' },
+    { icon: Guitar, label: 'Slipknot', href: '/music/slipknot' },
   ];
 
   const [openCollapsible, setOpenCollapsible] = React.useState('Profil');
@@ -124,6 +129,38 @@ export function AppSidebar() {
                 </SidebarMenu>
             </CollapsibleContent>
         </Collapsible>
+
+        <Collapsible open={openCollapsible === 'Music Favorit'} onOpenChange={() => setOpenCollapsible(openCollapsible === 'Music Favorit' ? '' : 'Music Favorit')}>
+            <CollapsibleTrigger className="flex w-full items-center justify-between rounded-md p-2 font-semibold text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground">
+                Music Favorit
+                <ChevronDown className={cn("h-4 w-4 transition-transform", openCollapsible === 'Music Favorit' && "rotate-180")} />
+            </CollapsibleTrigger>
+            <CollapsibleContent>
+                <SidebarMenu className="py-2">
+                    {musicMenuItems.map((item, index) => (
+                    <SidebarMenuItem key={index}>
+                        <Link href={item.href} passHref>
+                        <SidebarMenuButton
+                            asChild
+                            tooltip={{
+                            children: item.label,
+                            side: 'right',
+                            align: 'center',
+                            }}
+                            isActive={pathname === item.href}
+                        >
+                            <div>
+                            <item.icon />
+                            <span>{item.label}</span>
+                            </div>
+                        </SidebarMenuButton>
+                        </Link>
+                    </SidebarMenuItem>
+                    ))}
+                </SidebarMenu>
+            </CollapsibleContent>
+        </Collapsible>
+
         </div>
       </SidebarContent>
     </Sidebar>

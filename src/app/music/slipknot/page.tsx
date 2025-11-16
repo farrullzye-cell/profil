@@ -6,9 +6,9 @@ import { AppSidebar } from '@/components/app-sidebar';
 import { AppFooter } from '@/components/app-footer';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Music } from 'lucide-react';
+import { Guitar } from 'lucide-react';
 
-export default function MusicFavoritPage() {
+export default function SlipknotPage() {
   return (
     <SidebarProvider>
       <AppSidebar />
@@ -20,15 +20,15 @@ export default function MusicFavoritPage() {
                 <Card className="overflow-hidden rounded-xl shadow-lg">
                     <CardHeader className="bg-card p-6">
                         <div className="flex items-center gap-4">
-                            <Music className="h-8 w-8 text-primary" />
+                            <Guitar className="h-8 w-8 text-primary" />
                             <div>
-                                <CardTitle className="text-3xl font-bold text-primary">Music Favorit</CardTitle>
-                                <CardDescription className="text-muted-foreground">Soundtrack yang menemani perjalanan kopi dan hidup.</CardDescription>
+                                <CardTitle className="text-3xl font-bold text-primary">Slipknot</CardTitle>
+                                <CardDescription className="text-muted-foreground">Diskografi dan lagu favorit dari The Nine.</CardDescription>
                             </div>
                         </div>
                     </CardHeader>
                     <CardContent className="p-6">
-                        <p className="text-muted-foreground">Konten untuk halaman "Music Favorit" akan segera hadir. Di sini akan ditampilkan daftar putar atau lagu-lagu pilihan.</p>
+                        <p className="text-muted-foreground">Konten untuk halaman Slipknot akan segera hadir. Di sini akan ditampilkan daftar album, lagu, dan cerita menarik lainnya.</p>
                     </CardContent>
                 </Card>
             </div>
