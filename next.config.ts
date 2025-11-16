@@ -57,6 +57,12 @@ const nextConfig: NextConfig = {
         hostname: 'dynamic-media-cdn.tripadvisor.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'asset-2.tribunnews.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

@@ -51,31 +51,31 @@
     {
       "id": "portfolio-coffee-1",
       "description": "Aesthetic coffee cup",
-      "imageUrl": "https://images.unsplash.com/photo-1517244008259-2ab1b54a29a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBjb2ZmZWV8ZW58MHx8fHwxNzY0NTI0MzYyfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1517244008259-2ab1b54a29a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBjb2ZmZWV8ZW58MHx8fHwxNzY0NTI0MzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "aesthetic coffee"
     },
     {
       "id": "portfolio-coffee-2",
       "description": "Latte art in a cafe",
-      "imageUrl": "https://images.unsplash.com/photo-1572442388855-458a58494c13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjBjb2ZmZWV8ZW58MHx8fHwxNzY0NTI0MzYyfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1572442388855-458a58494c13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjBjb2ZmZWV8ZW58MHx8fHwxNzY0NTI0MzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "latte art"
     },
     {
       "id": "portfolio-sunset-1",
       "description": "Golden hour sunset",
-      "imageUrl": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "aesthetic sunset"
     },
     {
       "id": "portfolio-sunset-2",
       "description": "Pastel sky sunset",
-      "imageUrl": "https://images.unsplash.com/photo-1494537150333-90d2695595a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1494537150333-90d2695595a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "pastel sunset"
     },
     {
       "id": "portfolio-place-1",
       "description": "Aesthetic European street",
-      "imageUrl": "https://images.unsplash.com/photo-1541892219424-8a035d5a9391?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1541892219424-8a035d5a9391?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "aesthetic place"
     },
     {
@@ -147,7 +147,7 @@
     {
       "id": "semarang-coffee-5",
       "description": "A cozy small coffee shop corner",
-      "imageUrl": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3p5JTIwY29mZmVlJTIwc2hvcHxlbnwwfHx8fDE3NjUzMzYxMjR8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3p5JTIwY29mZmVlJTIwc2hvcHxlbnwwfHx8fDE3NjUzMzYxMjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cozy coffee"
     },
     {
@@ -159,19 +159,19 @@
     {
       "id": "semarang-coffee-7",
       "description": "Rooftop cafe with a city view",
-      "imageUrl": "https://images.unsplash.com/photo-1504974312814-6178c13cc328?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyb29mdG9wJTIwY2FmZXxlbnwwfHx8fDE3NjUzMzYxNzF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://asset-2.tribunnews.com/tribunnews/foto/images/preview/restoran-goodfellas-semarang-sajikan-makanan-eropa_20151007_122851.jpg",
       "imageHint": "rooftop cafe"
     },
     {
       "id": "semarang-coffee-8",
       "description": "People using laptops in a 24-hour cafe",
-      "imageUrl": "https://images.unsplash.com/photo-1493106641515-7635e833f0b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYXRlJTIwbmlnaHQlMjBjb2ZmZWUlMjBzaG9wfGVufDB8fHx8MTc2NTMzNjE5Nnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1493106641515-7635e833f0b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYXRlJTIwbmlnaHQlMjBjb2ZmZWUlMjBzaG9wfGVufDB8fHx8MTc2NTMzNjE5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "late night"
     },
     {
       "id": "semarang-coffee-9",
       "description": "Interior of Kairos Coffee",
-      "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBzaG9wJTIwbW9kZXJufGVufDB8fHx8MTc2NTMzODg4OHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBzaG9wJTIwbW9kZXJufGVufDB8fHx8MTc2NTMzODg4OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern cafe"
     },
     {
@@ -183,25 +183,25 @@
     {
       "id": "journey-kintamani-2",
       "description": "Scenic landscape of Kintamani, Bali with Mount Batur",
-      "imageUrl": "https://images.unsplash.com/photo-1578557999234-904d6d9311b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraW50YW1hbmlfYmFsaV9sYW5kc2NhcGV8ZW58MHx8fHwxNzY1NDIzMjg0fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1578557999234-904d6d9311b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraW50YW1hbmlfYmFsaV9sYW5kc2NhcGV8ZW58MHx8fHwxNzY1NDIzMjg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bali landscape"
     },
     {
       "id": "journey-toraja-3",
       "description": "Traditional Torajan houses with coffee beans drying",
-      "imageUrl": "https://images.unsplash.com/photo-1599153169315-e2303c73a69a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b3JhamElMjB2aWxsYWdlJTIwY29mZmVlfGVufDB8fHx8MTc2NTQyMzMwNnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599153169315-e2303c73a69a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b3JhamElMjB2aWxsYWdlJTIwY29mZmVlfGVufDB8fHx8MTc2NTQyMzMwNnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "toraja village"
     },
     {
       "id": "journey-sidamo-4",
       "description": "An Ethiopian woman performing a traditional coffee ceremony",
-      "imageUrl": "https://images.unsplash.com/photo-1582845600994-3ac7a326079b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxldGhpb3BpYW4lMjBjb2ZmZWUlMjBjZXJlbW9ueXxlbnwwfHx8fDE3NjU0MjMzMzR8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1582845600994-3ac7a326079b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxldGhpb3BpYW4lMjBjb2ZmZWUlMjBjZXJlbW9ueXxlbnwwfHx8fDE3NjU0MjMzMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "coffee ceremony"
     },
     {
       "id": "journey-antioquia-5",
       "description": "Vast coffee plantation in the mountains of Colombia",
-      "imageUrl": "https://images.unsplash.com/photo-1589920155694-1b15003b306b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2xvbWJpYW4lMjBjb2ZmZWUlMjBwbGFudGF0aW9ufGVufDB8fHx8MTc2NTQyMzM1Nnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1589920155694-1b15003b306b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2xvbWJpYW4lMjBjb2ZmZWUlMjBwbGFudGF0aW9ufGVufDB8fHx8MTc2NTQyMzM1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "colombian plantation"
     },
     {
