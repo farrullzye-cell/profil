@@ -27,8 +27,8 @@
     {
       "id": "project-image-1",
       "description": "Placeholder for project image about coffee blog",
-      "imageUrl": "https://images.unsplash.com/photo-1495474472287-4d713b22e8b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBsYXR0ZXxlbnwwfHx8fDE3NjM0MTE1MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "coffee latte"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJWnW1bZSateOhWaPu4ySx5Mw2ZeIdybn8VYVk88VA8M6Vbkextv-C-4LW&s=10",
+      "imageHint": "coffee journal"
     },
     {
       "id": "project-image-2",
@@ -122,57 +122,57 @@
     },
     {
       "id": "semarang-coffee-1",
-      "description": "Interior of Antarakata Coffee",
+      "description": "Suasana modern dan hangat di Antarakata Coffee, cocok untuk fokus atau bersantai.",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA7o0SX0QTcMbZttz9ZbkkVkGg7shskfbqWQZueRAz0Y1e35sWT531AplN&s=10",
       "imageHint": "coffee shop interior"
     },
     {
       "id": "semarang-coffee-2",
-      "description": "Classic colonial building facade",
+      "description": "Eastman Coffee House di sebuah bangunan kolonial megah, perpaduan klasik dan modern.",
       "imageUrl": "https://d1r9hss9q19p18.cloudfront.net/uploads/2022/10/B12D6129-815B-4145-BB10-4B1A5BC15A0A.jpg",
       "imageHint": "colonial building"
     },
     {
       "id": "semarang-coffee-3",
-      "description": "Students studying in a coffee shop",
+      "description": "Moment Coffee & Space, tempat populer untuk belajar dan diskusi bagi mahasiswa.",
       "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/df/70/0a/img20180507122835-largejpg.jpg?w=1200&h=1200&s=1",
-      "imageHint": "students coffee"
+      "imageHint": "students studying"
     },
     {
       "id": "semarang-coffee-4",
-      "description": "Modern coffee shop counter",
+      "description": "Anak Panah Kopi, destinasi utama specialty coffee dengan desain modern di pusat kota.",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMouAwMjtY35e2j1logy8KXxsidT8Pb2Ih6QclkbcDVsMcNFqht7puQs&s=10",
       "imageHint": "modern coffee"
     },
     {
       "id": "semarang-coffee-5",
-      "description": "A cozy small coffee shop corner",
+      "description": "Kofitiere, kedai kopi kecil yang homey dengan barista ramah dan kopi berkualitas.",
       "imageUrl": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3p5JTIwY29mZmVlJTIwc2hvcHxlbnwwfHx8fDE3NjUzMzYxMjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cozy coffee"
     },
     {
       "id": "semarang-coffee-6",
-      "description": "Iced coffee to go",
+      "description": "Toko Kopi Tuku, pelopor es kopi susu kekinian yang cocok untuk dibawa pergi.",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv28ytpttv0Dx28no4kXytoxefdwerGLfsyEi-6xBlcCA1vXHpfXa2B_Y&s=10",
       "imageHint": "iced coffee"
     },
     {
       "id": "semarang-coffee-7",
-      "description": "Rooftop cafe with a city view",
+      "description": "Goodfellas Resto & Coffee, menawarkan pengalaman ngopi dengan pemandangan kota.",
       "imageUrl": "https://asset-2.tribunnews.com/tribunnews/foto/images/preview/restoran-goodfellas-semarang-sajikan-makanan-eropa_20151007_122851.jpg",
       "imageHint": "rooftop cafe"
     },
     {
       "id": "semarang-coffee-8",
-      "description": "People using laptops in a 24-hour cafe",
+      "description": "Legend Coffee, surga 24 jam bagi para gamer dan pekerja malam dengan internet kencang.",
       "imageUrl": "https://assets.ladiestory.id/gallery/1637212169-legend-coffee-semarang.jpg",
-      "imageHint": "late night"
+      "imageHint": "late night cafe"
     },
     {
       "id": "semarang-coffee-9",
-      "description": "Interior of Kairos Coffee",
+      "description": "Kairos Coffee, pelopor specialty coffee dengan interior industrial dan area outdoor asri.",
       "imageUrl": "https://assets.kompasiana.com/items/album/2024/12/02/whatsapp-image-2024-12-02-at-10-15-31-674d2663c925c46b6a6cb492.jpeg?t=o&v=350",
-      "imageHint": "kairos coffee"
+      "imageHint": "industrial cafe"
     },
     {
       "id": "a7x-city-of-evil",
@@ -201,31 +201,31 @@
     {
       "id": "journey-gayo-1",
       "description": "Vast mountain landscape with a coffee cup",
-      "imageUrl": "https://images.unsplash.com/photo-1610552050890-fe99536c2615?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb3VudGFpbiUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3NjMyODU1Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/yBw52n4.jpeg",
       "imageHint": "mountain landscape"
     },
     {
       "id": "journey-kintamani-2",
       "description": "A person doing pour over coffee with a mountain backdrop",
-      "imageUrl": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtb3VudGFpbiUyMGxha2V8ZW58MHx8fHwxNzYzMjAxODUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/L3uS4dJ.jpeg",
       "imageHint": "mountain lake"
     },
     {
       "id": "journey-toraja-3",
       "description": "Coffee beans in a hand with misty mountains in the background",
-      "imageUrl": "https://images.unsplash.com/photo-1490100667990-4fced8021649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtaXN0eSUyMG1vdW50YWluc3xlbnwwfHx8fDE3NjMyOTU0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/xVj2YyB.jpeg",
       "imageHint": "misty mountains"
     },
     {
       "id": "journey-sidamo-4",
       "description": "A person reading a book about coffee on a mountain trail",
-      "imageUrl": "https://images.unsplash.com/photo-1504280317859-9c6cce36bca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb3VudGFpbiUyMHRyYWlsfGVufDB8fHx8MTc2MzI1MDUxMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/2s4x7rW.jpeg",
       "imageHint": "mountain trail"
     },
     {
       "id": "journey-antioquia-5",
       "description": "Looking out over a mountain range at sunrise, contemplating the journey ahead.",
-      "imageUrl": "https://images.unsplash.com/photo-1594329852649-012d9528deda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb3VudGFpbiUyMHN1bnJpc2V8ZW58MHx8fHwxNzYzMjI2ODE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/sC03p52.jpeg",
       "imageHint": "mountain sunrise"
     }
   ]
