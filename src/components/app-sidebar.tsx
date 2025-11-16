@@ -44,7 +44,7 @@ export function AppSidebar() {
     { icon: ShieldQuestion, label: 'Anonymous Talk', href: '#' },
     { icon: Crown, label: 'Special Chat (VIP)', href: '#' },
     { icon: HelpCircle, label: 'Ask Me Anything', href: '#' },
-    { icon: PenSquare, label: 'Feedback / Pesan', href: '#' },
+    { icon: PenSquare, label: 'Feedback / Pesan', href: '/pesan' },
   ];
 
   const contactMenuItems = [{ icon: Mail, label: 'Kontak', href: '#' }];
