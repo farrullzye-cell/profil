@@ -35,6 +35,18 @@
       "description": "Placeholder for project image about coffee roasting",
       "imageUrl": "https://images.unsplash.com/photo-1447290941546-4a4c489338df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjByb2FzdGluZ3xlbnwwfHx8fDE3NjM0MTE1NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "coffee roasting"
+    },
+    {
+      "id": "about-image-1",
+      "description": "Image of coffee beans in a sack",
+      "imageUrl": "https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBiZWFucyUyMHNhY2t8ZW58MHx8fHwxNzY0MDQ3ODc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coffee beans"
+    },
+    {
+      "id": "about-image-2",
+      "description": "Image of a notebook and coffee",
+      "imageUrl": "https://images.unsplash.com/photo-1481974128363-233364f77a8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxub3RlYm9vayUyMGNvZmZlZXxlbnwwfHx8fDE3NjQwNDc5MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "notebook coffee"
     }
   ]
 }

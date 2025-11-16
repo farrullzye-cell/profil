@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import {
   BookText,
   Flame,
@@ -22,19 +24,22 @@ import {
   SidebarGroup,
   SidebarGroupLabel,
 } from '@/components/ui/sidebar';
-
-const profileMenuItems = [
-  { icon: Home, label: 'Beranda', active: true },
-  { icon: User, label: 'Tentang Saya' },
-  { icon: Sparkles, label: 'Keahlian' },
-  { icon: LayoutGrid, label: 'Portofolio' },
-  { icon: Flame, label: 'Riwayat' },
-  { icon: BookText, label: 'Blog' },
-];
-
-const contactMenuItems = [{ icon: Mail, label: 'Kontak' }];
+import { cn } from '@/lib/utils';
 
 export function AppSidebar() {
+  const pathname = usePathname();
+
+  const profileMenuItems = [
+    { icon: Home, label: 'Beranda', href: '/' },
+    { icon: User, label: 'Tentang Saya', href: '/tentang-saya' },
+    { icon: Sparkles, label: 'Keahlian', href: '#' },
+    { icon: LayoutGrid, label: 'Portofolio', href: '#' },
+    { icon: Flame, label: 'Riwayat', href: '#' },
+    { icon: BookText, label: 'Blog', href: '#' },
+  ];
+
+  const contactMenuItems = [{ icon: Mail, label: 'Kontak', href: '#' }];
+
   return (
     <Sidebar collapsible="icon">
       <SidebarHeader className="border-b p-2">
@@ -52,17 +57,22 @@ export function AppSidebar() {
           <SidebarMenu>
             {profileMenuItems.map((item, index) => (
               <SidebarMenuItem key={index}>
-                <SidebarMenuButton
-                  tooltip={{
-                    children: item.label,
-                    side: 'right',
-                    align: 'center',
-                  }}
-                  isActive={item.active}
-                >
-                  <item.icon />
-                  <span>{item.label}</span>
-                </SidebarMenuButton>
+                <Link href={item.href} passHref>
+                  <SidebarMenuButton
+                    asChild
+                    tooltip={{
+                      children: item.label,
+                      side: 'right',
+                      align: 'center',
+                    }}
+                    isActive={pathname === item.href}
+                  >
+                    <div>
+                      <item.icon />
+                      <span>{item.label}</span>
+                    </div>
+                  </SidebarMenuButton>
+                </Link>
               </SidebarMenuItem>
             ))}
           </SidebarMenu>
@@ -73,16 +83,22 @@ export function AppSidebar() {
           <SidebarMenu>
             {contactMenuItems.map((item, index) => (
               <SidebarMenuItem key={index}>
-                <SidebarMenuButton
-                  tooltip={{
-                    children: item.label,
-                    side: 'right',
-                    align: 'center',
-                  }}
-                >
-                  <item.icon />
-                  <span>{item.label}</span>
-                </SidebarMenuButton>
+                <Link href={item.href} passHref>
+                  <SidebarMenuButton
+                    asChild
+                    tooltip={{
+                      children: item.label,
+                      side: 'right',
+                      align: 'center',
+                    }}
+                    isActive={pathname === item.href}
+                  >
+                    <div>
+                      <item.icon />
+                      <span>{item.label}</span>
+                    </div>
+                  </SidebarMenuButton>
+                </Link>
               </SidebarMenuItem>
             ))}
           </SidebarMenu>
