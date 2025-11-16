@@ -24,6 +24,7 @@ export function ProfileSection() {
             alt="Header background"
             fill
             objectFit="cover"
+            objectPosition="top"
             data-ai-hint={heroImage.imageHint}
           />
         )}
