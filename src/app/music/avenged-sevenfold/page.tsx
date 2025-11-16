@@ -135,108 +135,125 @@ export default function AvengedSevenfoldPage() {
     setSelectedSong(song);
   }
 
+  const headerImage = useMemo(() => PlaceHolderImages.find(p => p.id === 'a7x-avenged-sevenfold'), []);
+
   return (
     <SidebarProvider>
       <AppSidebar />
       <SidebarInset>
         <div className="flex min-h-svh flex-col bg-background">
           <AppHeader />
-          <main className="flex-1 overflow-y-auto p-4 md:p-8">
-            <div className="mx-auto max-w-4xl space-y-8">
-                <Card className="overflow-hidden rounded-xl shadow-lg">
-                    <CardHeader className="bg-card p-6">
-                        <div className="flex items-center gap-4">
-                            <Guitar className="h-8 w-8 text-primary" />
-                            <div>
-                                <CardTitle className="text-3xl font-bold text-primary">Avenged Sevenfold</CardTitle>
-                                <CardDescription className="text-muted-foreground">Koleksi lagu favorit dari A7X.</CardDescription>
-                            </div>
+          <main className="flex-1 overflow-y-auto">
+            <div className="relative h-64 md:h-80 w-full">
+                {headerImage && (
+                    <>
+                        <Image
+                            src={headerImage.imageUrl}
+                            alt="Avenged Sevenfold band logo"
+                            fill
+                            objectFit="cover"
+                            className="object-top"
+                            data-ai-hint={headerImage.imageHint}
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent" />
+                    </>
+                )}
+                <div className="absolute bottom-0 p-4 md:p-8">
+                    <div className="max-w-4xl mx-auto flex items-end gap-4">
+                        <Guitar className="h-12 w-12 text-primary" />
+                        <div>
+                            <h1 className="text-4xl md:text-5xl font-bold text-foreground shadow-lg">Avenged Sevenfold</h1>
+                            <p className="text-lg text-muted-foreground">Koleksi lagu favorit dari A7X.</p>
                         </div>
-                    </CardHeader>
-                </Card>
-                <Dialog>
-                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                        {songsWithImages.map((song, index) => (
-                            <DialogTrigger asChild key={index} onClick={() => handleSelectSong(song)}>
-                                <Card className="group flex cursor-pointer flex-col overflow-hidden rounded-lg shadow-md transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl">
-                                    {song.placeholder && (
-                                        <div className="relative h-48 w-full">
-                                            <Image
-                                                src={song.placeholder.imageUrl}
-                                                alt={`Album art for ${song.album}`}
-                                                fill
-                                                objectFit="cover"
-                                                data-ai-hint={song.placeholder.imageHint}
-                                            />
-                                            <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 transition-opacity group-hover:opacity-100">
-                                                <Music className="h-16 w-16 text-white" />
-                                            </div>
-                                        </div>
-                                    )}
-                                    <CardHeader>
-                                        <CardTitle className="text-lg text-primary">{song.title}</CardTitle>
-                                        <CardDescription className="flex items-center gap-2 pt-1">
-                                            {song.album} &middot; {song.year}
-                                        </CardDescription>
-                                    </CardHeader>
-                                </Card>
-                            </DialogTrigger>
-                        ))}
                     </div>
+                </div>
+            </div>
+            <div className="p-4 md:p-8 -mt-8">
+                <div className="mx-auto max-w-4xl space-y-8">
+                    <Dialog>
+                        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                            {songsWithImages.map((song, index) => (
+                                <DialogTrigger asChild key={index} onClick={() => handleSelectSong(song)}>
+                                    <Card className="group flex cursor-pointer flex-col overflow-hidden rounded-lg shadow-md transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl">
+                                        {song.placeholder && (
+                                            <div className="relative h-48 w-full">
+                                                <Image
+                                                    src={song.placeholder.imageUrl}
+                                                    alt={`Album art for ${song.album}`}
+                                                    fill
+                                                    objectFit="cover"
+                                                    data-ai-hint={song.placeholder.imageHint}
+                                                />
+                                                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 transition-opacity group-hover:opacity-100">
+                                                    <Music className="h-16 w-16 text-white" />
+                                                </div>
+                                            </div>
+                                        )}
+                                        <CardHeader>
+                                            <CardTitle className="text-lg text-primary">{song.title}</CardTitle>
+                                            <CardDescription className="flex items-center gap-2 pt-1">
+                                                {song.album} &middot; {song.year}
+                                            </CardDescription>
+                                        </CardHeader>
+                                    </Card>
+                                </DialogTrigger>
+                            ))}
+                        </div>
 
-                    {selectedSong && (
-                        <DialogContent className="grid max-h-[90svh] max-w-2xl grid-rows-[auto_minmax(0,1fr)] overflow-hidden rounded-2xl border-none bg-neutral-900/90 p-0 text-white backdrop-blur-2xl">
-                           <DialogHeader className="sr-only">
-                             <DialogTitle>Detail Lagu: {selectedSong.title}</DialogTitle>
-                             <DialogDescription>Deskripsi mendalam tentang lagu {selectedSong.title} oleh Avenged Sevenfold.</DialogDescription>
-                           </DialogHeader>
-                           <div className="relative">
-                                {selectedSong.placeholder && (
-                                    <>
-                                     <Image
-                                        src={selectedSong.placeholder.imageUrl}
-                                        alt={`Album art for ${selectedSong.album}`}
-                                        width={800}
-                                        height={450}
-                                        className="h-56 w-full rounded-t-2xl object-cover"
-                                        data-ai-hint={selectedSong.placeholder.imageHint}
-                                    />
-                                     <div className="absolute inset-0 rounded-t-2xl bg-gradient-to-t from-neutral-900 via-neutral-900/70 to-transparent" />
-                                    </>
-                                )}
-                                <div className="absolute bottom-0 p-6">
-                                     <h3 className="text-4xl font-bold tracking-tight">{selectedSong.title}</h3>
-                                     <p className="text-lg text-neutral-300">Avenged Sevenfold - {selectedSong.album} ({selectedSong.year})</p>
-                                </div>
-                           </div>
-                           <ScrollArea className="overflow-hidden">
-                            <div className="space-y-6 p-6 pt-4">
-                                <div className="flex items-start gap-4 rounded-lg bg-white/5 p-4">
-                                    <Quote className="h-6 w-6 shrink-0 translate-y-1 text-primary"/>
-                                    <p className="text-neutral-300 leading-relaxed italic">"{selectedSong.description}"</p>
-                                </div>
-                                <div className="grid grid-cols-3 gap-4 text-center">
-                                    <div className="rounded-lg bg-white/5 p-3">
-                                        <Mic className="mx-auto h-6 w-6 text-primary"/>
-                                        <p className="mt-1 text-sm font-semibold">M. Shadows</p>
-                                        <p className="text-xs text-neutral-400">Vokal</p>
+                        {selectedSong && (
+                            <DialogContent className="grid max-h-[90svh] max-w-2xl grid-rows-[auto_minmax(0,1fr)] overflow-hidden rounded-2xl border-none bg-neutral-900/90 p-0 text-white backdrop-blur-2xl">
+                            <DialogHeader className="sr-only">
+                                <DialogTitle>Detail Lagu: {selectedSong.title}</DialogTitle>
+                                <DialogDescription>Deskripsi mendalam tentang lagu {selectedSong.title} oleh Avenged Sevenfold.</DialogDescription>
+                            </DialogHeader>
+                            <div className="relative">
+                                    {selectedSong.placeholder && (
+                                        <>
+                                        <Image
+                                            src={selectedSong.placeholder.imageUrl}
+                                            alt={`Album art for ${selectedSong.album}`}
+                                            width={800}
+                                            height={450}
+                                            className="h-56 w-full rounded-t-2xl object-cover"
+                                            data-ai-hint={selectedSong.placeholder.imageHint}
+                                        />
+                                        <div className="absolute inset-0 rounded-t-2xl bg-gradient-to-t from-neutral-900 via-neutral-900/70 to-transparent" />
+                                        </>
+                                    )}
+                                    <div className="absolute bottom-0 p-6">
+                                        <h3 className="text-4xl font-bold tracking-tight">{selectedSong.title}</h3>
+                                        <p className="text-lg text-neutral-300">Avenged Sevenfold - {selectedSong.album} ({selectedSong.year})</p>
                                     </div>
-                                    <div className="rounded-lg bg-white/5 p-3">
-                                        <Guitar className="mx-auto h-6 w-6 text-primary"/>
-                                        <p className="mt-1 text-sm font-semibold">Synyster Gates</p>
-                                        <p className="text-xs text-neutral-400">Gitaris</p>
-                                    </div>
-                                     <div className="rounded-lg bg-white/5 p-3">
-                                        <Drum className="mx-auto h-6 w-6 text-primary"/>
-                                        <p className="mt-1 text-sm font-semibold">The Rev</p>
-                                        <p className="text-xs text-neutral-400">Drummer</p>
-                                    </div>
-                                </div>
                             </div>
-                           </ScrollArea>
-                        </DialogContent>
-                    )}
-                </Dialog>
+                            <ScrollArea className="overflow-hidden">
+                                <div className="space-y-6 p-6 pt-4">
+                                    <div className="flex items-start gap-4 rounded-lg bg-white/5 p-4">
+                                        <Quote className="h-6 w-6 shrink-0 translate-y-1 text-primary"/>
+                                        <p className="text-neutral-300 leading-relaxed italic">"{selectedSong.description}"</p>
+                                    </div>
+                                    <div className="grid grid-cols-3 gap-4 text-center">
+                                        <div className="rounded-lg bg-white/5 p-3">
+                                            <Mic className="mx-auto h-6 w-6 text-primary"/>
+                                            <p className="mt-1 text-sm font-semibold">M. Shadows</p>
+                                            <p className="text-xs text-neutral-400">Vokal</p>
+                                        </div>
+                                        <div className="rounded-lg bg-white/5 p-3">
+                                            <Guitar className="mx-auto h-6 w-6 text-primary"/>
+                                            <p className="mt-1 text-sm font-semibold">Synyster Gates</p>
+                                            <p className="text-xs text-neutral-400">Gitaris</p>
+                                        </div>
+                                        <div className="rounded-lg bg-white/5 p-3">
+                                            <Drum className="mx-auto h-6 w-6 text-primary"/>
+                                            <p className="mt-1 text-sm font-semibold">The Rev</p>
+                                            <p className="text-xs text-neutral-400">Drummer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ScrollArea>
+                            </DialogContent>
+                        )}
+                    </Dialog>
+                </div>
             </div>
           </main>
           <AppFooter />
