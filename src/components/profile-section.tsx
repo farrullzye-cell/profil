@@ -1,14 +1,18 @@
 'use client';
 
 import Image from 'next/image';
-import { Github, Linkedin, Twitter, Mail, Info, Bell, Phone, Search, AtSign } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail, Info, Bell, Phone, Search, AtSign, Coffee, Wind, Droplets } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Separator } from '@/components/ui/separator';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 
 export function ProfileSection() {
-  const heroImage = PlaceHolderImages.find((p) => p.id === 'hero-image-2');
+  const heroImage = PlaceHolderImages.find((p) => p.id === 'hero-image-3');
   const userAvatar = PlaceHolderImages.find((p) => p.id === 'user-avatar-1');
+  const projectImage1 = PlaceHolderImages.find((p) => p.id === 'project-image-1');
+  const projectImage2 = PlaceHolderImages.find((p) => p.id === 'project-image-2');
 
   return (
     <div className="bg-background text-card-foreground">
@@ -33,7 +37,7 @@ export function ProfileSection() {
         </Avatar>
 
         <h2 className="text-2xl font-bold">Your Name</h2>
-        <p className="text-primary">@yourusername</p>
+        <p className="text-primary">@coffee_maestro</p>
         
         <div className="mt-4 flex justify-center gap-4">
           <a href="#" className="text-muted-foreground hover:text-primary">
@@ -50,16 +54,62 @@ export function ProfileSection() {
           </a>
         </div>
 
-
         <Separator className="my-6" />
 
         <div className="text-left">
           <h3 className="mb-4 text-lg font-semibold">About</h3>
           <p className="text-muted-foreground">
-            I'm a passionate developer who loves building amazing web applications. Skilled in React,
-            Next.js, and creating beautiful user interfaces. In my free time, I enjoy contributing
-            to open-source projects and exploring new technologies.
+            I'm a passionate coffee enthusiast and brewer. Skilled in various brewing methods and creating beautiful latte art. In my free time, I enjoy exploring new coffee origins and roasting my own beans.
           </p>
+        </div>
+
+        <Separator className="my-6" />
+        
+        <div className="text-left">
+          <h3 className="mb-4 text-lg font-semibold">My Projects</h3>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <Card>
+              {projectImage1 && 
+                <Image src={projectImage1.imageUrl} alt="Project 1" width={400} height={250} className="rounded-t-lg object-cover" data-ai-hint={projectImage1.imageHint} />
+              }
+              <CardContent className="p-4">
+                <h4 className="font-semibold">Artisan Coffee Blog</h4>
+                <p className="text-sm text-muted-foreground">A blog sharing brewing tips and coffee stories.</p>
+              </CardContent>
+            </Card>
+            <Card>
+              {projectImage2 && 
+                <Image src={projectImage2.imageUrl} alt="Project 2" width={400} height={250} className="rounded-t-lg object-cover" data-ai-hint={projectImage2.imageHint} />
+              }
+              <CardContent className="p-4">
+                <h4 className="font-semibold">Home Roasting Setup</h4>
+                <p className="text-sm text-muted-foreground">My personal setup for roasting beans at home.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        <Separator className="my-6" />
+
+        <div className="text-left">
+          <h3 className="mb-4 text-lg font-semibold">Skills</h3>
+          <div className="flex flex-wrap gap-4">
+            <Badge variant="secondary" className="flex items-center gap-2 text-base p-2 px-3">
+              <Coffee className="h-4 w-4" />
+              Espresso
+            </Badge>
+            <Badge variant="secondary" className="flex items-center gap-2 text-base p-2 px-3">
+              <Wind className="h-4 w-4" />
+              Aeropress
+            </Badge>
+             <Badge variant="secondary" className="flex items-center gap-2 text-base p-2 px-3">
+              <Droplets className="h-4 w-4" />
+              Latte Art
+            </Badge>
+            <Badge variant="secondary" className="flex items-center gap-2 text-base p-2 px-3">
+              Bean Roasting
+            </Badge>
+          </div>
         </div>
 
         <Separator className="my-6" />
@@ -84,7 +134,7 @@ export function ProfileSection() {
              <li className="flex items-center gap-4">
               <AtSign className="h-5 w-5 text-muted-foreground" />
                <div className="flex flex-col text-left">
-                <span className="text-foreground">@yourusername</span>
+                <span className="text-foreground">@coffee_maestro</span>
                 <span className="text-xs text-muted-foreground">Username</span>
               </div>
             </li>

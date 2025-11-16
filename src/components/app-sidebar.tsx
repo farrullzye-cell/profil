@@ -1,8 +1,14 @@
 'use client';
 
-import { Briefcase, Code, Mail, Search, User } from 'lucide-react';
+import { Briefcase, Coffee, Mail, Search, User } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+} from '@/components/ui/sheet';
 import {
   Sidebar,
   SidebarContent,
@@ -16,7 +22,7 @@ import {
 const menuItems = [
   { icon: User, label: 'My Profile', active: true },
   { icon: Briefcase, label: 'Projects' },
-  { icon: Code, label: 'Skills' },
+  { icon: Coffee, label: 'Skills' },
   { icon: Mail, label: 'Contact' },
 ];
 

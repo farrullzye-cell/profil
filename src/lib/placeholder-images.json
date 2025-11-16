@@ -17,6 +17,24 @@
       "description": "Placeholder for hero image with gradient",
       "imageUrl": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWJzdHJhY3QlMjBncmFkaWVudHxlbnwwfHx8fDE3NjMyMjc5MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract gradient"
+    },
+    {
+      "id": "hero-image-3",
+      "description": "Placeholder for hero image with dark coffee/cafe theme",
+      "imageUrl": "https://images.unsplash.com/photo-1511920183353-3c9c93da694e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBiZWFuc3xlbnwwfHx8fDE3NjM0MTE0ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coffee beans"
+    },
+    {
+      "id": "project-image-1",
+      "description": "Placeholder for project image about coffee blog",
+      "imageUrl": "https://images.unsplash.com/photo-1495474472287-4d713b22e8b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBsYXR0ZXxlbnwwfHx8fDE3NjM0MTE1MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coffee latte"
+    },
+    {
+      "id": "project-image-2",
+      "description": "Placeholder for project image about coffee roasting",
+      "imageUrl": "https://images.unsplash.com/photo-1447290941546-4a4c489338df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjByb2FzdGluZ3xlbnwwfHx8fDE3NjM0MTE1NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coffee roasting"
     }
   ]
 }
