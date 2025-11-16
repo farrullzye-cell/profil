@@ -26,14 +26,14 @@
     },
     {
       "id": "project-image-1",
-      "description": "Placeholder for project image about coffee blog",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJWnW1bZSateOhWaPu4ySx5Mw2ZeIdybn8VYVk88VA8M6Vbkextv-C-4LW&s=10",
+      "description": "Aesthetic coffee shot",
+      "imageUrl": "https://i.pinimg.com/736x/b7/f5/87/b7f58775ce52ec61b44f29b25c4273b1.jpg",
       "imageHint": "coffee journal"
     },
     {
       "id": "project-image-2",
-      "description": "Placeholder for project image about coffee roasting",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBJzSaBWlo5B-eRkvOx3MVRo4Ff5fpi4e5yo9jEHQqRhhe7sWAv1A6-tQ&s=10",
+      "description": "Overhead view of coffee",
+      "imageUrl": "https://i.pinimg.com/736x/8b/ff/8e/8bff8e891a92701d79abac16acbb5db1.jpg",
       "imageHint": "coffee map"
     },
     {
@@ -51,13 +51,13 @@
     {
       "id": "portfolio-coffee-1",
       "description": "Aesthetic coffee cup",
-      "imageUrl": "https://images.unsplash.com/photo-1517244008259-2ab1b54a29a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBjb2ZmZWV8ZW58MHx8fHwxNzY0NTI0MzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.pinimg.com/736x/15/d6/6a/15d66a12328ad78b273c404a23df892f.jpg",
       "imageHint": "aesthetic coffee"
     },
     {
       "id": "portfolio-coffee-2",
       "description": "Latte art in a cafe",
-      "imageUrl": "https://images.unsplash.com/photo-1572442388855-458a58494c13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjBjb2ZmZWV8ZW58MHx8fHwxNzY0NTI0MzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.pinimg.com/474x/3c/71/a1/3c71a10d91a56a524ff361a4798d1144.jpg",
       "imageHint": "latte art"
     },
     {
@@ -93,7 +93,7 @@
     {
       "id": "portfolio-wallpaper-2",
       "description": "Vibrant gradient wallpaper",
-      "imageUrl": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjB3YWxscGFwZXJ8ZW58MHx8fHwxNzY0NTI0NDY4fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjB3YWxscGFwZXJ8ZW58MHx8fHwxNzY0NTI0NDY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "gradient wallpaper"
     },
     {
@@ -105,7 +105,7 @@
     {
       "id": "portfolio-coffee-3",
       "description": "Morning coffee ritual",
-      "imageUrl": "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBjb2ZmZWV8ZW58MHx8fHwxNzY0NTI0MzYyfDA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRbXegiYJX_wjscBpTaiZ7MBJH02iNFRCVLRWDbjaRNQ&s=10",
       "imageHint": "morning coffee"
     },
     {
@@ -117,7 +117,7 @@
     {
       "id": "portfolio-sunset-3",
       "description": "City skyline silhouette",
-      "imageUrl": "https://images.unsplash.com/photo-1524234103328-1b4b10499b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1524234103328-1b4b10499b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "city silhouette"
     },
     {
