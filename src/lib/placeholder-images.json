@@ -27,13 +27,13 @@
     {
       "id": "project-image-1",
       "description": "Aesthetic coffee shot",
-      "imageUrl": "https://i.pinimg.com/736x/b7/f5/87/b7f58775ce52ec61b44f29b25c4273b1.jpg",
-      "imageHint": "coffee journal"
+      "imageUrl": "https://ik.imagekit.io/goodid/gnfi/uploads/articles/large-shutterstock-582329227-3d26e73af7a09a663014a4d85b68f5bd.jpg?tr=w-730,h-486,fo-center",
+      "imageHint": "notebook coffee"
     },
     {
       "id": "project-image-2",
       "description": "Overhead view of coffee",
-      "imageUrl": "https://i.pinimg.com/736x/8b/ff/8e/8bff8e891a92701d79abac16acbb5db1.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBiZWFucyUyMHNhY2t8ZW58MHx8fHwxNzY0MDQ3ODc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "coffee map"
     },
     {
@@ -81,7 +81,7 @@
     {
       "id": "portfolio-place-2",
       "description": "Misty forest path",
-      "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "forest path"
     },
     {
@@ -111,7 +111,7 @@
     {
       "id": "portfolio-place-3",
       "description": "Old library",
-      "imageUrl": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "old library"
     },
     {
@@ -201,31 +201,31 @@
     {
       "id": "journey-semarang-1",
       "description": "Lawang Sewu yang megah di malam hari, sebuah ikon bersejarah di Semarang.",
-      "imageUrl": "https://i.imgur.com/gKBMt2a.jpeg",
+      "imageUrl": "https://asset.kgnewsroom.com/photo/pre/2023/07/26/lawang-sewu_64c120a1c1d13.jpg",
       "imageHint": "semarang building"
     },
     {
       "id": "journey-semarang-2",
       "description": "Sudut artistik dari Kota Lama Semarang, dengan arsitektur kolonial yang menawan.",
-      "imageUrl": "https://i.imgur.com/uR2iP7t.jpeg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Gereja_Blenduk_Semarang.jpg",
       "imageHint": "semarang old town"
     },
     {
       "id": "journey-semarang-3",
       "description": "Detail arsitektur Klenteng Sam Poo Kong yang kaya akan warna dan sejarah.",
-      "imageUrl": "https://i.imgur.com/N3b5fB5.jpeg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Sam_Poo_Kong_Temple_in_Semarang.jpg",
       "imageHint": "semarang temple"
     },
     {
       "id": "journey-semarang-4",
       "description": "Masjid Agung Jawa Tengah, perpaduan arsitektur Jawa, Islam, dan Romawi.",
-      "imageUrl": "https://i.imgur.com/uSZZKq4.jpeg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Masjid_Agung_Jawa_Tengah.jpg",
       "imageHint": "semarang mosque"
     },
     {
       "id": "journey-semarang-5",
       "description": "Tugu Muda, monumen perjuangan yang berdiri kokoh di jantung kota Semarang.",
-      "imageUrl": "https://i.imgur.com/eB6u4hV.jpeg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Tugu_Muda_Semarang.jpg",
       "imageHint": "semarang monument"
     },
     {
