@@ -55,10 +55,10 @@ export function ProfileSection() {
           <a href="https://id.linkedin.com/in/arul-d-u-415292360" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
             <Linkedin className="h-6 w-6" />
           </a>
-          <a href="#" className="text-muted-foreground hover:text-primary">
+          <a href="https://www.instagram.com/arul_fait" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
             <Instagram className="h-6 w-6" />
           </a>
-          <a href="#" className="text-muted-foreground hover:text-primary">
+          <a href="mailto:support@arulfaathirweb.my.id" className="text-muted-foreground hover:text-primary">
             <Mail className="h-6 w-6" />
           </a>
         </div>
@@ -241,3 +241,5 @@ export function ProfileSection() {
     </div>
   );
 }
+
+    
