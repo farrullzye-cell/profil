@@ -45,7 +45,7 @@ const skillsData = [
       },
       {
         name: "Latte Art",
-        level: 60,
+        level: 30,
         description: "Mampu memanaskan susu hingga mencapai microfoam yang cukup baik. Sudah bisa membuat pola dasar seperti hati (heart) dan tulip sederhana, dan sedang berlatih untuk pola yang lebih kompleks."
       }
     ]

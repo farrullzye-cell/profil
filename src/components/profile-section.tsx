@@ -16,8 +16,8 @@ import React from 'react';
 export function ProfileSection() {
   const heroImage = PlaceHolderImages.find((p) => p.id === 'hero-image-3');
   const userAvatar = PlaceHolderImages.find((p) => p.id === 'user-avatar-1');
-  const projectImage1 = PlaceHolderImages.find((p) => p.id === 'about-image-2');
-  const projectImage2 = PlaceHolderImages.find((p) => p.id === 'journey-gayo-1');
+  const projectImage1 = PlaceHolderImages.find((p) => p.id === 'project-image-1');
+  const projectImage2 = PlaceHolderImages.find((p) => p.id === 'project-image-2');
 
   const [openCollapsible, setOpenCollapsible] = React.useState<string | null>(null);
 
@@ -158,11 +158,11 @@ export function ProfileSection() {
                         <span className="font-medium">Seni Latte</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-sm text-muted-foreground">60%</span>
+                      <span className="text-sm text-muted-foreground">30%</span>
                       <ChevronDown className={cn("h-4 w-4 transition-transform", openCollapsible === 'latte-art' && "rotate-180")} />
                     </div>
                   </div>
-                  <Progress value={60} />
+                  <Progress value={30} />
                 </div>
               </CollapsibleTrigger>
               <CollapsibleContent>
