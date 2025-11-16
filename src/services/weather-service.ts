@@ -1,3 +1,4 @@
+
 export type HourlyForecast = {
     time: string;
     condition: 'Cerah' | 'Hujan' | 'Berawan' | 'Mendung';
@@ -34,13 +35,13 @@ function mapWeatherCondition(weatherId: number): 'Cerah' | 'Hujan' | 'Berawan' |
     return 'Berawan';
 }
 
-const API_KEY = process.env.OPENWEATHER_API_KEY;
+const API_KEY = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
 const LAT_SEMARANG = -6.966667;
 const LON_SEMARANG = 110.433333;
 
 export async function getWeather(city: string): Promise<WeatherCondition> {
     if (!API_KEY || API_KEY === "MASUKKAN_API_KEY_ANDA_DI_SINI") {
-        throw new Error("API Key OpenWeatherMap belum diatur di file .env");
+        throw new Error("API Key OpenWeatherMap belum diatur di file .env dengan prefix NEXT_PUBLIC_");
     }
 
     const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT_SEMARANG}&lon=${LON_SEMARANG}&appid=${API_KEY}&units=metric&lang=id`;

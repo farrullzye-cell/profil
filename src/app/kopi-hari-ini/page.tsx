@@ -94,13 +94,13 @@ export default function KopiHariIniPage() {
                             )}
 
                             {error && (
-                                <Card className="border-destructive bg-destructive/10 text-destructive">
+                                <Card className="border-destructive bg-destructive/10 text-destructive-foreground">
                                 <CardHeader>
                                     <CardTitle>Terjadi Kesalahan</CardTitle>
                                 </CardHeader>
                                 <CardContent>
                                     <p className="font-semibold">{error}</p>
-                                    {error.includes("API Key") && <p className="mt-2 text-sm">Silakan periksa file `.env` dan pastikan Anda telah memasukkan API Key yang valid dari OpenWeatherMap.</p>}
+                                    {error.includes("API Key") && <p className="mt-2 text-sm">Silakan periksa file `.env` dan pastikan Anda telah memasukkan API Key yang valid dari OpenWeatherMap dengan prefix `NEXT_PUBLIC_`.</p>}
                                 </CardContent>
                                 </Card>
                             )}
