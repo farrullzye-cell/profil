@@ -19,18 +19,18 @@ const skillsData = [
     skills: [
       {
         name: "Pour Over (V60, Kalita)",
-        level: 95,
-        description: "Menguasai teknik penuangan yang presisi untuk mengontrol laju alir dan ekstraksi, menghasilkan kopi yang jernih dengan profil rasa yang kompleks dan berlapis. Mampu menonjolkan keasaman cerah dan nuansa floral dari biji kopi."
+        level: 75,
+        description: "Memiliki pemahaman yang baik tentang teknik penuangan untuk mengontrol laju alir dan ekstraksi. Mampu secara konsisten menghasilkan kopi yang jernih dengan profil rasa yang seimbang."
       },
       {
         name: "Aeropress",
-        level: 90,
-        description: "Ahli dalam metode seduh standar dan terbalik (inverted). Berpengalaman dalam memanipulasi variabel seperti waktu perendaman, tekanan, dan ukuran gilingan untuk menciptakan secangkir kopi yang kaya rasa dan bersih."
+        level: 70,
+        description: "Cukup terampil dalam metode seduh standar dan terbalik (inverted). Dapat memanipulasi variabel dasar untuk menyesuaikan hasil seduhan sesuai preferensi rasa."
       },
       {
         name: "French Press",
-        level: 85,
-        description: "Memahami cara memaksimalkan ekstraksi untuk menghasilkan kopi dengan body yang penuh dan kaya tanpa rasa pahit berlebih. Menguasai teknik memecah 'crust' dan waktu perendaman yang ideal."
+        level: 65,
+        description: "Memahami cara menghasilkan kopi dengan body yang kaya menggunakan French Press. Masih terus bereksperimen dengan waktu perendaman dan ukuran gilingan untuk hasil optimal."
       }
     ]
   },
@@ -40,13 +40,13 @@ const skillsData = [
     skills: [
       {
         name: "Ekstraksi Espresso",
-        level: 98,
-        description: "Keahlian tingkat lanjut dalam 'dialing-in' shot espresso. Mampu secara konsisten menghasilkan espresso dengan krema tebal, keasaman seimbang, dan rasa manis yang mendalam. Memahami dampak rasio, suhu, dan tekanan."
+        level: 75,
+        description: "Mampu melakukan 'dialing-in' untuk menghasilkan shot espresso yang layak dengan krema yang stabil. Terus belajar untuk mencapai keseimbangan rasa yang lebih konsisten."
       },
       {
         name: "Latte Art",
-        level: 92,
-        description: "Terampil dalam memanaskan susu hingga mencapai microfoam yang sempurna. Mampu menuangkan desain yang rumit dan simetris, mulai dari hati, tulip, hingga rosetta yang kompleks, menggabungkan seni visual dengan rasa yang lezat."
+        level: 60,
+        description: "Mampu memanaskan susu hingga mencapai microfoam yang cukup baik. Sudah bisa membuat pola dasar seperti hati (heart) dan tulip sederhana, dan sedang berlatih untuk pola yang lebih kompleks."
       }
     ]
   },
@@ -56,13 +56,13 @@ const skillsData = [
     skills: [
       {
         name: "Profil Penyangraian",
-        level: 88,
-        description: "Berpengalaman dalam mengembangkan profil sangrai untuk berbagai jenis biji kopi. Memahami fase-fase penting (drying, Maillard, development) dan cara memanipulasinya untuk menonjolkan atau menutupi karakteristik rasa tertentu."
+        level: 60,
+        description: "Memiliki pengetahuan dasar tentang profil sangrai dan fase-fase pentingnya. Sudah mulai mencoba mengembangkan profil sangrai sederhana untuk beberapa jenis biji kopi."
       },
       {
-        name: "Analisis Sensorik Biji Hijau & Sangrai",
-        level: 90,
-        description: "Mampu mengevaluasi kualitas biji kopi hijau berdasarkan aroma, cacat fisik, dan kepadatan. Terlatih dalam mengidentifikasi hasil sangrai yang 'underdeveloped', 'baked', atau 'over-roasted' melalui evaluasi visual dan sensorik."
+        name: "Analisis Sensorik Biji",
+        level: 65,
+        description: "Mampu mengevaluasi kualitas dasar biji kopi. Dapat mengidentifikasi cacat sangrai yang jelas seperti 'underdeveloped' atau 'over-roasted' melalui evaluasi sensorik."
       }
     ]
   },
@@ -72,13 +72,13 @@ const skillsData = [
     skills: [
       {
         name: "Protokol Cupping",
-        level: 30,
-        description: "Memulai perjalanan dalam memahami protokol cupping standar. Masih dalam tahap belajar untuk melakukan evaluasi kopi secara objektif dan konsisten."
+        level: 55,
+        description: "Memahami dan mampu mengikuti protokol cupping standar. Terus melatih konsistensi dalam melakukan evaluasi kopi secara objektif."
       },
       {
         name: "Identifikasi Rasa & Aroma",
-        level: 30,
-        description: "Sedang melatih palet rasa untuk mulai mengidentifikasi nuansa rasa dan aroma dasar dalam kopi. Ini adalah area fokus untuk pengembangan diri."
+        level: 50,
+        description: "Mulai dapat mengidentifikasi dan membedakan beberapa nuansa rasa dan aroma dasar dalam kopi. Secara aktif melatih palet rasa untuk kepekaan yang lebih tinggi."
       }
     ]
   }
