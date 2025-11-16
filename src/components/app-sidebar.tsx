@@ -24,7 +24,6 @@ import {
   SidebarGroup,
   SidebarGroupLabel,
 } from '@/components/ui/sidebar';
-import { cn } from '@/lib/utils';
 
 export function AppSidebar() {
   const pathname = usePathname();
@@ -33,7 +32,7 @@ export function AppSidebar() {
     { icon: Home, label: 'Beranda', href: '/' },
     { icon: User, label: 'Tentang Saya', href: '/tentang-saya' },
     { icon: Sparkles, label: 'Keahlian', href: '/keahlian' },
-    { icon: LayoutGrid, label: 'Portofolio', href: '#' },
+    { icon: LayoutGrid, label: 'Portofolio', href: '/portofolio' },
     { icon: Flame, label: 'Riwayat', href: '#' },
     { icon: BookText, label: 'Blog', href: '#' },
   ];

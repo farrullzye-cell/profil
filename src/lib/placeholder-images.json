@@ -47,6 +47,60 @@
       "description": "Image of a notebook and coffee",
       "imageUrl": "https://images.unsplash.com/photo-1481974128363-233364f77a8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxub3RlYm9vayUyMGNvZmZlZXxlbnwwfHx8fDE3NjQwNDc5MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "notebook coffee"
+    },
+    {
+      "id": "portfolio-coffee-1",
+      "description": "Aesthetic coffee cup",
+      "imageUrl": "https://images.unsplash.com/photo-1517244008259-2ab1b54a29a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBjb2ZmZWV8ZW58MHx8fHwxNzY0NTI0MzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "aesthetic coffee"
+    },
+    {
+      "id": "portfolio-coffee-2",
+      "description": "Latte art in a cafe",
+      "imageUrl": "https://images.unsplash.com/photo-1572442388855-458a58494c13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjBjb2ZmZWV8ZW58MHx8fHwxNzY0NTI0MzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "latte art"
+    },
+    {
+      "id": "portfolio-sunset-1",
+      "description": "Golden hour sunset",
+      "imageUrl": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "aesthetic sunset"
+    },
+    {
+      "id": "portfolio-sunset-2",
+      "description": "Pastel sky sunset",
+      "imageUrl": "https://images.unsplash.com/photo-1494537150333-90d2695595a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pastel sunset"
+    },
+    {
+      "id": "portfolio-place-1",
+      "description": "Aesthetic European street",
+      "imageUrl": "https://images.unsplash.com/photo-1541892219424-8a035d5a9391?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "aesthetic place"
+    },
+    {
+      "id": "portfolio-place-2",
+      "description": "Misty forest path",
+      "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageHint": "forest path"
+    },
+    {
+      "id": "portfolio-wallpaper-1",
+      "description": "Minimalist abstract wallpaper",
+      "imageUrl": "https://images.unsplash.com/photo-1508614999333-3a43569TGU1E?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjB3YWxscGFwZXJ8ZW58MHx8fHwxNzY0NTI0NDY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "aesthetic wallpaper"
+    },
+    {
+      "id": "portfolio-wallpaper-2",
+      "description": "Vibrant gradient wallpaper",
+      "imageUrl": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjB3YWxscGFwZXJ8ZW58MHx8fHwxNzY0NTI0NDY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gradient wallpaper"
+    },
+    {
+      "id": "portfolio-screenshot-1",
+      "description": "Aesthetic screenshot of code",
+      "imageUrl": "https://images.unsplash.com/photo-1624996752380-8ec242e0f85d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBzY3JlZW5zaG90fGVufDB8fHx8MTc2NDUyNDQ5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "code screenshot"
     }
   ]
 }
