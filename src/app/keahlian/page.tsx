@@ -46,7 +46,7 @@ const skillsData = [
       {
         name: "Latte Art",
         level: 30,
-        description: "Mampu memanaskan susu hingga mencapai microfoam yang cukup baik. Sudah bisa membuat pola dasar seperti hati (heart) dan tulip sederhana, dan sedang berlatih untuk pola yang lebih kompleks."
+        description: "Baru mulai belajar teknik steaming susu untuk mendapatkan microfoam. Terkadang berhasil membuat gumpalan busa yang mirip bentuk hati, tapi masih lebih sering menjadi awan abstrak. Masih dalam tahap coba-coba!"
       }
     ]
   },

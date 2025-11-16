@@ -16,8 +16,8 @@ import React from 'react';
 export function ProfileSection() {
   const heroImage = PlaceHolderImages.find((p) => p.id === 'hero-image-3');
   const userAvatar = PlaceHolderImages.find((p) => p.id === 'user-avatar-1');
-  const projectImage1 = PlaceHolderImages.find((p) => p.id === 'project-image-1');
-  const projectImage2 = PlaceHolderImages.find((p) => p.id === 'project-image-2');
+  const projectImage1 = PlaceHolderImages.find((p) => p.id === 'portfolio-coffee-1');
+  const projectImage2 = PlaceHolderImages.find((p) => p.id === 'portfolio-coffee-2');
 
   const [openCollapsible, setOpenCollapsible] = React.useState<string | null>(null);
 
@@ -167,7 +167,7 @@ export function ProfileSection() {
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <p className="text-sm text-muted-foreground">
-                 Mampu memanaskan susu hingga mencapai microfoam yang cukup baik. Sudah bisa membuat pola dasar seperti hati (heart) dan tulip sederhana, dan sedang berlatih untuk pola yang lebih kompleks.
+                  Baru mulai belajar teknik steaming susu untuk mendapatkan microfoam. Terkadang berhasil membuat gumpalan busa yang mirip bentuk hati, tapi masih lebih sering menjadi awan abstrak. Masih dalam tahap coba-coba!
                 </p>
               </CollapsibleContent>
             </Collapsible>
