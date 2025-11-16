@@ -16,8 +16,8 @@ import React from 'react';
 export function ProfileSection() {
   const heroImage = PlaceHolderImages.find((p) => p.id === 'hero-image-3');
   const userAvatar = PlaceHolderImages.find((p) => p.id === 'user-avatar-1');
-  const projectImage1 = PlaceHolderImages.find((p) => p.id === 'project-image-1');
-  const projectImage2 = PlaceHolderImages.find((p) => p.id === 'project-image-2');
+  const projectImage1 = PlaceHolderImages.find((p) => p.id === 'about-image-2');
+  const projectImage2 = PlaceHolderImages.find((p) => p.id === 'journey-gayo-1');
 
   const [openCollapsible, setOpenCollapsible] = React.useState<string | null>(null);
 
