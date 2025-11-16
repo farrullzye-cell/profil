@@ -49,7 +49,7 @@ export function ProfileSection() {
         <p className="text-primary">@arul_faathir</p>
         
         <div className="mt-4 flex justify-center gap-4">
-          <a href="#" className="text-muted-foreground hover:text-primary">
+          <a href="https://github.com/farrullzye-cell" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
             <Github className="h-6 w-6" />
           </a>
           <a href="#" className="text-muted-foreground hover:text-primary">
