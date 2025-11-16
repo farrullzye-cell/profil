@@ -134,9 +134,9 @@ export default function AnonymousChatPage() {
       <SidebarInset>
         <div className="flex max-h-svh min-h-svh flex-col bg-background">
           <AppHeader />
-          <main className="flex-1 overflow-y-auto p-4 md:p-8">
-            <div className="mx-auto max-w-4xl space-y-8">
-              <Card className="overflow-hidden rounded-xl shadow-lg">
+          <main className="flex flex-1 flex-col overflow-y-auto">
+            <div className="mx-auto flex w-full max-w-4xl flex-1 flex-col p-4 md:p-8">
+              <Card className="mb-4 overflow-hidden rounded-xl shadow-lg">
                 <CardHeader className="bg-card p-6">
                   <div className="flex items-center gap-4">
                     <ShieldQuestion className="h-8 w-8 text-primary" />
@@ -148,25 +148,22 @@ export default function AnonymousChatPage() {
                 </CardHeader>
               </Card>
 
-              <Card className="flex h-[60vh] flex-col">
-                <CardHeader>
-                    <CardTitle>Ruang Obrolan</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-1 space-y-4 overflow-y-auto pr-4">
+              <div className="flex flex-1 flex-col rounded-xl border bg-card shadow-lg">
+                <div className="flex-1 space-y-4 overflow-y-auto p-4">
                     {loading ? (
                        <div className="flex h-full items-center justify-center text-muted-foreground">
                             <p>Memuat pesan...</p>
                         </div>
                     ) : messages && messages.length > 0 ? (
-                        messages.map((msg, index) => (
+                        messages.map((msg) => (
                             <div key={msg.id} className={`flex items-end gap-3 ${msg.anonymousId === anonymousId ? 'justify-end' : 'justify-start'}`}>
                                 {msg.anonymousId !== anonymousId && (
                                     <Avatar className="h-8 w-8 border">
                                         <AvatarFallback><UserCircle className="h-5 w-5" /></AvatarFallback>
                                     </Avatar>
                                 )}
-                                <div className={`max-w-xs md:max-w-md rounded-lg p-3 ${msg.anonymousId === anonymousId ? 'rounded-br-none bg-primary text-primary-foreground' : 'rounded-bl-none bg-muted'}`}>
-                                    <p className="text-sm whitespace-pre-wrap">{msg.message}</p>
+                                <div className={`max-w-xs rounded-lg p-3 md:max-w-md ${msg.anonymousId === anonymousId ? 'rounded-br-none bg-primary text-primary-foreground' : 'rounded-bl-none bg-muted'}`}>
+                                    <p className="whitespace-pre-wrap text-sm">{msg.message}</p>
                                     <p className={`mt-1 text-xs opacity-70 ${msg.anonymousId === anonymousId ? 'text-right' : 'text-left'}`}>
                                         {msg.createdAt ? formatDistanceToNow(new Date(msg.createdAt.seconds * 1000), { addSuffix: true, locale: id }) : ''}
                                     </p>
@@ -184,8 +181,8 @@ export default function AnonymousChatPage() {
                         </div>
                     )}
                     <div ref={messagesEndRef} />
-                </CardContent>
-                <CardContent className="border-t pt-6">
+                </div>
+                <div className="border-t bg-card p-4">
                     <form onSubmit={handleSubmit} className="flex items-center gap-4">
                         <Input
                         placeholder="Ketik pesan anonim Anda..."
@@ -198,11 +195,10 @@ export default function AnonymousChatPage() {
                             <Send className="h-5 w-5" />
                         </Button>
                   </form>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             </div>
           </main>
-          <AppFooter />
         </div>
       </SidebarInset>
     </SidebarProvider>
