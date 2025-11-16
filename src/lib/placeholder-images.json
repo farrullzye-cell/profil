@@ -15,7 +15,7 @@
     {
       "id": "hero-image-2",
       "description": "Placeholder for hero image with gradient",
-      "imageUrl": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWJzdHJhY3QlMjBncmFkaWVudHxlbnwwfHx8fDE3NjMyMjc5MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGdyYWRpZW50fGVufDB8fHx8MTc2MzIyNzkwNnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract gradient"
     },
     {
@@ -81,13 +81,13 @@
     {
       "id": "portfolio-place-2",
       "description": "Misty forest path",
-      "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "forest path"
     },
     {
       "id": "portfolio-wallpaper-1",
       "description": "Minimalist abstract wallpaper",
-      "imageUrl": "https://images.unsplash.com/photo-1508614999333-3a43569TGU1E?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjB3YWxscGFwZXJ8ZW58MHx8fHwxNzY0NTI0NDY4fDA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1508614999333-3a43569TGU1E?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjB3YWxscGFwZXJ8ZW58MHx8fHwxNzY0NTI0NDY4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "aesthetic wallpaper"
     },
     {
@@ -175,36 +175,6 @@
       "imageHint": "kairos coffee"
     },
     {
-      "id": "journey-gayo-1",
-      "description": "Lush green coffee plantation in Gayo highlands",
-      "imageUrl": "https://images.unsplash.com/photo-1620360344369-e82b71946892?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBwbGFudGF0aW9uJTIwZ2F5b3xlbnwwfHx8fDE3NjU0MjMyNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "coffee plantation"
-    },
-    {
-      "id": "journey-kintamani-2",
-      "description": "Scenic landscape of Kintamani, Bali with Mount Batur",
-      "imageUrl": "https://images.unsplash.com/photo-1578557999234-904d6d9311b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraW50YW1hbmlfYmFsaV9sYW5kc2NhcGV8ZW58MHx8fHwxNzY1NDIzMjg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "bali landscape"
-    },
-    {
-      "id": "journey-toraja-3",
-      "description": "Traditional Torajan houses with coffee beans drying",
-      "imageUrl": "https://images.unsplash.com/photo-1599153169315-e2303c73a69a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b3JhamElMjB2aWxsYWdlJTIwY29mZmVlfGVufDB8fHx8MTc2NTQyMzMwNnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "toraja village"
-    },
-    {
-      "id": "journey-sidamo-4",
-      "description": "An Ethiopian woman performing a traditional coffee ceremony",
-      "imageUrl": "https://images.unsplash.com/photo-1582845600994-3ac7a326079b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxldGhpb3BpYW4lMjBjb2ZmZWUlMjBjZXJlbW9ueXxlbnwwfHx8fDE3NjU0MjMzMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "coffee ceremony"
-    },
-    {
-      "id": "journey-antioquia-5",
-      "description": "Vast coffee plantation in the mountains of Colombia",
-      "imageUrl": "https://images.unsplash.com/photo-1589920155694-1b15003b306b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2xvbWJpYW4lMjBjb2ZmZWUlMjBwbGFudGF0aW9ufGVufDB8fHx8MTc2NTQyMzM1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "colombian plantation"
-    },
-    {
       "id": "a7x-city-of-evil",
       "description": "Album art for City of Evil",
       "imageUrl": "https://i.imgur.com/3gXpT5o.jpeg",
@@ -227,6 +197,36 @@
       "description": "Album art for Hail to the King",
       "imageUrl": "https://i.imgur.com/uDk24k2.jpeg",
       "imageHint": "avenged sevenfold king"
+    },
+    {
+      "id": "journey-gayo-1",
+      "description": "Lush green coffee plantation in Gayo highlands",
+      "imageUrl": "https://images.unsplash.com/photo-1620360344369-e82b71946892?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBwbGFudGF0aW9uJTIwZ2F5b3xlbnwwfHx8fDE3NjU0MjMyNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coffee plantation gayo"
+    },
+    {
+      "id": "journey-kintamani-2",
+      "description": "Scenic landscape of Kintamani, Bali with Mount Batur",
+      "imageUrl": "https://images.unsplash.com/photo-1578557999234-904d6d9311b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraW50YW1hbmlfYmFsaV9sYW5kc2NhcGV8ZW58MHx8fHwxNzY1NDIzMjg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kintamani bali landscape"
+    },
+    {
+      "id": "journey-toraja-3",
+      "description": "Traditional Torajan houses with coffee beans drying",
+      "imageUrl": "https://images.unsplash.com/photo-1599153169315-e2303c73a69a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b3JhamElMjB2aWxsYWdlJTIwY29mZmVlfGVufDB8fHx8MTc2NTQyMzMwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "toraja village coffee"
+    },
+    {
+      "id": "journey-sidamo-4",
+      "description": "An Ethiopian woman performing a traditional coffee ceremony",
+      "imageUrl": "https://images.unsplash.com/photo-1582845600994-3ac7a326079b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxldGhpb3BpYW4lMjBjb2ZmZWUlMjBjZXJlbW9ueXxlbnwwfHx8fDE3NjU0MjMzMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ethiopian coffee ceremony"
+    },
+    {
+      "id": "journey-antioquia-5",
+      "description": "Vast coffee plantation in the mountains of Colombia",
+      "imageUrl": "https://images.unsplash.com/photo-1589920155694-1b15003b306b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2xvbWJpYW4lMjBjb2ZmZWUlMjBwbGFudGF0aW9ufGVufDB8fHx8MTc2NTQyMzM1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "colombian coffee plantation"
     }
   ]
 }

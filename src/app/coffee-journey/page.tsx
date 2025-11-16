@@ -7,55 +7,50 @@ import { AppSidebar } from '@/components/app-sidebar';
 import { AppFooter } from '@/components/app-footer';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Route, MapPin, Leaf, Wind } from 'lucide-react';
+import { Route, MapPin, Leaf, Wind, BookOpen, Atom, Home } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useMemo } from 'react';
 
 const journeyData = [
     {
         id: 'journey-gayo-1',
-        region: 'Dataran Tinggi Gayo, Aceh',
-        year: '2022',
-        title: 'Misteri Giling Basah di Tanah Serambi Mekkah',
-        description: 'Perjalanan pertama membawa saya ke Gayo, tempat saya belajar langsung proses "Giling Basah" yang ikonik. Proses ini memberikan body yang tebal dan karakter rasa earthy, spicy, dengan keasaman yang rendah. Pengalaman tak terlupakan bersama para petani yang menjaga tradisi.',
-        icon: <Leaf className="h-6 w-6 text-primary" />,
-        imageHint: 'coffee plantation gayo'
+        region: 'Kedai Kopi Lokal',
+        year: 'Awal 2024',
+        title: 'Cangkir Pertama yang Mengubah Segalanya',
+        description: 'Semua berawal di sini. Mencicipi secangkir kopi Gayo yang diseduh manual. Untuk pertama kalinya, saya sadar kopi bukan cuma pahit, tapi ada rasa buah dan rempah. Momen "wow" yang memulai semuanya.',
+        icon: <Atom className="h-6 w-6 text-primary" />,
     },
     {
         id: 'journey-kintamani-2',
-        region: 'Kintamani, Bali',
-        year: '2022',
-        title: 'Harmoni Kopi dan Jeruk di Lereng Gunung Batur',
-        description: 'Di Kintamani, saya menemukan harmoni yang unik. Tanaman kopi ditanam berdampingan dengan kebun jeruk, menghasilkan biji kopi dengan cita rasa asam segar seperti jeruk, body medium, dan aftertaste yang bersih. Sistem subak menjadi bukti filosofi Tri Hita Karana dalam praktik.',
-        icon: <Wind className="h-6 w-6 text-primary" />,
-        imageHint: 'kintamani bali landscape'
+        region: 'Dapur Pribadi',
+        year: 'Pertengahan 2024',
+        title: 'Petualangan V60 Pertama: Gagal & Penasaran',
+        description: 'Bermodal nekat membeli V60 dan paper filter. Hasil seduhan pertama? Terlalu encer dan asam. Tapi dari kegagalan itu, rasa penasaran justru membesar. Saya mulai belajar tentang rasio, suhu, dan teknik tuang.',
+        icon: <Home className="h-6 w-6 text-primary" />,
     },
     {
         id: 'journey-toraja-3',
-        region: 'Toraja, Sulawesi',
-        year: '2023',
-        title: 'Jejak Rasa Eksotis dari Tanah Para Raja',
-        description: 'Toraja menyambut dengan kopi yang kompleks dan berlapis. Diproses dengan metode semi-washed, kopi Toraja memiliki notes dark chocolate, rempah, dan sedikit nuansa floral. Saya terpesona dengan budaya lokal yang kental dan bagaimana kopi menjadi bagian tak terpisahkan darinya.',
+        region: 'Toko Biji Kopi',
+        year: 'Pertengahan 2024',
+        title: 'Tersesat di "Hutan" Biji Kopi',
+        description: 'Pertama kali memberanikan diri masuk ke toko khusus biji kopi. Bingung dengan istilah "washed", "natural", "honey". Pulang membawa sebungkus biji Toraja dengan sejuta pertanyaan baru di kepala.',
         icon: <Leaf className="h-6 w-6 text-primary" />,
-        imageHint: 'toraja village coffee'
     },
     {
         id: 'journey-sidamo-4',
-        region: 'Sidamo, Ethiopia',
-        year: '2023',
-        title: 'Kembali ke Akar: Ziarah ke Tanah Kelahiran Kopi',
-        description: 'Mengunjungi Ethiopia terasa seperti pulang ke rumah. Di Sidamo, saya mencicipi kopi yang diseduh dalam upacara tradisional. Biji kopi hasil proses natural di sini memiliki keasaman lemon yang cerah, aroma bunga melati yang kuat, dan rasa manis seperti buah beri. Sebuah pengalaman spiritual.',
-        icon: <Route className="h-6 w-6 text-primary" />,
-        imageHint: 'ethiopian coffee ceremony'
+        region: 'Dunia Maya',
+        year: 'Akhir 2024',
+        title: 'Menemukan Komunitas dan Guru Online',
+        description: 'Menghabiskan waktu berjam-jam menonton video review dan tutorial. Belajar banyak dari para ahli di internet. Komunitas online menjadi tempat bertanya dan berbagi kebingungan sebagai seorang pemula.',
+        icon: <BookOpen className="h-6 w-6 text-primary" />,
     },
     {
         id: 'journey-antioquia-5',
-        region: 'Antioquia, Kolombia',
-        year: '2024',
-        title: 'Menyelami Lautan Kopi di Pegunungan Andes',
-        description: 'Kolombia, dengan perkebunan kopinya yang tak berujung. Di Antioquia, saya menyaksikan proses washed process yang teliti, menghasilkan kopi yang sangat seimbang, dengan notes kacang, cokelat, dan keasaman ringan. Kualitas konsisten yang menjadi standar dunia.',
-        icon: <Wind className="h-6 w-6 text-primary" />,
-        imageHint: 'colombian coffee plantation'
+        region: 'Masa Depan',
+        year: '2025 ~',
+        title: 'Perjalanan Ini Baru Dimulai',
+        description: 'Saya sadar perjalanan ini masih sangat panjang. Masih banyak biji kopi yang belum dicicipi, banyak metode yang belum dicoba. Rencana ke depan? Terus belajar, bereksperimen, dan yang terpenting, menikmati setiap cangkirnya.',
+        icon: <Route className="h-6 w-6 text-primary" />,
     }
 ];
 
@@ -63,31 +58,13 @@ const journeyData = [
 export default function CoffeeJourneyPage() {
 
     const journeys = useMemo(() => {
-        // Create dummy placeholders if they don't exist
-        const imagePlaceholders = [
-            { id: 'journey-gayo-1', imageHint: 'coffee plantation gayo' },
-            { id: 'journey-kintamani-2', imageHint: 'kintamani bali landscape' },
-            { id: 'journey-toraja-3', imageHint: 'toraja village coffee' },
-            { id: 'journey-sidamo-4', imageHint: 'ethiopian coffee ceremony' },
-            { id: 'journey-antioquia-5', imageHint: 'colombian coffee plantation' },
-        ];
-
         return journeyData.map(journey => {
-            let placeholder = PlaceHolderImages.find(p => p.id === journey.id);
-            if (!placeholder) {
-                const pImage = imagePlaceholders.find(p => p.id === journey.id);
-                placeholder = {
-                    id: pImage!.id,
-                    description: `Placeholder for ${journey.region}`,
-                    imageUrl: `https://picsum.photos/seed/${Math.random()}/800/600`,
-                    imageHint: pImage!.imageHint,
-                }
-            }
+            const placeholder = PlaceHolderImages.find(p => p.id === journey.id);
             return {
                 ...journey,
                 placeholder
             }
-        });
+        }).filter(j => j.placeholder);
     }, []);
 
 
@@ -105,7 +82,7 @@ export default function CoffeeJourneyPage() {
                             <Route className="h-8 w-8 text-primary" />
                             <div>
                                 <CardTitle className="text-3xl font-bold text-primary">Coffee Journey</CardTitle>
-                                <CardDescription className="text-muted-foreground">Jejak perjalanan kopi dari berbagai daerah yang pernah dijelajahi.</CardDescription>
+                                <CardDescription className="text-muted-foreground">Catatan langkah-langkah awal seorang pemula di dunia kopi.</CardDescription>
                             </div>
                         </div>
                     </CardHeader>
@@ -116,20 +93,22 @@ export default function CoffeeJourneyPage() {
                         <Card key={index} className="overflow-hidden rounded-lg shadow-md transition-shadow hover:shadow-xl">
                             <div className="grid grid-cols-1 md:grid-cols-3">
                                 <div className="relative h-56 w-full md:h-full">
-                                    <Image
-                                        src={item.placeholder.imageUrl}
-                                        alt={`Perjalanan ke ${item.region}`}
-                                        fill
-                                        objectFit="cover"
-                                        className={index % 2 !== 0 ? 'md:order-last' : ''}
-                                        data-ai-hint={item.placeholder.imageHint}
-                                    />
+                                    {item.placeholder && (
+                                        <Image
+                                            src={item.placeholder.imageUrl}
+                                            alt={`Perjalanan ke ${item.region}`}
+                                            fill
+                                            style={{objectFit: 'cover'}}
+                                            className={index % 2 !== 0 ? 'md:order-last' : ''}
+                                            data-ai-hint={item.placeholder.imageHint}
+                                        />
+                                    )}
                                 </div>
                                 <div className="md:col-span-2">
                                      <CardHeader>
                                         <div className="flex items-center justify-between">
                                             <CardDescription className="flex items-center gap-2">
-                                                <MapPin className="h-4 w-4" />
+                                                {item.icon}
                                                 {item.region}
                                             </CardDescription>
                                             <span className="text-sm font-semibold text-primary">{item.year}</span>
