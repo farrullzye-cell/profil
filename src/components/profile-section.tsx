@@ -103,7 +103,7 @@ export function ProfileSection() {
         <div className="text-left">
           <h3 className="mb-4 text-lg font-semibold">Skills</h3>
           <div className="space-y-4">
-            <Collapsible open={openCollapsible === 'espresso'} onOpenChange={() => setOpenCollapsible(openCollapsible === 'espresso' ? null : 'espresso')}>
+            <Collapsible open={openCollapsible === 'espresso'} onOpenChange={(isOpen) => setOpenCollapsible(isOpen ? 'espresso' : null)}>
               <CollapsibleTrigger className="w-full">
                 <div className="space-y-2 cursor-pointer">
                   <div className="flex items-center justify-between">
@@ -120,13 +120,13 @@ export function ProfileSection() {
                 </div>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <p className="mt-2 text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground">
                   Mastery in pulling the perfect espresso shot, with a rich crema, balanced acidity, and deep flavor. Understanding grind size, tamping pressure, and extraction time is key.
                 </p>
               </CollapsibleContent>
             </Collapsible>
 
-            <Collapsible open={openCollapsible === 'aeropress'} onOpenChange={() => setOpenCollapsible(openCollapsible === 'aeropress' ? null : 'aeropress')}>
+            <Collapsible open={openCollapsible === 'aeropress'} onOpenChange={(isOpen) => setOpenCollapsible(isOpen ? 'aeropress' : null)}>
               <CollapsibleTrigger className="w-full">
                 <div className="space-y-2 cursor-pointer">
                   <div className="flex items-center justify-between">
@@ -143,13 +143,13 @@ export function ProfileSection() {
                 </div>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <p className="mt-2 text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground">
                   Proficient in using the Aeropress for a clean, full-bodied cup. Experienced with both standard and inverted methods, and experimenting with different recipes.
                 </p>
               </CollapsibleContent>
             </Collapsible>
 
-            <Collapsible open={openCollapsible === 'latte-art'} onOpenChange={() => setOpenCollapsible(openCollapsible === 'latte-art' ? null : 'latte-art')}>
+            <Collapsible open={openCollapsible === 'latte-art'} onOpenChange={(isOpen) => setOpenCollapsible(isOpen ? 'latte-art' : null)}>
               <CollapsibleTrigger className="w-full">
                 <div className="space-y-2 cursor-pointer">
                   <div className="flex items-center justify-between">
@@ -166,13 +166,13 @@ export function ProfileSection() {
                 </div>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <p className="mt-2 text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground">
                   Skilled in steaming milk to the right texture and pouring intricate designs, from a simple heart to a rosetta. It's about combining art with the science of milk foam.
                 </p>
               </CollapsibleContent>
             </Collapsible>
 
-            <Collapsible open={openCollapsible === 'bean-roasting'} onOpenChange={() => setOpenCollapsible(openCollapsible === 'bean-roasting' ? null : 'bean-roasting')}>
+            <Collapsible open={openCollapsible === 'bean-roasting'} onOpenChange={(isOpen) => setOpenCollapsible(isOpen ? 'bean-roasting' : null)}>
               <CollapsibleTrigger className="w-full">
                 <div className="space-y-2 cursor-pointer">
                   <div className="flex items-center justify-between">
@@ -188,13 +188,13 @@ export function ProfileSection() {
                 </div>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <p className="mt-2 text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground">
                   Experience in home roasting, understanding the roasting curve, and manipulating variables like heat and airflow to bring out the unique flavors of green coffee beans.
                 </p>
               </CollapsibleContent>
             </Collapsible>
 
-            <Collapsible open={openCollapsible === 'cortado'} onOpenChange={() => setOpenCollapsible(openCollapsible === 'cortado' ? null : 'cortado')}>
+            <Collapsible open={openCollapsible === 'cortado'} onOpenChange={(isOpen) => setOpenCollapsible(isOpen ? 'cortado' : null)}>
               <CollapsibleTrigger className="w-full">
                 <div className="space-y-2 cursor-pointer">
                   <div className="flex items-center justify-between">
@@ -211,13 +211,13 @@ export function ProfileSection() {
                 </div>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <p className="mt-2 text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground">
                   A balanced drink with equal parts espresso and steamed milk. The skill lies in achieving the right milk texture to complement the espresso without overpowering it.
                 </p>
               </CollapsibleContent>
             </Collapsible>
 
-            <Collapsible open={openCollapsible === 'ristretto'} onOpenChange={() => setOpenCollapsible(openCollapsible === 'ristretto' ? null : 'ristretto')}>
+            <Collapsible open={openCollapsible === 'ristretto'} onOpenChange={(isOpen) => setOpenCollapsible(isOpen ? 'ristretto' : null)}>
               <CollapsibleTrigger className="w-full">
                 <div className="space-y-2 cursor-pointer">
                   <div className="flex items-center justify-between">
@@ -234,13 +234,13 @@ export function ProfileSection() {
                 </div>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <p className="mt-2 text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground">
                   A "restricted" shot of espresso. It uses less water, resulting in a shorter, more concentrated, and sweeter shot compared to a standard espresso.
                 </p>
               </CollapsibleContent>
             </Collapsible>
 
-            <Collapsible open={openCollapsible === 'lungo'} onOpenChange={() => setOpenCollapsible(openCollapsible === 'lungo' ? null : 'lungo')}>
+            <Collapsible open={openCollapsible === 'lungo'} onOpenChange={(isOpen) => setOpenCollapsible(isOpen ? 'lungo' : null)}>
               <CollapsibleTrigger className="w-full">
                 <div className="space-y-2 cursor-pointer">
                   <div className="flex items-center justify-between">
@@ -257,7 +257,7 @@ export function ProfileSection() {
                 </div>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <p className="mt-2 text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground">
                   A "long" shot of espresso. It's pulled with more water, resulting in a larger, less intense, and more bitter coffee compared to a standard espresso.
                 </p>
               </CollapsibleContent>
