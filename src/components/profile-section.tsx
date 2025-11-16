@@ -69,7 +69,7 @@ export function ProfileSection() {
         <div className="text-left">
           <h3 className="mb-4 text-lg font-semibold">Tentang Saya</h3>
           <p className="text-muted-foreground">
-            Saya seorang penikmat dan peracik kopi yang bersemangat. Terampil dalam berbagai metode penyeduhan dan menciptakan seni latte yang indah. Di waktu luang, saya senang menjelajahi asal-usul kopi baru dan menyangrai biji kopi saya sendiri.
+            Saya seorang penikmat kopi yang baru memulai perjalanan di dunia rasa ini. Saya percaya setiap cangkir memiliki cerita unik, dan saya bersemangat untuk mempelajarinya, satu seduhan pada satu waktu.
           </p>
         </div>
 
@@ -83,8 +83,8 @@ export function ProfileSection() {
                 <Image src={projectImage1.imageUrl} alt="Proyek 1" width={400} height={250} className="rounded-t-lg object-cover" data-ai-hint={projectImage1.imageHint} />
               }
               <CardContent className="p-4">
-                <h4 className="font-semibold">Blog Kopi Artisan</h4>
-                <p className="text-sm text-muted-foreground">Blog yang berbagi tips menyeduh dan cerita kopi.</p>
+                <h4 className="font-semibold">Jurnal Seduh Digital</h4>
+                <p className="text-sm text-muted-foreground">Mencatat setiap eksperimen dan hasil seduhan untuk belajar.</p>
               </CardContent>
             </Card>
             <Card>
@@ -92,8 +92,8 @@ export function ProfileSection() {
                 <Image src={projectImage2.imageUrl} alt="Proyek 2" width={400} height={250} className="rounded-t-lg object-cover" data-ai-hint={projectImage2.imageHint} />
               }
               <CardContent className="p-4">
-                <h4 className="font-semibold">Penyangraian di Rumah</h4>
-                <p className="text-sm text-muted-foreground">Pengaturan pribadi saya untuk menyangrai biji kopi di rumah.</p>
+                <h4 className="font-semibold">Peta Kedai Kopi</h4>
+                <p className="text-sm text-muted-foreground">Mendokumentasikan kedai-kedai kopi lokal yang telah dikunjungi.</p>
               </CardContent>
             </Card>
           </div>
