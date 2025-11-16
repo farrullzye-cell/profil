@@ -1,4 +1,3 @@
-
 'use client';
 
 import Image from 'next/image';
@@ -213,7 +212,7 @@ export function ProfileSection() {
             <li className="flex items-center gap-4">
               <Phone className="h-5 w-5 text-muted-foreground" />
                <div className="flex flex-col text-left">
-                <span className="text-foreground">+62 123 4567 890</span>
+                <span className="text-foreground">+62 858 4865 1208</span>
                 <span className="text-xs text-muted-foreground">Ponsel</span>
               </div>
             </li>
