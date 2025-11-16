@@ -93,32 +93,80 @@
     {
       "id": "portfolio-wallpaper-2",
       "description": "Vibrant gradient wallpaper",
-      "imageUrl": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjB3YWxscGFwZXJ8ZW58MHx8fHwxNzY0NTI0NDY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjB3YWxscGFwZXJ8ZW58MHx8fHwxNzY0NTI0NDY4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "gradient wallpaper"
     },
     {
       "id": "portfolio-screenshot-1",
       "description": "Aesthetic screenshot of code",
-      "imageUrl": "https://images.unsplash.com/photo-1624996752380-8ec242e0f85d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBzY3JlZW5zaG90fGVufDB8fHx8MTc2NDUyNDQ5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1624996752380-8ec242e0f85d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBzY3JlZW5zaG90fGVufDB8fHx8MTc2NDUyNDQ5N3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "code screenshot"
     },
     {
       "id": "portfolio-coffee-3",
       "description": "Morning coffee ritual",
-      "imageUrl": "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBjb2ZmZWV8ZW58MHx8fHwxNzY0NTI0MzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBjb2ZmZWV8ZW58MHx8fHwxNzY0NTI0MzYyfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "morning coffee"
     },
     {
       "id": "portfolio-place-3",
       "description": "Old library",
-      "imageUrl": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "old library"
     },
     {
       "id": "portfolio-sunset-3",
       "description": "City skyline silhouette",
-      "imageUrl": "https://images.unsplash.com/photo-1524234103328-1b4b10499b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1524234103328-1b4b10499b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "city silhouette"
+    },
+    {
+      "id": "semarang-coffee-1",
+      "description": "Interior of Antarakata Coffee",
+      "imageUrl": "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBzaG9wJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzY1MzM2MDIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coffee shop interior"
+    },
+    {
+      "id": "semarang-coffee-2",
+      "description": "Classic colonial building facade",
+      "imageUrl": "https://images.unsplash.com/photo-1568702846914-92b157a38928?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2xvbmlhbCUyMGJ1aWxkaW5nfGVufDB8fHx8MTc2NTMzNjA0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "colonial building"
+    },
+    {
+      "id": "semarang-coffee-3",
+      "description": "Students studying in a coffee shop",
+      "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMGNvZmVlJTIwc2hvcHxlbnwwfHx8fDE3NjUzMzYwNzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "students coffee"
+    },
+    {
+      "id": "semarang-coffee-4",
+      "description": "Modern coffee shop counter",
+      "imageUrl": "https://images.unsplash.com/photo-1463797221720-6b07e6426c24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjb2ZmZWUlMjBzaG9wfGVufDB8fHx8MTc2NTMzNjEwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern coffee"
+    },
+    {
+      "id": "semarang-coffee-5",
+      "description": "A cozy small coffee shop corner",
+      "imageUrl": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3p5JTIwY29mZmVlJTIwc2hvcHxlbnwwfHx8fDE3NjUzMzYxMjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cozy coffee"
+    },
+    {
+      "id": "semarang-coffee-6",
+      "description": "Iced coffee to go",
+      "imageUrl": "https://images.unsplash.com/photo-1579989970950-8c20e4a7c85a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpY2VkJTIwY29mZmVlJTIwdGFrZWF3YXl8ZW58MHx8fHwxNzY1MzMzODE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "iced coffee"
+    },
+    {
+      "id": "semarang-coffee-7",
+      "description": "Rooftop cafe with a city view",
+      "imageUrl": "https://images.unsplash.com/photo-1504974312814-6178c13cc328?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyb29mdG9wJTIwY2FmZXxlbnwwfHx8fDE3NjUzMzYxNzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rooftop cafe"
+    },
+    {
+      "id": "semarang-coffee-8",
+      "description": "People using laptops in a 24-hour cafe",
+      "imageUrl": "https://images.unsplash.com/photo-1493106641515-7635e833f0b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYXRlJTIwbmlnaHQlMjBjb2ZmZWUlMjBzaG9wfGVufDB8fHx8MTc2NTMzNjE5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "late night"
     }
   ]
 }
