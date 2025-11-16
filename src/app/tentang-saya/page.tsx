@@ -33,7 +33,7 @@ export default function TentangSayaPage() {
                     </Avatar>
                     <div>
                         <h1 className="text-3xl font-bold text-primary">Tentang Arul Faathir</h1>
-                        <p className="text-lg text-muted-foreground">Perjalanan Rasa, Aroma, dan Seni</p>
+                        <p className="text-lg text-muted-foreground">Titik Awal Perjalanan Rasa</p>
                     </div>
                   </div>
                   <Separator />
@@ -42,15 +42,15 @@ export default function TentangSayaPage() {
                   <section>
                     <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-accent">
                       <Compass className="h-7 w-7" />
-                      Awal Mula Perjalanan
+                      Langkah Pertama
                     </h2>
                     <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
                         <div className="md:col-span-2">
                             <p className="text-muted-foreground leading-relaxed">
-                            Semua berawal dari sebuah kebetulan yang tak terduga di sebuah kedai kopi kecil di sudut kota yang ramai. Aroma biji kopi yang baru disangrai menyapa, bukan sebagai aroma biasa, melainkan sebagai sebuah undangan. Undangan ke dunia yang belum pernah saya jelajahi. Secangkir kopi hitam pertama yang saya cicipi hari itu bukanlah sekadar minuman; itu adalah sebuah epifani. Rasa pahit yang kompleks, jejak manis yang tertinggal, dan kehangatan yang menjalar membuka mata saya bahwa kopi lebih dari sekadar pengusir kantuk.
+                            Perjalanan saya di dunia kopi sebenarnya baru saja dimulai. Semuanya berawal dari rasa penasaran sederhana: mengapa secangkir kopi bisa memiliki rasa yang begitu beragam? Dari pertanyaan itu, saya mulai mencoba beberapa jenis kopi dari kedai-kedai lokal, dan terkejut menemukan betapa kompleksnya dunia di balik minuman hitam ini.
                             </p>
                             <p className="mt-4 text-muted-foreground leading-relaxed">
-                            Dari situlah, obsesi saya dimulai. Saya tidak hanya ingin minum kopi, saya ingin memahaminya. Saya melahap buku, mengikuti lokakarya, dan menghabiskan berjam-jam bereksperimen di dapur yang saya sulap menjadi laboratorium kopi pribadi. Perjalanan ini membawa saya dari dataran tinggi Gayo hingga kebun-kebun di lereng Ijen, bertemu para petani yang berdedikasi dan belajar langsung dari sumbernya.
+                            Rasa ingin tahu itu mendorong saya untuk membeli peralatan seduh manual pertama saya. Meskipun hasilnya belum sempurna, setiap proses—mulai dari menakar biji, menggiling, hingga menuangkan air panas—memberikan kepuasan tersendiri. Saya sadar bahwa saya telah menemukan sebuah hobi baru yang menantang sekaligus menenangkan.
                             </p>
                         </div>
                         {aboutImage1 && (
@@ -73,7 +73,7 @@ export default function TentangSayaPage() {
                   <section>
                     <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-accent">
                       <BookOpen className="h-7 w-7" />
-                      Filosofi Saya: Seni dalam Kesederhanaan
+                      Tujuan & Pembelajaran
                     </h2>
                      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
                          {aboutImage2 && (
@@ -90,13 +90,13 @@ export default function TentangSayaPage() {
                         )}
                         <div className="md:col-span-2 md:order-1">
                             <p className="text-muted-foreground leading-relaxed">
-                            Bagi saya, secangkir kopi yang sempurna adalah cerminan dari harmoni. Harmoni antara alam, manusia, dan sains. Saya percaya bahwa setiap biji kopi memiliki cerita uniknya sendiri, dan tugas seorang barista atau peracik adalah menjadi narator yang baik. Ini bukan tentang peralatan paling mahal atau teknik paling rumit. Ini tentang menghormati bahan baku.
+                            Saat ini, saya belum memiliki filosofi yang muluk. Tujuan saya sederhana: terus belajar dan menikmati setiap prosesnya. Saya percaya, untuk bisa 'bercerita' tentang kopi, saya harus menjadi pendengar yang baik terlebih dahulu—mendengarkan apa yang ingin disampaikan oleh setiap biji kopi.
                             </p>
                             <blockquote className="mt-4 border-l-4 border-primary pl-4 italic text-muted-foreground">
-                            "Kesempurnaan tercapai bukan saat tidak ada lagi yang bisa ditambahkan, tetapi saat tidak ada lagi yang bisa dihilangkan."
+                            "Setiap cangkir adalah guru. Setiap seduhan adalah pelajaran baru."
                             </blockquote>
                             <p className="mt-4 text-muted-foreground leading-relaxed">
-                            Filosofi ini saya terapkan dalam setiap seduhan. Saya berusaha menonjolkan karakter asli dari setiap biji kopi, membiarkannya berbicara sendiri tanpa terlalu banyak intervensi. Baik itu melalui tekanan sebuah Aeropress, tetesan lambat V60, atau kekuatan espresso, tujuannya selalu sama: menyajikan kopi dalam bentuknya yang paling jujur dan paling indah.
+                            Saya masih dalam tahap mengeksplorasi berbagai variabel: ukuran gilingan, suhu air, dan metode seduh. Kegagalan masih sering terjadi, namun setiap kegagalan justru memberikan pemahaman baru. Bagi saya, kesempurnaan saat ini bukanlah hasil akhir, melainkan kemauan untuk terus mencoba.
                             </p>
                         </div>
                     </div>
@@ -107,10 +107,10 @@ export default function TentangSayaPage() {
                   <section className="text-center">
                     <h2 className="mb-4 flex items-center justify-center gap-3 text-2xl font-semibold text-accent">
                       <Droplets className="h-7 w-7" />
-                      Lebih dari Sekadar Minuman
+                      Sebuah Dunia yang Terbuka
                     </h2>
                     <p className="mx-auto max-w-2xl text-muted-foreground leading-relaxed">
-                      Kopi adalah jembatan. Jembatan yang menghubungkan orang, budaya, dan momen. Di balik setiap cangkir, ada komunitas petani, roaster, dan penikmat yang saling terhubung. Inilah yang membuat saya terus bersemangat. Halaman ini bukan hanya tentang saya, tetapi tentang perayaan budaya kopi yang kaya dan dinamis. Mari kita nikmati perjalanan ini bersama, seteguk demi seteguk.
+                      Saya sadar bahwa kopi adalah sebuah dunia yang sangat luas. Halaman ini adalah catatan pribadi saya dalam menjelajahi dunia tersebut. Saya berharap dapat berbagi apa yang saya pelajari, betapapun sederhananya, dan mungkin kita bisa belajar bersama dalam perjalanan yang mengasyikkan ini.
                     </p>
                   </section>
 
