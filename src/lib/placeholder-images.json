@@ -105,7 +105,7 @@
     {
       "id": "portfolio-coffee-3",
       "description": "Morning coffee ritual",
-      "imageUrl": "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBjb2ZmZWV8ZW58MHx8fHwxNzY0NTI0MzYyfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBjb2ZmZWV8ZW58MHx8fHwxNzY0NTI0MzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "morning coffee"
     },
     {
@@ -117,7 +117,7 @@
     {
       "id": "portfolio-sunset-3",
       "description": "City skyline silhouette",
-      "imageUrl": "https://images.unsplash.com/photo-1524234103328-1b4b10499b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1524234103328-1b4b10499b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "city silhouette"
     },
     {
@@ -173,6 +173,36 @@
       "description": "Interior of Kairos Coffee",
       "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBzaG9wJTIwbW9kZXJufGVufDB8fHx8MTc2NTMzODg4OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern cafe"
+    },
+    {
+      "id": "journey-gayo-1",
+      "description": "Lush green coffee plantation in Gayo highlands",
+      "imageUrl": "https://images.unsplash.com/photo-1620360344369-e82b71946892?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBwbGFudGF0aW9uJTIwZ2F5b3xlbnwwfHx8fDE3NjU0MjMyNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coffee plantation"
+    },
+    {
+      "id": "journey-kintamani-2",
+      "description": "Scenic landscape of Kintamani, Bali with Mount Batur",
+      "imageUrl": "https://images.unsplash.com/photo-1578557999234-904d6d9311b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraW50YW1hbmlfYmFsaV9sYW5kc2NhcGV8ZW58MHx8fHwxNzY1NDIzMjg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bali landscape"
+    },
+    {
+      "id": "journey-toraja-3",
+      "description": "Traditional Torajan houses with coffee beans drying",
+      "imageUrl": "https://images.unsplash.com/photo-1599153169315-e2303c73a69a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b3JhamElMjB2aWxsYWdlJTIwY29mZmVlfGVufDB8fHx8MTc2NTQyMzMwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "toraja village"
+    },
+    {
+      "id": "journey-sidamo-4",
+      "description": "An Ethiopian woman performing a traditional coffee ceremony",
+      "imageUrl": "https://images.unsplash.com/photo-1582845600994-3ac7a326079b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxldGhpb3BpYW4lMjBjb2ZmZWUlMjBjZXJlbW9ueXxlbnwwfHx8fDE3NjU0MjMzMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coffee ceremony"
+    },
+    {
+      "id": "journey-antioquia-5",
+      "description": "Vast coffee plantation in the mountains of Colombia",
+      "imageUrl": "https://images.unsplash.com/photo-1589920155694-1b15003b306b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2xvbWJpYW4lMjBjb2ZmZWUlMjBwbGFudGF0aW9ufGVufDB8fHx8MTc2NTQyMzM1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "colombian plantation"
     }
   ]
 }
