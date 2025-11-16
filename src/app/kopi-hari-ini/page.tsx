@@ -8,9 +8,9 @@ import { AppFooter } from '@/components/app-footer';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { Coffee, Loader2, Thermometer, Cloud, Sun, CloudRain, Wind, BookOpen } from 'lucide-react';
+import { Coffee, Loader2, Thermometer, Cloud, Sun, CloudRain, Wind, BookOpen, Clock } from 'lucide-react';
 import { recommendCoffeeByWeather, type CoffeeRecommendationOutput } from '@/ai/flows/coffee-recommendation-flow';
-import { getWeather, WeatherCondition } from '@/services/weather-service';
+import { getWeather, WeatherCondition, HourlyForecast } from '@/services/weather-service';
 import { Badge } from '@/components/ui/badge';
 
 type RecommendationState = {
@@ -20,9 +20,9 @@ type RecommendationState = {
   error: string | null;
 };
 
-const WeatherIcon = ({ weather, className }: { weather: WeatherCondition | null, className?: string }) => {
-    if (!weather) return <Thermometer className={cn('h-6 w-6', className)} />;
-    switch (weather.condition) {
+const WeatherIcon = ({ condition, className }: { condition: WeatherCondition['condition'] | null, className?: string }) => {
+    if (!condition) return <Thermometer className={cn('h-6 w-6', className)} />;
+    switch (condition) {
         case 'Cerah': return <Sun className={cn('h-6 w-6 text-yellow-500', className)} />;
         case 'Berawan': return <Cloud className={cn('h-6 w-6 text-sky-500', className)} />;
         case 'Hujan': return <CloudRain className={cn('h-6 w-6 text-blue-500', className)} />;
@@ -107,11 +107,12 @@ export default function KopiHariIniPage() {
                             )}
 
                             {data && weather && (
+                                <>
                                 <Card className="overflow-hidden rounded-xl shadow-lg transition-all animate-in fade-in-50">
                                     <CardHeader className="bg-muted/50 p-6">
                                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                                             <div className="flex items-center gap-3">
-                                                <WeatherIcon weather={weather} className="h-7 w-7" />
+                                                <WeatherIcon condition={weather.condition} className="h-7 w-7" />
                                                 <div>
                                                     <p className="text-sm text-muted-foreground">Cuaca di Semarang</p>
                                                     <p className="text-xl font-bold text-foreground">{weather.condition}, {weather.temperature}°C</p>
@@ -147,6 +148,27 @@ export default function KopiHariIniPage() {
                                         </div>
                                     </CardContent>
                                 </Card>
+
+                                <Card className="overflow-hidden rounded-xl shadow-lg transition-all animate-in fade-in-50 delay-150">
+                                    <CardHeader>
+                                        <CardTitle className="flex items-center gap-2 text-lg">
+                                            <Clock className="h-5 w-5 text-primary"/>
+                                            Prediksi Per Jam
+                                        </CardTitle>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <div className="flex justify-between text-center">
+                                            {weather.hourlyForecast.map((forecast, index) => (
+                                                <div key={index} className="flex flex-col items-center gap-2">
+                                                    <span className="text-sm font-medium text-muted-foreground">{forecast.time}</span>
+                                                    <WeatherIcon condition={forecast.condition} className="h-6 w-6"/>
+                                                    <span className="text-base font-bold">{forecast.temperature}°C</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                                </>
                             )}
 
                         </div>
