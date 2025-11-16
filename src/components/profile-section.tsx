@@ -7,6 +7,7 @@ import { Separator } from '@/components/ui/separator';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Progress } from '@/components/ui/progress';
 
 export function ProfileSection() {
   const heroImage = PlaceHolderImages.find((p) => p.id === 'hero-image-3');
@@ -21,7 +22,7 @@ export function ProfileSection() {
           <Image
             src={heroImage.imageUrl}
             alt="Header background"
-            layout="fill"
+            fill
             objectFit="cover"
             data-ai-hint={heroImage.imageHint}
           />
@@ -93,22 +94,44 @@ export function ProfileSection() {
 
         <div className="text-left">
           <h3 className="mb-4 text-lg font-semibold">Skills</h3>
-          <div className="flex flex-wrap gap-4">
-            <Badge variant="secondary" className="flex items-center gap-2 text-base p-2 px-3">
-              <Coffee className="h-4 w-4" />
-              Espresso
-            </Badge>
-            <Badge variant="secondary" className="flex items-center gap-2 text-base p-2 px-3">
-              <Wind className="h-4 w-4" />
-              Aeropress
-            </Badge>
-             <Badge variant="secondary" className="flex items-center gap-2 text-base p-2 px-3">
-              <Droplets className="h-4 w-4" />
-              Latte Art
-            </Badge>
-            <Badge variant="secondary" className="flex items-center gap-2 text-base p-2 px-3">
-              Bean Roasting
-            </Badge>
+          <div className="space-y-6">
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <Coffee className="h-5 w-5" />
+                  <span className="font-medium">Espresso</span>
+                </div>
+                <span className="text-sm text-muted-foreground">95%</span>
+              </div>
+              <Progress value={95} />
+            </div>
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                 <div className="flex items-center gap-2">
+                    <Wind className="h-5 w-5" />
+                    <span className="font-medium">Aeropress</span>
+                </div>
+                <span className="text-sm text-muted-foreground">90%</span>
+              </div>
+              <Progress value={90} />
+            </div>
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                    <Droplets className="h-5 w-5" />
+                    <span className="font-medium">Latte Art</span>
+                </div>
+                <span className="text-sm text-muted-foreground">80%</span>
+              </div>
+              <Progress value={80} />
+            </div>
+             <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <span className="font-medium">Bean Roasting</span>
+                <span className="text-sm text-muted-foreground">85%</span>
+              </div>
+              <Progress value={85} />
+            </div>
           </div>
         </div>
 
