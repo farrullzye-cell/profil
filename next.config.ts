@@ -41,7 +41,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'https',
+        protocol: 'https,"',
         hostname: 'ik.imagekit.io',
         port: '',
         pathname: '/**',
@@ -49,6 +49,12 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'd1r9hss9q19p18.cloudfront.net',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'dynamic-media-cdn.tripadvisor.com',
         port: '',
         pathname: '/**',
       }
