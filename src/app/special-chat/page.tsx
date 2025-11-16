@@ -1,3 +1,4 @@
+
 'use client';
 
 import React, { useState, useMemo, useEffect, useRef } from 'react';
@@ -12,7 +13,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { formatDistanceToNow } from 'date-fns';
 import { id } from 'date-fns/locale';
 import { useToast } from '@/hooks/use-toast';
-import { useAuth, useFirestore, useDoc, useUser } from '@/firebase';
+import { useAuth, useFirestore, useDoc, useUser, useCollection } from '@/firebase';
 import { addDoc, collection, serverTimestamp, query, orderBy, limit, doc, setDoc } from 'firebase/firestore';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged, type User } from 'firebase/auth';
 import { FirestorePermissionError } from '@/firebase/errors';
@@ -362,3 +363,5 @@ export default function SpecialChatPage() {
     </SidebarProvider>
   );
 }
+
+    
