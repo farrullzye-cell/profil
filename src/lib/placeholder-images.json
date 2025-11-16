@@ -93,7 +93,7 @@
     {
       "id": "portfolio-wallpaper-2",
       "description": "Vibrant gradient wallpaper",
-      "imageUrl": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjB3YWxscGFwZXJ8ZW58MHx8fHwxNzY0NTI0NDY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjB3YWxscGFwZXJ8ZW58MHx8fHwxNzY0NTI0NDY4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "gradient wallpaper"
     },
     {
@@ -177,25 +177,25 @@
     {
       "id": "a7x-city-of-evil",
       "description": "Album art for City of Evil",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUarwfzL86SVmKtuX8G5SCYEmkd0UUwMpScWPUp2smQA&s=10",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/id/3/37/A7x2013.jpg",
       "imageHint": "avenged sevenfold skull"
     },
     {
       "id": "a7x-avenged-sevenfold",
       "description": "Album art for Avenged Sevenfold self-titled album",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUarwfzL86SVmKtuX8G5SCYEmkd0UUwMpScWPUp2smQA&s=10",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/id/3/37/A7x2013.jpg",
       "imageHint": "avenged sevenfold skull"
     },
     {
       "id": "a7x-nightmare",
       "description": "Album art for Nightmare",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUarwfzL86SVmKtuX8G5SCYEmkd0UUwMpScWPUp2smQA&s=10",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/id/3/37/A7x2013.jpg",
       "imageHint": "avenged sevenfold skull"
     },
     {
       "id": "a7x-hail-to-the-king",
       "description": "Album art for Hail to the King",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUarwfzL86SVmKtuX8G5SCYEmkd0UUwMpScWPUp2smQA&s=10",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/id/3/37/A7x2013.jpg",
       "imageHint": "avenged sevenfold skull"
     },
     {
@@ -231,31 +231,31 @@
     {
       "id": "slipknot-st",
       "description": "Slipknot self-titled album",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh7bp39WRY2bUJQSvQP1esY3nd0PDqD_W3SUFBpreRsw&s=10",
+      "imageUrl": "https://superlive.id/storage/articles/mobile/mobile_11451ff9-b0e8-4038-8d98-6385c4270e96.jpg",
       "imageHint": "slipknot nonagram"
     },
     {
       "id": "slipknot-iowa",
       "description": "Slipknot Iowa album",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh7bp39WRY2bUJQSvQP1esY3nd0PDqD_W3SUFBpreRsw&s=10",
+      "imageUrl": "https://superlive.id/storage/articles/mobile/mobile_11451ff9-b0e8-4038-8d98-6385c4270e96.jpg",
       "imageHint": "slipknot nonagram"
     },
     {
       "id": "slipknot-vol3",
       "description": "Slipknot Vol. 3: (The Subliminal Verses) album",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh7bp39WRY2bUJQSvQP1esY3nd0PDqD_W3SUFBpreRsw&s=10",
+      "imageUrl": "https://superlive.id/storage/articles/mobile/mobile_11451ff9-b0e8-4038-8d98-6385c4270e96.jpg",
       "imageHint": "slipknot nonagram"
     },
     {
       "id": "slipknot-ahig",
       "description": "Slipknot All Hope Is Gone album",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh7bp39WRY2bUJQSvQP1esY3nd0PDqD_W3SUFBpreRsw&s=10",
+      "imageUrl": "https://superlive.id/storage/articles/mobile/mobile_11451ff9-b0e8-4038-8d98-6385c4270e96.jpg",
       "imageHint": "slipknot nonagram"
     },
     {
       "id": "slipknot-gray",
       "description": "Slipknot .5: The Gray Chapter album",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh7bp39WRY2bUJQSvQP1esY3nd0PDqD_W3SUFBpreRsw&s=10",
+      "imageUrl": "https://superlive.id/storage/articles/mobile/mobile_11451ff9-b0e8-4038-8d98-6385c4270e96.jpg",
       "imageHint": "slipknot nonagram"
     },
     {

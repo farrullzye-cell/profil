@@ -88,6 +88,18 @@ const nextConfig: NextConfig = {
         hostname: 'asset.kgnewsroom.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'superlive.id',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
