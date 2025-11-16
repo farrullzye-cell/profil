@@ -1,20 +1,26 @@
 'use client';
 
 import Image from 'next/image';
-import { Github, Linkedin, Twitter, Mail, Info, Bell, Phone, Search, AtSign, Coffee, Wind, Droplets } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail, Info, Bell, Phone, Search, AtSign, Coffee, Wind, Droplets, ChevronDown } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Separator } from '@/components/ui/separator';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
+import { cn } from '@/lib/utils';
+import React from 'react';
+
 
 export function ProfileSection() {
   const heroImage = PlaceHolderImages.find((p) => p.id === 'hero-image-3');
   const userAvatar = PlaceHolderImages.find((p) => p.id === 'user-avatar-1');
   const projectImage1 = PlaceHolderImages.find((p) => p.id === 'project-image-1');
   const projectImage2 = PlaceHolderImages.find((p) => p.id === 'project-image-2');
+
+  const [openCollapsible, setOpenCollapsible] = React.useState<string | null>(null);
+
 
   return (
     <div className="bg-background text-card-foreground">
@@ -31,7 +37,7 @@ export function ProfileSection() {
         )}
       </div>
 
-      <div className="relative -mt-20 rounded-t-3xl bg-card p-6 pt-24 text-center">
+      <div className="relative -mt-24 rounded-t-3xl bg-card p-6 pt-28 text-center">
         <Avatar className="absolute -top-14 left-1/2 h-28 w-28 -translate-x-1/2 border-4 border-card">
           {userAvatar && (
             <AvatarImage src={userAvatar.imageUrl} alt="Your Name" data-ai-hint={userAvatar.imageHint} />
@@ -96,160 +102,166 @@ export function ProfileSection() {
 
         <div className="text-left">
           <h3 className="mb-4 text-lg font-semibold">Skills</h3>
-          <div className="space-y-6">
-            <Dialog>
-              <DialogTrigger asChild>
+          <div className="space-y-4">
+            <Collapsible open={openCollapsible === 'espresso'} onOpenChange={() => setOpenCollapsible(openCollapsible === 'espresso' ? null : 'espresso')}>
+              <CollapsibleTrigger className="w-full">
                 <div className="space-y-2 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
                       <Coffee className="h-5 w-5" />
                       <span className="font-medium">Espresso</span>
                     </div>
-                    <span className="text-sm text-muted-foreground">95%</span>
+                     <div className="flex items-center gap-2">
+                      <span className="text-sm text-muted-foreground">95%</span>
+                      <ChevronDown className={cn("h-4 w-4 transition-transform", openCollapsible === 'espresso' && "rotate-180")} />
+                    </div>
                   </div>
                   <Progress value={95} />
                 </div>
-              </DialogTrigger>
-              <DialogContent>
-                <DialogHeader>
-                  <DialogTitle>Espresso</DialogTitle>
-                  <DialogDescription>
-                    Mastery in pulling the perfect espresso shot, with a rich crema, balanced acidity, and deep flavor. Understanding grind size, tamping pressure, and extraction time is key.
-                  </DialogDescription>
-                </DialogHeader>
-              </DialogContent>
-            </Dialog>
-            <Dialog>
-              <DialogTrigger asChild>
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Mastery in pulling the perfect espresso shot, with a rich crema, balanced acidity, and deep flavor. Understanding grind size, tamping pressure, and extraction time is key.
+                </p>
+              </CollapsibleContent>
+            </Collapsible>
+
+            <Collapsible open={openCollapsible === 'aeropress'} onOpenChange={() => setOpenCollapsible(openCollapsible === 'aeropress' ? null : 'aeropress')}>
+              <CollapsibleTrigger className="w-full">
                 <div className="space-y-2 cursor-pointer">
                   <div className="flex items-center justify-between">
                      <div className="flex items-center gap-2">
                         <Wind className="h-5 w-5" />
                         <span className="font-medium">Aeropress</span>
                     </div>
-                    <span className="text-sm text-muted-foreground">90%</span>
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm text-muted-foreground">90%</span>
+                      <ChevronDown className={cn("h-4 w-4 transition-transform", openCollapsible === 'aeropress' && "rotate-180")} />
+                    </div>
                   </div>
                   <Progress value={90} />
                 </div>
-              </DialogTrigger>
-              <DialogContent>
-                <DialogHeader>
-                  <DialogTitle>Aeropress</DialogTitle>
-                  <DialogDescription>
-                    Proficient in using the Aeropress for a clean, full-bodied cup. Experienced with both standard and inverted methods, and experimenting with different recipes.
-                  </DialogDescription>
-                </DialogHeader>
-              </DialogContent>
-            </Dialog>
-            <Dialog>
-              <DialogTrigger asChild>
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Proficient in using the Aeropress for a clean, full-bodied cup. Experienced with both standard and inverted methods, and experimenting with different recipes.
+                </p>
+              </CollapsibleContent>
+            </Collapsible>
+
+            <Collapsible open={openCollapsible === 'latte-art'} onOpenChange={() => setOpenCollapsible(openCollapsible === 'latte-art' ? null : 'latte-art')}>
+              <CollapsibleTrigger className="w-full">
                 <div className="space-y-2 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
                         <Droplets className="h-5 w-5" />
                         <span className="font-medium">Latte Art</span>
                     </div>
-                    <span className="text-sm text-muted-foreground">80%</span>
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm text-muted-foreground">80%</span>
+                      <ChevronDown className={cn("h-4 w-4 transition-transform", openCollapsible === 'latte-art' && "rotate-180")} />
+                    </div>
                   </div>
                   <Progress value={80} />
                 </div>
-              </DialogTrigger>
-              <DialogContent>
-                <DialogHeader>
-                  <DialogTitle>Latte Art</DialogTitle>
-                  <DialogDescription>
-                    Skilled in steaming milk to the right texture and pouring intricate designs, from a simple heart to a rosetta. It's about combining art with the science of milk foam.
-                  </DialogDescription>
-                </DialogHeader>
-              </DialogContent>
-            </Dialog>
-            <Dialog>
-              <DialogTrigger asChild>
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Skilled in steaming milk to the right texture and pouring intricate designs, from a simple heart to a rosetta. It's about combining art with the science of milk foam.
+                </p>
+              </CollapsibleContent>
+            </Collapsible>
+
+            <Collapsible open={openCollapsible === 'bean-roasting'} onOpenChange={() => setOpenCollapsible(openCollapsible === 'bean-roasting' ? null : 'bean-roasting')}>
+              <CollapsibleTrigger className="w-full">
                 <div className="space-y-2 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
                         <span className="font-medium">Bean Roasting</span>
                     </div>
-                    <span className="text-sm text-muted-foreground">85%</span>
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm text-muted-foreground">85%</span>
+                      <ChevronDown className={cn("h-4 w-4 transition-transform", openCollapsible === 'bean-roasting' && "rotate-180")} />
+                    </div>
                   </div>
                   <Progress value={85} />
                 </div>
-              </DialogTrigger>
-              <DialogContent>
-                <DialogHeader>
-                  <DialogTitle>Bean Roasting</DialogTitle>
-                  <DialogDescription>
-                    Experience in home roasting, understanding the roasting curve, and manipulating variables like heat and airflow to bring out the unique flavors of green coffee beans.
-                  </DialogDescription>
-                </DialogHeader>
-              </DialogContent>
-            </Dialog>
-            <Dialog>
-              <DialogTrigger asChild>
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Experience in home roasting, understanding the roasting curve, and manipulating variables like heat and airflow to bring out the unique flavors of green coffee beans.
+                </p>
+              </CollapsibleContent>
+            </Collapsible>
+
+            <Collapsible open={openCollapsible === 'cortado'} onOpenChange={() => setOpenCollapsible(openCollapsible === 'cortado' ? null : 'cortado')}>
+              <CollapsibleTrigger className="w-full">
                 <div className="space-y-2 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
                       <Coffee className="h-5 w-5" />
                       <span className="font-medium">Cortado</span>
                     </div>
-                    <span className="text-sm text-muted-foreground">92%</span>
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm text-muted-foreground">92%</span>
+                      <ChevronDown className={cn("h-4 w-4 transition-transform", openCollapsible === 'cortado' && "rotate-180")} />
+                    </div>
                   </div>
                   <Progress value={92} />
                 </div>
-              </DialogTrigger>
-              <DialogContent>
-                <DialogHeader>
-                  <DialogTitle>Cortado</DialogTitle>
-                  <DialogDescription>
-                    A balanced drink with equal parts espresso and steamed milk. The skill lies in achieving the right milk texture to complement the espresso without overpowering it.
-                  </DialogDescription>
-                </DialogHeader>
-              </DialogContent>
-            </Dialog>
-            <Dialog>
-              <DialogTrigger asChild>
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  A balanced drink with equal parts espresso and steamed milk. The skill lies in achieving the right milk texture to complement the espresso without overpowering it.
+                </p>
+              </CollapsibleContent>
+            </Collapsible>
+
+            <Collapsible open={openCollapsible === 'ristretto'} onOpenChange={() => setOpenCollapsible(openCollapsible === 'ristretto' ? null : 'ristretto')}>
+              <CollapsibleTrigger className="w-full">
                 <div className="space-y-2 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
                       <Coffee className="h-5 w-5" />
                       <span className="font-medium">Ristretto</span>
                     </div>
-                    <span className="text-sm text-muted-foreground">88%</span>
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm text-muted-foreground">88%</span>
+                      <ChevronDown className={cn("h-4 w-4 transition-transform", openCollapsible === 'ristretto' && "rotate-180")} />
+                    </div>
                   </div>
                   <Progress value={88} />
                 </div>
-              </DialogTrigger>
-              <DialogContent>
-                <DialogHeader>
-                  <DialogTitle>Ristretto</DialogTitle>
-                  <DialogDescription>
-                    A "restricted" shot of espresso. It uses less water, resulting in a shorter, more concentrated, and sweeter shot compared to a standard espresso.
-                  </DialogDescription>
-                </DialogHeader>
-              </DialogContent>
-            </Dialog>
-            <Dialog>
-              <DialogTrigger asChild>
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  A "restricted" shot of espresso. It uses less water, resulting in a shorter, more concentrated, and sweeter shot compared to a standard espresso.
+                </p>
+              </CollapsibleContent>
+            </Collapsible>
+
+            <Collapsible open={openCollapsible === 'lungo'} onOpenChange={() => setOpenCollapsible(openCollapsible === 'lungo' ? null : 'lungo')}>
+              <CollapsibleTrigger className="w-full">
                 <div className="space-y-2 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
                       <Coffee className="h-5 w-5" />
                       <span className="font-medium">Lungo</span>
                     </div>
-                    <span className="text-sm text-muted-foreground">85%</span>
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm text-muted-foreground">85%</span>
+                      <ChevronDown className={cn("h-4 w-4 transition-transform", openCollapsible === 'lungo' && "rotate-180")} />
+                    </div>
                   </div>
                   <Progress value={85} />
                 </div>
-              </DialogTrigger>
-              <DialogContent>
-                <DialogHeader>
-                  <DialogTitle>Lungo</DialogTitle>
-                  <DialogDescription>
-                    A "long" shot of espresso. It's pulled with more water, resulting in a larger, less intense, and more bitter coffee compared to a standard espresso.
-                  </DialogDescription>
-                </DialogHeader>
-              </DialogContent>
-            </Dialog>
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  A "long" shot of espresso. It's pulled with more water, resulting in a larger, less intense, and more bitter coffee compared to a standard espresso.
+                </p>
+              </CollapsibleContent>
+            </Collapsible>
           </div>
         </div>
 
