@@ -7,49 +7,49 @@ import { AppSidebar } from '@/components/app-sidebar';
 import { AppFooter } from '@/components/app-footer';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Route, MapPin, Leaf, Wind, BookOpen, Atom, Home } from 'lucide-react';
+import { Route, MapPin, Building, Palmtree, Landmark, Milestone } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useMemo } from 'react';
 
 const journeyData = [
     {
-        id: 'journey-gayo-1',
-        region: 'Kedai Kopi Lokal',
-        year: 'Awal 2024',
-        title: 'Cangkir Pertama yang Mengubah Segalanya',
-        description: 'Semua berawal di sini. Mencicipi secangkir kopi Gayo yang diseduh manual. Untuk pertama kalinya, saya sadar kopi bukan cuma pahit, tapi ada rasa buah dan rempah. Momen "wow" yang memulai semuanya.',
-        icon: <Atom className="h-6 w-6 text-primary" />,
+        id: 'journey-semarang-1',
+        region: 'Lawang Sewu',
+        year: 'Titik Awal',
+        title: 'Misteri Seribu Pintu',
+        description: 'Perjalanan dimulai dari Lawang Sewu, bangunan ikonik yang penuh sejarah. Arsitekturnya yang megah dan cerita-cerita di baliknya selalu berhasil membuatku terpukau. Setiap sudutnya adalah saksi bisu perjalanan panjang kota ini.',
+        icon: <Landmark className="h-6 w-6 text-primary" />,
     },
     {
-        id: 'journey-kintamani-2',
-        region: 'Dapur Pribadi',
-        year: 'Pertengahan 2024',
-        title: 'Petualangan V60 Pertama: Gagal & Penasaran',
-        description: 'Bermodal nekat membeli V60 dan paper filter. Hasil seduhan pertama? Terlalu encer dan asam. Tapi dari kegagalan itu, rasa penasaran justru membesar. Saya mulai belajar tentang rasio, suhu, dan teknik tuang.',
-        icon: <Home className="h-6 w-6 text-primary" />,
+        id: 'journey-semarang-2',
+        region: 'Kota Lama',
+        year: 'Langkah Kedua',
+        title: 'Pesona Eropa di Jantung Jawa',
+        description: 'Menyusuri jalanan Kota Lama seperti kembali ke masa lalu. Bangunan-bangunan tua peninggalan Belanda yang gagah berdiri menciptakan suasana yang unik dan fotogenik. Tempat favorit untuk sekadar jalan santai dan menikmati sore.',
+        icon: <Building className="h-6 w-6 text-primary" />,
     },
     {
-        id: 'journey-toraja-3',
-        region: 'Toko Biji Kopi',
-        year: 'Pertengahan 2024',
-        title: 'Tersesat di "Hutan" Biji Kopi',
-        description: 'Pertama kali memberanikan diri masuk ke toko khusus biji kopi. Bingung dengan istilah "washed", "natural", "honey". Pulang membawa sebungkus biji Toraja dengan sejuta pertanyaan baru di kepala.',
-        icon: <Leaf className="h-6 w-6 text-primary" />,
+        id: 'journey-semarang-3',
+        region: 'Sam Poo Kong',
+        year: 'Persinggahan Budaya',
+        title: 'Akulturasi dalam Merah Menyala',
+        description: 'Klenteng Sam Poo Kong adalah bukti nyata indahnya perpaduan budaya. Arsitektur khas Tionghoa dengan sentuhan Jawa terasa begitu kental. Tempat ini bukan hanya tempat ibadah, tapi juga simbol harmoni.',
+        icon: <Palmtree className="h-6 w-6 text-primary" />,
     },
     {
-        id: 'journey-sidamo-4',
-        region: 'Dunia Maya',
-        year: 'Akhir 2024',
-        title: 'Menemukan Komunitas dan Guru Online',
-        description: 'Menghabiskan waktu berjam-jam menonton video review dan tutorial. Belajar banyak dari para ahli di internet. Komunitas online menjadi tempat bertanya dan berbagi kebingungan sebagai seorang pemula.',
-        icon: <BookOpen className="h-6 w-6 text-primary" />,
+        id: 'journey-semarang-4',
+        region: 'Masjid Agung Jawa Tengah',
+        year: 'Oase Spiritual',
+        title: 'Payung Raksasa Peneduh Jiwa',
+        description: 'Kemegahan Masjid Agung Jawa Tengah dengan payung-payung raksasanya yang terinspirasi dari Masjid Nabawi selalu memberikan ketenangan. Sebuah mahakarya arsitektur modern yang menjadi kebanggaan warga Semarang.',
+        icon: <Milestone className="h-6 w-6 text-primary" />,
     },
     {
-        id: 'journey-antioquia-5',
-        region: 'Masa Depan',
-        year: '2025 ~',
-        title: 'Perjalanan Ini Baru Dimulai',
-        description: 'Saya sadar perjalanan ini masih sangat panjang. Masih banyak biji kopi yang belum dicicipi, banyak metode yang belum dicoba. Rencana ke depan? Terus belajar, bereksperimen, dan yang terpenting, menikmati setiap cangkirnya.',
+        id: 'journey-semarang-5',
+        region: 'Tugu Muda',
+        year: 'Titik Pusat',
+        title: 'Api Perjuangan yang Tak Pernah Padam',
+        description: 'Berdiri di pusat kota, Tugu Muda adalah pengingat akan semangat perjuangan para pahlawan. Monumen ini menjadi jantung kota, dikelilingi oleh bangunan-bangunan penting yang menjadi saksi sejarah Semarang.',
         icon: <Route className="h-6 w-6 text-primary" />,
     }
 ];
@@ -79,10 +79,10 @@ export default function CoffeeJourneyPage() {
                 <Card className="overflow-hidden rounded-xl shadow-lg">
                     <CardHeader className="bg-card p-6">
                         <div className="flex items-center gap-4">
-                            <Route className="h-8 w-8 text-primary" />
+                            <MapPin className="h-8 w-8 text-primary" />
                             <div>
-                                <CardTitle className="text-3xl font-bold text-primary">Coffee Journey</CardTitle>
-                                <CardDescription className="text-muted-foreground">Catatan langkah-langkah awal seorang pemula di dunia kopi.</CardDescription>
+                                <CardTitle className="text-3xl font-bold text-primary">Jelajah Semarang</CardTitle>
+                                <CardDescription className="text-muted-foreground">Catatan visual perjalanan menyusuri sudut-sudut ikonik Kota Lumpia.</CardDescription>
                             </div>
                         </div>
                     </CardHeader>
@@ -96,7 +96,7 @@ export default function CoffeeJourneyPage() {
                                     {item.placeholder && (
                                         <Image
                                             src={item.placeholder.imageUrl}
-                                            alt={`Perjalanan ke ${item.region}`}
+                                            alt={`Pemandangan di ${item.region}`}
                                             fill
                                             style={{objectFit: 'cover'}}
                                             className={index % 2 !== 0 ? 'md:order-last' : ''}
