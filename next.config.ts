@@ -120,6 +120,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'awsimages.detik.net.id',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };

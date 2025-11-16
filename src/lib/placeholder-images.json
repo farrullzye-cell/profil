@@ -27,13 +27,13 @@
     {
       "id": "project-image-1",
       "description": "Aesthetic coffee shot",
-      "imageUrl": "https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBiZWFucyUyMHNhY2t8ZW58MHx8fHwxNzY0MDQ3ODc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://ik.imagekit.io/goodid/gnfi/uploads/articles/large-shutterstock-582329227-3d26e73af7a09a663014a4d85b68f5bd.jpg?tr=w-730,h-486,fo-center",
       "imageHint": "notebook coffee"
     },
     {
       "id": "project-image-2",
       "description": "Overhead view of coffee",
-      "imageUrl": "https://ik.imagekit.io/goodid/gnfi/uploads/articles/large-shutterstock-582329227-3d26e73af7a09a663014a4d85b68f5bd.jpg?tr=w-730,h-486,fo-center",
+      "imageUrl": "https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBiZWFucyUyMHNhY2t8ZW58MHx8fHwxNzY0MDQ3ODc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "coffee map"
     },
     {
@@ -75,19 +75,19 @@
     {
       "id": "portfolio-place-1",
       "description": "Aesthetic European street",
-      "imageUrl": "https://images.unsplash.com/photo-1541892219424-8a035d5a9391?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1541892219424-8a035d5a9391?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "aesthetic place"
     },
     {
       "id": "portfolio-place-2",
       "description": "Misty forest path",
-      "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "forest path"
     },
     {
       "id": "portfolio-wallpaper-1",
       "description": "Minimalist abstract wallpaper",
-      "imageUrl": "https://images.unsplash.com/photo-1508614999333-3a43569TGU1E?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjB3YWxscGFwZXJ8ZW58MHx8fHwxNzY0NTI0NDY4fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1508614999333-3a43569TGU1E?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjB3YWxscGFwZXJ8ZW58MHx8fHwxNzY0NTI0NDY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "aesthetic wallpaper"
     },
     {
@@ -99,7 +99,7 @@
     {
       "id": "portfolio-screenshot-1",
       "description": "Aesthetic screenshot of code",
-      "imageUrl": "https://images.unsplash.com/photo-1624996752380-8ec242e0f85d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBzY3JlZW5zaG90fGVufDB8fHx8MTc2NDUyNDQ5N3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1624996752380-8ec242e0f85d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBzY3JlZW5zaG90fGVufDB8fHx8MTc2NDUyNDQ5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "code screenshot"
     },
     {
@@ -117,7 +117,7 @@
     {
       "id": "portfolio-sunset-3",
       "description": "City skyline silhouette",
-      "imageUrl": "https://images.unsplash.com/photo-1524234103328-1b4b10499b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1524234103328-1b4b10499b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "city silhouette"
     },
     {
@@ -207,7 +207,7 @@
     {
       "id": "journey-semarang-2",
       "description": "Sudut artistik dari Kota Lama Semarang, dengan arsitektur kolonial yang menawan.",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Gereja_Blenduk_Semarang.jpg",
+      "imageUrl": "https://awsimages.detik.net.id/community/media/visual/2023/11/30/kota-lama-semarang_169.jpeg?w=1200",
       "imageHint": "semarang old town"
     },
     {
