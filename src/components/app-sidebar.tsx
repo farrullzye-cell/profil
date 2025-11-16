@@ -41,7 +41,7 @@ export function AppSidebar() {
   ];
   
   const interactionMenuItems = [
-    { icon: ShieldQuestion, label: 'Anonymous Talk', href: '#' },
+    { icon: ShieldQuestion, label: 'Anonymous Talk', href: '/anonymous-chat' },
     { icon: Crown, label: 'Special Chat (VIP)', href: '#' },
     { icon: HelpCircle, label: 'Ask Me Anything', href: '#' },
     { icon: PenSquare, label: 'Feedback / Pesan', href: '/pesan' },

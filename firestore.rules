@@ -7,5 +7,11 @@ service cloud.firestore {
       allow read: if true;
       allow write: if true;
     }
+
+    // Allow public read and write access to anonymous messages
+    match /anonymous_messages/{messageId} {
+        allow read: if true;
+        allow write: if request.resource.data.anonymousId != null && request.resource.data.message != null;
+    }
   }
 }

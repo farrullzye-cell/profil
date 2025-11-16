@@ -20,6 +20,27 @@
         }
       },
       "required": ["name", "message", "createdAt"]
+    },
+    "anonymousMessage": {
+      "title": "Anonymous Message",
+      "description": "An anonymous message from a user.",
+      "type": "object",
+      "properties": {
+        "anonymousId": {
+          "type": "string",
+          "description": "The anonymous ID of the user."
+        },
+        "message": {
+          "type": "string",
+          "description": "The content of the message."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The timestamp when the message was created."
+        }
+      },
+      "required": ["anonymousId", "message", "createdAt"]
     }
   },
   "auth": {
@@ -29,6 +50,10 @@
     "/messages/{messageId}": {
       "schema": { "$ref": "#/entities/message" },
       "description": "Collection of feedback messages."
+    },
+    "/anonymous_messages/{messageId}": {
+      "schema": { "$ref": "#/entities/anonymousMessage" },
+      "description": "Collection of anonymous chat messages."
     }
   }
 }
