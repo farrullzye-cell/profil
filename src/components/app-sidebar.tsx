@@ -32,7 +32,7 @@ export function AppSidebar() {
   const profileMenuItems = [
     { icon: Home, label: 'Beranda', href: '/' },
     { icon: User, label: 'Tentang Saya', href: '/tentang-saya' },
-    { icon: Sparkles, label: 'Keahlian', href: '#' },
+    { icon: Sparkles, label: 'Keahlian', href: '/keahlian' },
     { icon: LayoutGrid, label: 'Portofolio', href: '#' },
     { icon: Flame, label: 'Riwayat', href: '#' },
     { icon: BookText, label: 'Blog', href: '#' },
