@@ -21,8 +21,6 @@ import {
 
 const menuItems = [
   { icon: User, label: 'My Profile', active: true },
-  { icon: Briefcase, label: 'Projects' },
-  { icon: Coffee, label: 'Skills' },
   { icon: Mail, label: 'Contact' },
 ];
 
