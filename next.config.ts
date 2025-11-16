@@ -69,6 +69,12 @@ const nextConfig: NextConfig = {
         hostname: 'assets.ladiestory.id',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'assets.kompasiana.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
