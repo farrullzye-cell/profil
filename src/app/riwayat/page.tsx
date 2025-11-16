@@ -7,7 +7,7 @@ import { AppSidebar } from '@/components/app-sidebar';
 import { AppFooter } from '@/components/app-footer';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Flame, GraduationCap, Coffee, Cake } from 'lucide-react';
+import { Flame, GraduationCap, Coffee, Cake, School, Microscope } from 'lucide-react';
 
 const RiwayatPage: React.FC = () => {
   const [age, setAge] = useState<number | null>(null);
@@ -32,18 +32,32 @@ const RiwayatPage: React.FC = () => {
         description: "Sebuah babak baru dimulai. Dunia dengan segala rasa dan aromanya menanti untuk dijelajahi."
     },
     {
-        icon: <GraduationCap className="h-6 w-6 text-primary" />,
+        icon: <School className="h-6 w-6 text-primary" />,
+        period: "2012 - 2018",
+        title: "Pendidikan Dasar (SD)",
+        subtitle: "Masa Kanak-Kanak",
+        description: "Menjalani masa kecil dan mulai mempelajari hal-hal dasar yang membentuk fondasi pengetahuan."
+    },
+    {
+        icon: <School className="h-6 w-6 text-primary" />,
+        period: "2018 - 2021",
+        title: "Pendidikan Menengah Pertama (SMP)",
+        subtitle: "Masa Remaja",
+        description: "Memasuki masa remaja, di mana berbagai minat dan hobi baru mulai dieksplorasi di luar lingkungan sekolah."
+    },
+    {
+        icon: <Microscope className="h-6 w-6 text-primary" />,
         period: "2021 - 2024",
-        title: "Pendidikan SMA",
+        title: "Pendidikan SMK Jurusan Farmasi",
         subtitle: "Masa Penemuan",
-        description: "Di tengah kesibukan akademis, ketertarikan pada dunia di luar buku pelajaran mulai tumbuh. Kunjungan sesekali ke kedai kopi lokal membuka mata pada kompleksitas rasa yang tak terduga."
+        description: "Di tengah kesibukan akademis di dunia farmasi, ketertarikan pada 'seni meracik' lainnya mulai tumbuh. Kunjungan sesekali ke kedai kopi membuka mata pada kompleksitas rasa yang tak terduga."
     },
     {
         icon: <Coffee className="h-6 w-6 text-primary" />,
         period: "2024 - Sekarang",
         title: "Memasuki Dunia Kopi",
         subtitle: "Perjalanan Seorang Pemula",
-        description: `Di usia ${age || '19'} tahun, saya memutuskan untuk mendalami hobi ini lebih serius. Dari sekadar penikmat, saya mulai belajar menyeduh sendiri, bereksperimen, dan mencatat setiap hasilnya. Sebuah perjalanan yang baru dimulai.`
+        description: `Di usia ${age || '18'} tahun, saya memutuskan untuk mendalami hobi ini lebih serius. Dari sekadar penikmat, saya mulai belajar menyeduh sendiri, bereksperimen, dan mencatat setiap hasilnya. Sebuah perjalanan yang baru dimulai.`
     }
   ];
 
