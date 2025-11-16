@@ -114,6 +114,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'visitjawatengah.jatengprov.go.id',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };

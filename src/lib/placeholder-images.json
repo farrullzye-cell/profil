@@ -27,13 +27,13 @@
     {
       "id": "project-image-1",
       "description": "Aesthetic coffee shot",
-      "imageUrl": "https://ik.imagekit.io/goodid/gnfi/uploads/articles/large-shutterstock-582329227-3d26e73af7a09a663014a4d85b68f5bd.jpg?tr=w-730,h-486,fo-center",
+      "imageUrl": "https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBiZWFucyUyMHNhY2t8ZW58MHx8fHwxNzY0MDQ3ODc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "notebook coffee"
     },
     {
       "id": "project-image-2",
       "description": "Overhead view of coffee",
-      "imageUrl": "https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBiZWFucyUyMHNhY2t8ZW58MHx8fHwxNzY0MDQ3ODc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://ik.imagekit.io/goodid/gnfi/uploads/articles/large-shutterstock-582329227-3d26e73af7a09a663014a4d85b68f5bd.jpg?tr=w-730,h-486,fo-center",
       "imageHint": "coffee map"
     },
     {
@@ -75,7 +75,7 @@
     {
       "id": "portfolio-place-1",
       "description": "Aesthetic European street",
-      "imageUrl": "https://images.unsplash.com/photo-1541892219424-8a035d5a9391?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1541892219424-8a035d5a9391?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "aesthetic place"
     },
     {
@@ -87,7 +87,7 @@
     {
       "id": "portfolio-wallpaper-1",
       "description": "Minimalist abstract wallpaper",
-      "imageUrl": "https://images.unsplash.com/photo-1508614999333-3a43569TGU1E?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjB3YWxscGFwZXJ8ZW58MHx8fHwxNzY0NTI0NDY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1508614999333-3a43569TGU1E?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjB3YWxscGFwZXJ8ZW58MHx8fHwxNzY0NTI0NDY4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "aesthetic wallpaper"
     },
     {
@@ -99,25 +99,25 @@
     {
       "id": "portfolio-screenshot-1",
       "description": "Aesthetic screenshot of code",
-      "imageUrl": "https://images.unsplash.com/photo-1624996752380-8ec242e0f85d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBzY3JlZW5zaG90fGVufDB8fHx8MTc2NDUyNDQ5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1624996752380-8ec242e0f85d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjBzY3JlZW5zaG90fGVufDB8fHx8MTc2NDUyNDQ5N3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "code screenshot"
     },
     {
       "id": "portfolio-coffee-3",
       "description": "Morning coffee ritual",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRbXegiYJX_wjscBpTaiZ7MBJH02iNFRCVLRWDbjaRNQ&s=10",
+      "imageUrl": "https://i.pinimg.com/736x/b7/f5/87/b7f58775ce52ec61b44f29b25c4273b1.jpg",
       "imageHint": "morning coffee"
     },
     {
       "id": "portfolio-place-3",
       "description": "Old library",
-      "imageUrl": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.pinimg.com/736x/8b/ff/8e/8bff8e891a92701d79abac16acbb5db1.jpg",
       "imageHint": "old library"
     },
     {
       "id": "portfolio-sunset-3",
       "description": "City skyline silhouette",
-      "imageUrl": "https://images.unsplash.com/photo-1524234103328-1b4b10499b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1524234103328-1b4b10499b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "city silhouette"
     },
     {
@@ -201,7 +201,7 @@
     {
       "id": "journey-semarang-1",
       "description": "Lawang Sewu yang megah di malam hari, sebuah ikon bersejarah di Semarang.",
-      "imageUrl": "https://asset.kgnewsroom.com/photo/pre/2023/07/26/lawang-sewu_64c120a1c1d13.jpg",
+      "imageUrl": "https://visitjawatengah.jatengprov.go.id/assets/images/f496a13e-7684-4399-bd8a-0da160aa054b.jpg",
       "imageHint": "semarang building"
     },
     {
