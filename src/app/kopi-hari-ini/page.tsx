@@ -29,6 +29,7 @@ const PouringCoffeeLoader = () => {
                 bottom: 20px;
                 left: 50%;
                 transform: translateX(-50%);
+                overflow: hidden; /* This will contain the liquid */
               }
               .handle {
                 width: 24px;
@@ -37,23 +38,22 @@ const PouringCoffeeLoader = () => {
                 border-left: none;
                 border-radius: 0 24px 24px 0;
                 position: absolute;
-                right: -28px; /* Adjusted to align properly with the cup's border */
+                right: -28px;
                 top: 4px;
               }
               .coffee {
-                width: calc(100% - 8px); /* Full width minus border */
+                width: 100%;
                 height: 10px;
                 background: hsl(var(--accent));
                 position: absolute;
-                bottom: 4px; /* Inside the cup */
-                left: 50%;
-                transform: translateX(-50%);
+                bottom: 0;
+                left: 0;
                 border-radius: 0 0 30px 30px;
                 animation: fill 1.8s infinite ease-in-out;
               }
               @keyframes fill {
                 0% { height: 0; }
-                40% { height: 24px; } /* Increased height for better visibility */
+                40% { height: 24px; }
                 70% { height: 20px; }
                 100% { height: 0; }
               }
@@ -98,7 +98,12 @@ const PouringCoffeeLoader = () => {
                 <div className="pour"></div>
                 <div className="cup">
                     <div className="coffee"></div>
-                    <div className="handle"></div>
+                </div>
+                {/* Handle is outside the cup div to position correctly */}
+                <div style={{position: 'absolute', bottom: '20px', left: '50%', transform: 'translateX(-50%)'}}>
+                    <div style={{position: 'relative', width: '80px'}}>
+                         <div className="handle"></div>
+                    </div>
                 </div>
             </div>
         </>
