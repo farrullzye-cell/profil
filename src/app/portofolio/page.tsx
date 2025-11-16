@@ -2,6 +2,7 @@
 'use client';
 
 import Image from 'next/image';
+import React, { useState, useMemo } from 'react';
 import { AppHeader } from '@/components/app-header';
 import { AppSidebar } from '@/components/app-sidebar';
 import { AppFooter } from '@/components/app-footer';
@@ -10,6 +11,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Camera } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import {
   Dialog,
   DialogContent,
@@ -62,13 +64,38 @@ const portfolioItems = [
     category: 'Estetika',
     title: 'Gradasi Warna',
   },
+  {
+    id: 'portfolio-coffee-3',
+    category: 'Kopi',
+    title: 'Ritual Pagi',
+  },
+  {
+    id: 'portfolio-place-3',
+    category: 'Tempat',
+    title: 'Perpustakaan Tua',
+  },
+  {
+    id: 'portfolio-sunset-3',
+    category: 'Senja',
+    title: 'Siluet di Cakrawala',
+  },
 ];
 
 export default function PortofolioPage() {
-  const images = portfolioItems.map(item => ({
-    ...item,
-    placeholder: PlaceHolderImages.find(p => p.id === item.id)
-  })).filter(item => item.placeholder);
+  const [filter, setFilter] = useState('Semua');
+
+  const images = useMemo(() => 
+    portfolioItems.map(item => ({
+      ...item,
+      placeholder: PlaceHolderImages.find(p => p.id === item.id)
+    })).filter(item => item.placeholder)
+  , []);
+  
+  const categories = useMemo(() => ['Semua', ...Array.from(new Set(images.map(item => item.category)))], [images]);
+
+  const filteredImages = useMemo(() => 
+    filter === 'Semua' ? images : images.filter(item => item.category === filter)
+  , [filter, images]);
 
   return (
     <SidebarProvider>
@@ -90,8 +117,19 @@ export default function PortofolioPage() {
                 </CardHeader>
                 <Separator />
                 <CardContent className="p-6 md:p-8">
+                  <div className="mb-6 flex flex-wrap items-center justify-center gap-2">
+                    {categories.map((category) => (
+                      <Button
+                        key={category}
+                        variant={filter === category ? 'default' : 'outline'}
+                        onClick={() => setFilter(category)}
+                      >
+                        {category}
+                      </Button>
+                    ))}
+                  </div>
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
-                    {images.map((item) => (
+                    {filteredImages.map((item) => (
                       <Dialog key={item.id}>
                         <DialogTrigger asChild>
                           <Card className="group relative cursor-pointer overflow-hidden rounded-lg">
