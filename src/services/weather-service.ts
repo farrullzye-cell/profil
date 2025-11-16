@@ -50,6 +50,9 @@ export async function getWeather(city: string): Promise<WeatherCondition> {
         const response = await fetch(forecastUrl);
         if (!response.ok) {
             const errorData = await response.json();
+            if (response.status === 401) {
+                throw new Error("API Key tidak valid atau belum aktif. Pastikan Anda telah menyalin API key dengan benar dari dashboard OpenWeatherMap dan tunggu beberapa saat jika key baru dibuat.");
+            }
             throw new Error(`Gagal mengambil data cuaca: ${errorData.message}`);
         }
         const data = await response.json();
@@ -79,8 +82,8 @@ export async function getWeather(city: string): Promise<WeatherCondition> {
             iconUrl: `https://openweathermap.org/img/wn/${currentIcon}@2x.png`
         };
 
-    } catch (error) {
+    } catch (error: any) {
         console.error("Error fetching weather data:", error);
-        throw new Error("Tidak dapat terhubung ke layanan cuaca.");
+        throw new Error(error.message || "Tidak dapat terhubung ke layanan cuaca.");
     }
 }
