@@ -16,6 +16,9 @@ import { Button } from '@/components/ui/button';
 import {
   Dialog,
   DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
 
@@ -184,14 +187,18 @@ export default function PortofolioPage() {
                                 </Card>
                                 </DialogTrigger>
                                 <DialogContent className="max-w-3xl p-0">
-                                <Image
-                                    src={item.placeholder!.imageUrl}
-                                    alt={item.title}
-                                    width={1200}
-                                    height={1200}
-                                    className="h-auto w-full rounded-lg object-contain"
-                                    data-ai-hint={item.placeholder!.imageHint}
-                                    />
+                                  <DialogHeader className="sr-only">
+                                    <DialogTitle>{item.title}</DialogTitle>
+                                    <DialogDescription>Gambar {item.title} dari galeri kopi.</DialogDescription>
+                                  </DialogHeader>
+                                  <Image
+                                      src={item.placeholder!.imageUrl}
+                                      alt={item.title}
+                                      width={1200}
+                                      height={1200}
+                                      className="h-auto w-full rounded-lg object-contain"
+                                      data-ai-hint={item.placeholder!.imageHint}
+                                      />
                                 </DialogContent>
                             </Dialog>
                             ))}
