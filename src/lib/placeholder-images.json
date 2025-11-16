@@ -33,8 +33,8 @@
     {
       "id": "project-image-2",
       "description": "Placeholder for project image about coffee roasting",
-      "imageUrl": "https://images.unsplash.com/photo-1447290941546-4a4c489338df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjByb2FzdGluZ3xlbnwwfHx8fDE3NjM0MTE1NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "coffee roasting"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBJzSaBWlo5B-eRkvOx3MVRo4Ff5fpi4e5yo9jEHQqRhhe7sWAv1A6-tQ&s=10",
+      "imageHint": "coffee map"
     },
     {
       "id": "about-image-1",
@@ -134,43 +134,43 @@
     },
     {
       "id": "semarang-coffee-3",
-      "description": "Moment Coffee & Space, tempat populer untuk belajar dan diskusi bagi mahasiswa.",
+      "description": "Populer di kalangan mahasiswa, tempat ini menawarkan ruang yang nyaman untuk belajar dan berdiskusi sambil ditemani secangkir kopi.",
       "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/df/70/0a/img20180507122835-largejpg.jpg?w=1200&h=1200&s=1",
       "imageHint": "students studying"
     },
     {
       "id": "semarang-coffee-4",
-      "description": "Anak Panah Kopi, destinasi utama specialty coffee dengan desain modern di pusat kota.",
+      "description": "Destinasi utama specialty coffee dengan desain modern di pusat kota.",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMouAwMjtY35e2j1logy8KXxsidT8Pb2Ih6QclkbcDVsMcNFqht7puQs&s=10",
       "imageHint": "modern coffee"
     },
     {
       "id": "semarang-coffee-5",
-      "description": "Kofitiere, kedai kopi kecil yang homey dengan barista ramah dan kopi berkualitas.",
+      "description": "Kedai kopi kecil yang homey dengan kualitas kopi yang tidak main-main. Barista yang ramah siap merekomendasikan kopi terbaik untukmu.",
       "imageUrl": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3p5JTIwY29mZmVlJTIwc2hvcHxlbnwwfHx8fDE3NjUzMzYxMjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cozy coffee"
     },
     {
       "id": "semarang-coffee-6",
-      "description": "Toko Kopi Tuku, pelopor es kopi susu kekinian yang cocok untuk dibawa pergi.",
+      "description": "Pelopor es kopi susu kekinian yang cocok untuk dibawa pergi.",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv28ytpttv0Dx28no4kXytoxefdwerGLfsyEi-6xBlcCA1vXHpfXa2B_Y&s=10",
       "imageHint": "iced coffee"
     },
     {
       "id": "semarang-coffee-7",
-      "description": "Goodfellas Resto & Coffee, menawarkan pengalaman ngopi dengan pemandangan kota.",
+      "description": "Menawarkan pengalaman ngopi dengan pemandangan kota.",
       "imageUrl": "https://asset-2.tribunnews.com/tribunnews/foto/images/preview/restoran-goodfellas-semarang-sajikan-makanan-eropa_20151007_122851.jpg",
       "imageHint": "rooftop cafe"
     },
     {
       "id": "semarang-coffee-8",
-      "description": "Legend Coffee, surga 24 jam bagi para gamer dan pekerja malam dengan internet kencang.",
+      "description": "Buka 24 jam dengan internet kencang, menjadi surga bagi para gamer dan mereka yang butuh tempat kerja hingga larut malam.",
       "imageUrl": "https://assets.ladiestory.id/gallery/1637212169-legend-coffee-semarang.jpg",
       "imageHint": "late night cafe"
     },
     {
       "id": "semarang-coffee-9",
-      "description": "Kairos Coffee, pelopor specialty coffee dengan interior industrial dan area outdoor asri.",
+      "description": "Salah satu pelopor specialty coffee di Semarang dengan interior industrial yang luas dan area outdoor yang asri untuk bersantai.",
       "imageUrl": "https://assets.kompasiana.com/items/album/2024/12/02/whatsapp-image-2024-12-02-at-10-15-31-674d2663c925c46b6a6cb492.jpeg?t=o&v=350",
       "imageHint": "industrial cafe"
     },
