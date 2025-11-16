@@ -11,6 +11,8 @@ import { useSidebar } from '@/components/ui/sidebar';
 export function AppHeader() {
   const { toggleSidebar } = useSidebar();
   const userAvatar = PlaceHolderImages.find((p) => p.id === 'user-avatar-1');
+  const phoneNumber = "6285848651208";
+  const message = encodeURIComponent("Assalamualaikum, saya lihat profilmu! wkwk");
 
   return (
     <header className="flex h-14 shrink-0 items-center gap-4 border-b bg-card px-4 lg:h-[60px] lg:px-6">
@@ -42,10 +44,12 @@ export function AppHeader() {
           <Search className="h-5 w-5" />
           <span className="sr-only">Cari</span>
         </Button>
-        <Button variant="ghost" size="icon">
-          <Phone className="h-5 w-5" />
-          <span className="sr-only">Panggil</span>
-        </Button>
+        <a href={`https://wa.me/${phoneNumber}?text=${message}`} target="_blank" rel="noopener noreferrer">
+          <Button variant="ghost" size="icon">
+            <Phone className="h-5 w-5" />
+            <span className="sr-only">Panggil</span>
+          </Button>
+        </a>
         <Button variant="ghost" size="icon">
           <MoreVertical className="h-5 w-5" />
           <span className="sr-only">Opsi lainnya</span>
