@@ -45,6 +45,12 @@ const nextConfig: NextConfig = {
         hostname: 'ik.imagekit.io',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'd1r9hss9q19p18.cloudfront.net',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
