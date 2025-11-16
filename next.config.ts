@@ -63,6 +63,12 @@ const nextConfig: NextConfig = {
         hostname: 'asset-2.tribunnews.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'assets.ladiestory.id',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
