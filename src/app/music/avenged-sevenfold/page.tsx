@@ -10,7 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Guitar, Music, Play, Pause, Rewind, FastForward, Volume2, Cast } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useMemo, useState } from 'react';
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Progress } from '@/components/ui/progress';
 import { Slider } from '@/components/ui/slider';
 
@@ -157,6 +157,10 @@ export default function AvengedSevenfoldPage() {
 
                     {selectedSong && (
                         <DialogContent className="max-w-sm rounded-2xl border-none bg-neutral-900/80 p-4 text-white backdrop-blur-xl">
+                           <DialogHeader className="sr-only">
+                             <DialogTitle>Pemutar Musik: {selectedSong.title}</DialogTitle>
+                             <DialogDescription>Memutar lagu {selectedSong.title} oleh Avenged Sevenfold dari album {selectedSong.album}.</DialogDescription>
+                           </DialogHeader>
                            <div className="space-y-4">
                                 {selectedSong.placeholder && (
                                      <Image
