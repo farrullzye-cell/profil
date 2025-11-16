@@ -7,13 +7,11 @@ import { AppSidebar } from '@/components/app-sidebar';
 import { AppFooter } from '@/components/app-footer';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Guitar, Music, Play, Pause, Rewind, FastForward, Volume2, Cast, VolumeX, Volume1, Mic, Drum, Quote } from 'lucide-react';
+import { Guitar, Music, Mic, Drum, Quote } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { useMemo, useState, useEffect } from 'react';
+import { useMemo, useState } from 'react';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
-import { Progress } from '@/components/ui/progress';
-import { Slider } from '@/components/ui/slider';
-import { Button } from '@/components/ui/button';
+import { ScrollArea } from '@/components/ui/scroll-area';
 
 const songsData = [
   {
@@ -187,7 +185,7 @@ export default function AvengedSevenfoldPage() {
                     </div>
 
                     {selectedSong && (
-                        <DialogContent className="max-w-2xl rounded-2xl border-none bg-neutral-900/90 p-0 text-white backdrop-blur-2xl">
+                        <DialogContent className="max-h-[90svh] max-w-2xl rounded-2xl border-none bg-neutral-900/90 p-0 text-white backdrop-blur-2xl flex flex-col">
                            <DialogHeader className="sr-only">
                              <DialogTitle>Detail Lagu: {selectedSong.title}</DialogTitle>
                              <DialogDescription>Deskripsi mendalam tentang lagu {selectedSong.title} oleh Avenged Sevenfold.</DialogDescription>
@@ -211,7 +209,8 @@ export default function AvengedSevenfoldPage() {
                                      <p className="text-lg text-neutral-300">Avenged Sevenfold - {selectedSong.album} ({selectedSong.year})</p>
                                 </div>
                            </div>
-                           <div className="space-y-6 p-6 pt-4">
+                           <ScrollArea className="flex-1">
+                            <div className="space-y-6 p-6 pt-4">
                                 <div className="flex items-start gap-4 rounded-lg bg-white/5 p-4">
                                     <Quote className="h-6 w-6 shrink-0 translate-y-1 text-primary"/>
                                     <p className="text-neutral-300 leading-relaxed italic">"{selectedSong.description}"</p>
@@ -233,7 +232,8 @@ export default function AvengedSevenfoldPage() {
                                         <p className="text-xs text-neutral-400">Drummer</p>
                                     </div>
                                 </div>
-                           </div>
+                            </div>
+                           </ScrollArea>
                         </DialogContent>
                     )}
                 </Dialog>
