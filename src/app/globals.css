@@ -81,3 +81,16 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .collapsible-content {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  .collapsible-content[data-state='open'] {
+    max-height: 500px; /* Adjust if content is taller */
+    opacity: 1;
+  }
+}
