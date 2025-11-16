@@ -14,7 +14,8 @@ import {
   Route,
   BarChart2,
   Sparkles,
-  ChevronDown
+  ChevronDown,
+  Music
 } from 'lucide-react';
 
 import {
@@ -42,6 +43,7 @@ export function AppSidebar() {
     { icon: Sparkles, label: 'Keahlian', href: '/keahlian' },
     { icon: LayoutGrid, label: 'Portofolio', href: '/portofolio' },
     { icon: Flame, label: 'Riwayat', href: '/riwayat' },
+    { icon: Music, label: 'Music Favorit', href: '/music-favorit' },
   ];
   
   const coffeeMenuItems = [
