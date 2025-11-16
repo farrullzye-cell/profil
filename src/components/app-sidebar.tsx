@@ -58,6 +58,7 @@ export function AppSidebar() {
   const musicMenuItems = [
     { icon: Guitar, label: 'Avenged Sevenfold', href: '/music/avenged-sevenfold' },
     { icon: Users, label: 'Slipknot', href: '/music/slipknot' },
+    { icon: Music, label: 'Green Day', href: '/music/green-day' },
   ];
 
   const [openCollapsible, setOpenCollapsible] = React.useState('Profil');
