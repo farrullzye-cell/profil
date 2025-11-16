@@ -34,7 +34,6 @@ export function AppSidebar() {
     { icon: Sparkles, label: 'Keahlian', href: '/keahlian' },
     { icon: LayoutGrid, label: 'Portofolio', href: '/portofolio' },
     { icon: Flame, label: 'Riwayat', href: '/riwayat' },
-    { icon: BookText, label: 'Blog', href: '#' },
   ];
 
   const contactMenuItems = [{ icon: Mail, label: 'Kontak', href: '#' }];
