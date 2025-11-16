@@ -17,28 +17,28 @@ const coffeeShops = [
         id: 'semarang-coffee-1',
         name: 'Antarakata Coffee',
         address: 'Jl. Ahmad Yani, Semarang',
-        description: 'Dikenal dengan suasana yang nyaman untuk bekerja dan interior yang minimalis. Kopi mereka di-roasting sendiri, menjanjikan rasa yang otentik.',
+        description: 'Menawarkan suasana yang tenang dan modern dengan pencahayaan hangat, cocok untuk fokus bekerja atau sekadar menikmati kopi berkualitas.',
         mapsUrl: 'https://maps.app.goo.gl/y5jPSENB6y2k8a1g6'
     },
     {
         id: 'semarang-coffee-2',
         name: 'Eastman Coffee House',
-        address: 'Jl. Rinjani, Semarang',
-        description: 'Menggabungkan kedai kopi dengan nuansa bangunan kolonial yang klasik. Tempat yang luas dan cocok untuk bersantai atau bertemu teman.',
+        address: 'Jl. Ahmad Yani No.140, Semarang',
+        description: 'Berlokasi di sebuah bangunan peninggalan kolonial yang megah, Eastman menyajikan perpaduan klasik dan modern. Tempat yang sempurna untuk ngopi cantik.',
         mapsUrl: 'https://maps.app.goo.gl/3QW6B8rGzUfS1aZb7'
     },
     {
         id: 'semarang-coffee-3',
         name: 'Moment Coffee & Space',
         address: 'Jl. Pleburan, Semarang',
-        description: 'Tempat yang populer di kalangan mahasiswa karena lokasinya yang dekat dengan universitas. Menawarkan ruang yang nyaman untuk belajar dan diskusi.',
+        description: 'Populer di kalangan mahasiswa, tempat ini menawarkan ruang yang nyaman untuk belajar dan berdiskusi sambil ditemani secangkir kopi.',
         mapsUrl: 'https://maps.app.goo.gl/sM39N1N9vj9H2b4r8'
     },
     {
         id: 'semarang-coffee-4',
         name: 'Anak Panah Kopi',
         address: 'Jl. MH Thamrin, Semarang',
-        description: 'Cabang dari brand kopi terkenal yang menyajikan berbagai pilihan biji kopi spesialti. Desainnya modern dan selalu ramai pengunjung.',
+        description: 'Dengan desain yang modern dan bar yang sibuk, tempat ini menjadi salah satu destinasi utama para pencari kopi spesialti di pusat kota.',
         mapsUrl: 'https://maps.app.goo.gl/j4x3X2rQhK8yv78x9'
     },
     {
@@ -52,7 +52,7 @@ const coffeeShops = [
         id: 'semarang-coffee-6',
         name: 'Toko Kopi Tuku',
         address: 'Jl. Gajahmada, Semarang',
-        description: 'Pelopor es kopi susu kekinian di Indonesia, kini hadir di Semarang. Tempatnya mungil, lebih fokus untuk pesanan take-away.',
+        description: 'Pelopor es kopi susu kekinian yang terkenal. Cocok untuk Anda yang ingin memesan kopi favorit dengan cepat untuk dibawa pergi.',
         mapsUrl: 'https://maps.app.goo.gl/yT75v2h2vXz3N6mJ8'
     },
     {
@@ -65,15 +65,15 @@ const coffeeShops = [
     {
         id: 'semarang-coffee-8',
         name: 'Legend Coffee',
-        address: 'Jl. Sriwijaya, Semarang',
-        description: 'Buka 24 jam dengan fasilitas internet yang kencang, menjadikannya surga bagi para gamer dan mereka yang butuh tempat kerja hingga larut malam.',
+        address: 'Jl. Trilomba Juang, Semarang',
+        description: 'Buka 24 jam dengan internet kencang, menjadi surga bagi para gamer dan mereka yang butuh tempat kerja hingga larut malam.',
         mapsUrl: 'https://maps.app.goo.gl/C2oE9hJg1L5fP5kS7'
     },
     {
         id: 'semarang-coffee-9',
         name: 'Kairos Coffee',
         address: 'Jl. Letjen S. Parman, Semarang',
-        description: 'Salah satu pelopor specialty coffee di Semarang dengan interior yang modern dan industrial. Tempatnya luas dengan area outdoor yang asri.',
+        description: 'Salah satu pelopor specialty coffee di Semarang dengan interior industrial yang luas dan area outdoor yang asri untuk bersantai.',
         mapsUrl: 'https://maps.app.goo.gl/qYmCgA7hZ4XqVvG5A'
     }
 ];
