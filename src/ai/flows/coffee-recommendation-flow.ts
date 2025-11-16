@@ -10,13 +10,13 @@
 import { ai } from '@/ai/genkit';
 import { z } from 'zod';
 
-export const CoffeeRecommendationInputSchema = z.object({
+const CoffeeRecommendationInputSchema = z.object({
   city: z.string().describe('Kota saat ini, contoh: Semarang'),
   weather: z.string().describe('Kondisi cuaca saat ini, contoh: Cerah, Hujan, Berawan'),
 });
 export type CoffeeRecommendationInput = z.infer<typeof CoffeeRecommendationInputSchema>;
 
-export const CoffeeRecommendationOutputSchema = z.object({
+const CoffeeRecommendationOutputSchema = z.object({
   coffeeName: z.string().describe('Nama biji kopi atau minuman kopi yang direkomendasikan.'),
   reason: z.string().describe('Alasan singkat mengapa kopi ini cocok untuk cuaca dan kota yang diberikan.'),
   tastingNotes: z.array(z.string()).describe('Tiga atau empat catatan rasa utama dari kopi yang direkomendasikan.'),
