@@ -11,6 +11,10 @@ import {
   Sparkles,
   User,
   LayoutGrid,
+  ShieldQuestion,
+  Crown,
+  HelpCircle,
+  PenSquare,
 } from 'lucide-react';
 
 import {
@@ -34,6 +38,13 @@ export function AppSidebar() {
     { icon: Sparkles, label: 'Keahlian', href: '/keahlian' },
     { icon: LayoutGrid, label: 'Portofolio', href: '/portofolio' },
     { icon: Flame, label: 'Riwayat', href: '/riwayat' },
+  ];
+  
+  const interactionMenuItems = [
+    { icon: ShieldQuestion, label: 'Anonymous Talk', href: '#' },
+    { icon: Crown, label: 'Special Chat (VIP)', href: '#' },
+    { icon: HelpCircle, label: 'Ask Me Anything', href: '#' },
+    { icon: PenSquare, label: 'Feedback / Pesan', href: '#' },
   ];
 
   const contactMenuItems = [{ icon: Mail, label: 'Kontak', href: '#' }];
@@ -76,6 +87,32 @@ export function AppSidebar() {
           </SidebarMenu>
         </SidebarGroup>
 
+        <SidebarGroup>
+          <SidebarGroupLabel>Interaksi &amp; Komunikasi</SidebarGroupLabel>
+          <SidebarMenu>
+            {interactionMenuItems.map((item, index) => (
+              <SidebarMenuItem key={index}>
+                <Link href={item.href} passHref>
+                  <SidebarMenuButton
+                    asChild
+                    tooltip={{
+                      children: item.label,
+                      side: 'right',
+                      align: 'center',
+                    }}
+                    isActive={pathname === item.href}
+                  >
+                    <div>
+                      <item.icon />
+                      <span>{item.label}</span>
+                    </div>
+                  </SidebarMenuButton>
+                </Link>
+              </SidebarMenuItem>
+            ))}
+          </SidebarMenu>
+        </SidebarGroup>
+        
         <SidebarGroup>
           <SidebarGroupLabel>Lainnya</SidebarGroupLabel>
           <SidebarMenu>
