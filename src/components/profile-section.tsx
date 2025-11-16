@@ -127,7 +127,39 @@ export function ProfileSection() {
             </div>
              <div className="space-y-2">
               <div className="flex items-center justify-between">
-                <span className="font-medium">Bean Roasting</span>
+                <div className="flex items-center gap-2">
+                    <span className="font-medium">Bean Roasting</span>
+                </div>
+                <span className="text-sm text-muted-foreground">85%</span>
+              </div>
+              <Progress value={85} />
+            </div>
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <Coffee className="h-5 w-5" />
+                  <span className="font-medium">Cortado</span>
+                </div>
+                <span className="text-sm text-muted-foreground">92%</span>
+              </div>
+              <Progress value={92} />
+            </div>
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <Coffee className="h-5 w-5" />
+                  <span className="font-medium">Ristretto</span>
+                </div>
+                <span className="text-sm text-muted-foreground">88%</span>
+              </div>
+              <Progress value={88} />
+            </div>
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <Coffee className="h-5 w-5" />
+                  <span className="font-medium">Lungo</span>
+                </div>
                 <span className="text-sm text-muted-foreground">85%</span>
               </div>
               <Progress value={85} />
