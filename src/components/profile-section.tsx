@@ -79,7 +79,7 @@ export function ProfileSection() {
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <Card>
               {projectImage1 && 
-                <Image src={projectImage1.imageUrl} alt="Proyek 1" width={400} height={250} className="rounded-t-lg object-cover" data-ai-hint={projectImage1.imageHint} />
+                <Image src={projectImage1.imageUrl} alt="Jurnal Seduh Digital" width={400} height={250} className="rounded-t-lg object-cover" data-ai-hint={projectImage1.imageHint} />
               }
               <CardContent className="p-4">
                 <h4 className="font-semibold">Jurnal Seduh Digital</h4>
@@ -88,7 +88,7 @@ export function ProfileSection() {
             </Card>
             <Card>
               {projectImage2 && 
-                <Image src={projectImage2.imageUrl} alt="Proyek 2" width={400} height={250} className="rounded-t-lg object-cover" data-ai-hint={projectImage2.imageHint} />
+                <Image src={projectImage2.imageUrl} alt="Peta Kedai Kopi" width={400} height={250} className="rounded-t-lg object-cover" data-ai-hint={projectImage2.imageHint} />
               }
               <CardContent className="p-4">
                 <h4 className="font-semibold">Peta Kedai Kopi</h4>
@@ -205,7 +205,7 @@ export function ProfileSection() {
             <li className="flex items-center gap-4">
               <Mail className="h-5 w-5 text-muted-foreground" />
               <div className="flex flex-col text-left">
-                <span className="text-foreground">email.anda@example.com</span>
+                <span className="text-foreground">support@arulfaathirweb.my.id</span>
                 <span className="text-xs text-muted-foreground">Email</span>
               </div>
             </li>
