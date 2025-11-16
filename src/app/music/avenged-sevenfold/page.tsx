@@ -7,9 +7,12 @@ import { AppSidebar } from '@/components/app-sidebar';
 import { AppFooter } from '@/components/app-footer';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Guitar, Music } from 'lucide-react';
+import { Guitar, Music, Play, Pause, Rewind, FastForward, Volume2, Cast } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { Progress } from '@/components/ui/progress';
+import { Slider } from '@/components/ui/slider';
 
 const songsData = [
   {
@@ -92,12 +95,16 @@ const songsData = [
   }
 ];
 
+type Song = (typeof songsData)[0] & { placeholder: (typeof PlaceHolderImages)[0] | undefined };
+
 export default function AvengedSevenfoldPage() {
-  const songsWithImages = useMemo(() =>
+  const songsWithImages: Song[] = useMemo(() =>
     songsData.map(song => ({
         ...song,
         placeholder: PlaceHolderImages.find(p => p.id === song.albumId)
     })), []);
+
+  const [selectedSong, setSelectedSong] = useState<Song | null>(null);
 
   return (
     <SidebarProvider>
@@ -118,33 +125,74 @@ export default function AvengedSevenfoldPage() {
                         </div>
                     </CardHeader>
                 </Card>
+                <Dialog>
+                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                        {songsWithImages.map((song, index) => (
+                            <DialogTrigger asChild key={index} onClick={() => setSelectedSong(song)}>
+                                <Card className="group flex cursor-pointer flex-col overflow-hidden rounded-lg shadow-md transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl">
+                                    {song.placeholder && (
+                                        <div className="relative h-48 w-full">
+                                            <Image
+                                                src={song.placeholder.imageUrl}
+                                                alt={`Album art for ${song.album}`}
+                                                fill
+                                                objectFit="cover"
+                                                data-ai-hint={song.placeholder.imageHint}
+                                            />
+                                            <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition-opacity group-hover:opacity-100">
+                                                <Music className="h-16 w-16 text-white" />
+                                            </div>
+                                        </div>
+                                    )}
+                                    <CardHeader>
+                                        <CardTitle className="text-lg text-primary">{song.title}</CardTitle>
+                                        <CardDescription className="flex items-center gap-2 pt-1">
+                                            {song.album} &middot; {song.year}
+                                        </CardDescription>
+                                    </CardHeader>
+                                </Card>
+                            </DialogTrigger>
+                        ))}
+                    </div>
 
-                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {songsWithImages.map((song, index) => (
-                        <Card key={index} className="group flex flex-col overflow-hidden rounded-lg shadow-md transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl">
-                            {song.placeholder && (
-                                <div className="relative h-48 w-full">
-                                    <Image
-                                        src={song.placeholder.imageUrl}
-                                        alt={`Album art for ${song.album}`}
-                                        fill
-                                        objectFit="cover"
-                                        data-ai-hint={song.placeholder.imageHint}
+                    {selectedSong && (
+                        <DialogContent className="max-w-sm rounded-2xl border-none bg-neutral-900/80 p-4 text-white backdrop-blur-xl">
+                           <div className="space-y-4">
+                                {selectedSong.placeholder && (
+                                     <Image
+                                        src={selectedSong.placeholder.imageUrl}
+                                        alt={`Album art for ${selectedSong.album}`}
+                                        width={400}
+                                        height={400}
+                                        className="rounded-lg object-cover"
+                                        data-ai-hint={selectedSong.placeholder.imageHint}
                                     />
-                                    <div className="absolute inset-0 bg-black/50 opacity-0 transition-opacity group-hover:opacity-100 flex items-center justify-center">
-                                        <Music className="h-16 w-16 text-white" />
+                                )}
+                                <div>
+                                    <h3 className="text-2xl font-bold">{selectedSong.title}</h3>
+                                    <p className="text-lg text-neutral-300">Avenged Sevenfold</p>
+                                </div>
+                                <div className="space-y-1">
+                                    <Progress value={25} className="h-1 bg-neutral-600"/>
+                                    <div className="flex justify-between text-xs font-mono text-neutral-400">
+                                        <span>1:03</span>
+                                        <span>-3:45</span>
                                     </div>
                                 </div>
-                            )}
-                            <CardHeader>
-                                <CardTitle className="text-lg text-primary">{song.title}</CardTitle>
-                                <CardDescription className="flex items-center gap-2 pt-1">
-                                    {song.album} &middot; {song.year}
-                                </CardDescription>
-                            </CardHeader>
-                        </Card>
-                    ))}
-                </div>
+                                <div className="flex items-center justify-between">
+                                    <Rewind className="h-8 w-8 text-neutral-300"/>
+                                    <Pause className="h-12 w-12 text-white"/>
+                                    <FastForward className="h-8 w-8 text-neutral-300"/>
+                                </div>
+                                <div className="flex items-center gap-4">
+                                    <Volume2 className="h-5 w-5 text-neutral-400"/>
+                                    <Slider defaultValue={[40]} max={100} step={1} className="w-full [&>span]:h-1 [&>span>span]:bg-white [&>span>span]:h-1 [&>span>span]:w-1"/>
+                                    <Cast className="h-5 w-5 text-neutral-400"/>
+                                </div>
+                           </div>
+                        </DialogContent>
+                    )}
+                </Dialog>
             </div>
           </main>
           <AppFooter />
