@@ -41,10 +41,39 @@
         }
       },
       "required": ["anonymousId", "message", "createdAt"]
+    },
+    "vipMessage": {
+      "title": "VIP Message",
+      "description": "A message in the VIP chat room.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "The user ID of the sender."
+        },
+        "displayName": {
+          "type": "string",
+          "description": "The display name of the sender."
+        },
+        "photoURL": {
+          "type": "string",
+          "description": "The photo URL of the sender."
+        },
+        "message": {
+          "type": "string",
+          "description": "The content of the message."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The timestamp when the message was created."
+        }
+      },
+      "required": ["uid", "displayName", "message", "createdAt"]
     }
   },
   "auth": {
-    "providers": []
+    "providers": ["Google"]
   },
   "firestore": {
     "/messages/{messageId}": {
@@ -54,6 +83,10 @@
     "/anonymous_messages/{messageId}": {
       "schema": { "$ref": "#/entities/anonymousMessage" },
       "description": "Collection of anonymous chat messages."
+    },
+    "/vip_messages/{messageId}": {
+      "schema": { "$ref": "#/entities/vipMessage" },
+      "description": "Collection of VIP chat messages for authenticated users."
     }
   }
 }
