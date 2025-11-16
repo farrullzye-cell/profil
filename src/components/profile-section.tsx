@@ -52,7 +52,7 @@ export function ProfileSection() {
           <a href="https://github.com/farrullzye-cell" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
             <Github className="h-6 w-6" />
           </a>
-          <a href="#" className="text-muted-foreground hover:text-primary">
+          <a href="https://id.linkedin.com/in/arul-d-u-415292360" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
             <Linkedin className="h-6 w-6" />
           </a>
           <a href="#" className="text-muted-foreground hover:text-primary">
