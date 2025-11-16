@@ -72,13 +72,13 @@ const skillsData = [
     skills: [
       {
         name: "Protokol Cupping",
-        level: 94,
-        description: "Sangat memahami protokol cupping standar SCAA/SCA. Mampu melakukan evaluasi kopi secara objektif dan konsisten, mulai dari 'fragrance', 'aroma', hingga 'aftertaste' untuk menilai kualitas kopi secara profesional."
+        level: 30,
+        description: "Memulai perjalanan dalam memahami protokol cupping standar. Masih dalam tahap belajar untuk melakukan evaluasi kopi secara objektif dan konsisten."
       },
       {
         name: "Identifikasi Rasa & Aroma",
-        level: 96,
-        description: "Memiliki palet rasa yang terlatih untuk mengidentifikasi dan mendeskripsikan nuansa rasa dan aroma yang spesifik dalam kopi, menggunakan referensi dari 'SCA Flavor Wheel' untuk memberikan deskripsi yang akurat dan detail."
+        level: 30,
+        description: "Sedang melatih palet rasa untuk mulai mengidentifikasi nuansa rasa dan aroma dasar dalam kopi. Ini adalah area fokus untuk pengembangan diri."
       }
     ]
   }
