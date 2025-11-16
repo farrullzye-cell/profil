@@ -15,7 +15,7 @@ import { id } from 'date-fns/locale';
 import { useToast } from '@/hooks/use-toast';
 import { useAuth, useFirestore, useDoc, useUser, useCollection } from '@/firebase';
 import { addDoc, collection, serverTimestamp, query, orderBy, limit, doc, setDoc } from 'firebase/firestore';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged, type User } from 'firebase/auth';
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { FirestorePermissionError } from '@/firebase/errors';
 import { errorEmitter } from '@/firebase/error-emitter';
 
@@ -59,14 +59,15 @@ function AuthForm() {
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
         const user = userCredential.user;
         
-        // Create user profile in Firestore
         const userDocRef = doc(firestore, 'users', user.uid);
-        const newUserProfile = {
+        const newUserProfile: UserProfile = {
             uid: user.uid,
-            email: user.email,
+            email: user.email!,
             approvalStatus: 'pending',
         };
         
+        // This operation's security is handled by Firestore Rules.
+        // The rule allows a user to create their own profile document.
         setDoc(userDocRef, newUserProfile).catch(serverError => {
             const permissionError = new FirestorePermissionError({
                 path: userDocRef.path,
@@ -99,7 +100,7 @@ function AuthForm() {
   };
 
   return (
-    <div className="flex h-full flex-col items-center justify-center gap-4 text-center">
+    <div className="flex h-full flex-col items-center justify-center gap-4 text-center p-4">
         <Crown className="h-16 w-16 text-primary" />
         <h2 className="text-2xl font-bold">Akses Eksklusif VIP</h2>
         <p className="max-w-sm text-muted-foreground">
@@ -142,21 +143,22 @@ function AuthForm() {
 
 function PendingApproval() {
     const { user } = useUser();
-    const adminPhoneNumber = "6281234567890"; // Ganti dengan nomor WhatsApp Admin
+    // Ganti dengan nomor WhatsApp Admin yang sebenarnya
+    const adminPhoneNumber = "6281234567890"; 
     const message = `Halo Admin, saya telah mendaftar di Special Chat dengan email ${user?.email}. Mohon untuk menyetujui akun saya. Terima kasih.`;
     const whatsappUrl = `https://wa.me/${adminPhoneNumber}?text=${encodeURIComponent(message)}`;
 
     return (
-        <div className="flex h-full flex-col items-center justify-center gap-4 text-center">
+        <div className="flex h-full flex-col items-center justify-center gap-4 text-center p-4">
             <Hourglass className="h-16 w-16 text-primary" />
             <h2 className="text-2xl font-bold">Menunggu Persetujuan Admin</h2>
             <p className="max-w-sm text-muted-foreground">
-                Akun Anda telah berhasil dibuat. Saat ini kami sedang menunggu persetujuan dari admin.
-                Untuk mempercepat proses, Anda dapat menghubungi admin melalui WhatsApp.
+                Akun Anda telah berhasil dibuat. Silakan hubungi admin via WhatsApp untuk mempercepat proses persetujuan.
+                Admin akan mengubah status akun Anda secara manual.
             </p>
             <Button asChild>
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-2 h-5 w-5" /> Hubungi Admin via WhatsApp
+                    <ExternalLink className="mr-2 h-5 w-5" /> Hubungi Admin
                 </a>
             </Button>
         </div>
@@ -189,8 +191,26 @@ export default function SpecialChatPage() {
     return query(messagesCollection, orderBy('createdAt', 'asc'), limit(50));
   }, [messagesCollection]);
 
-  const { data: messages, loading: messagesLoading } = useCollection<VipMessage>(messagesQuery);
+  const { data: rawMessages, loading: messagesLoading } = useCollection<VipMessage>(messagesQuery);
   
+  const messages = useMemo(() => {
+    if (!rawMessages) return [];
+    if (rawMessages.length === 0 && userProfile?.approvalStatus === 'approved') {
+      return [
+        {
+          id: 'bot-welcome',
+          uid: 'bot',
+          displayName: 'System Bot',
+          photoURL: '',
+          message: `Selamat datang di Special Chat, ${user?.email}! Anda sekarang adalah anggota VIP.`,
+          isBot: true,
+          createdAt: null
+        }
+      ];
+    }
+    return rawMessages;
+  }, [rawMessages, userProfile, user]);
+
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -225,6 +245,7 @@ export default function SpecialChatPage() {
       createdAt: serverTimestamp(),
     };
 
+    // Security is handled by Firestore rules, which check for approved status.
     addDoc(messagesCollection, newMessage)
       .then(() => {
         setMessage('');
@@ -243,7 +264,7 @@ export default function SpecialChatPage() {
     if (userLoading || profileLoading) {
        return (
             <div className="flex flex-1 items-center justify-center">
-                <p className="text-muted-foreground">Memeriksa status login...</p>
+                <p className="text-muted-foreground">Memeriksa status otentikasi...</p>
             </div>
        );
     }
@@ -251,15 +272,15 @@ export default function SpecialChatPage() {
     if (!user) {
         return <AuthForm />;
     }
-
+    
     if (userProfile?.approvalStatus === 'pending') {
         return <PendingApproval />;
     }
 
     if (userProfile?.approvalStatus === 'rejected') {
-        return <div className="text-center text-red-500">Akun Anda ditolak.</div>
+        return <div className="flex flex-1 items-center justify-center text-center text-destructive p-4">Akun Anda ditolak oleh admin. Silakan hubungi admin untuk informasi lebih lanjut.</div>
     }
-
+    
     if (userProfile?.approvalStatus === 'approved') {
         return (
             <>
@@ -268,12 +289,12 @@ export default function SpecialChatPage() {
                    <div className="flex h-full items-center justify-center text-muted-foreground">
                         <p>Memuat pesan...</p>
                     </div>
-                ) : messages && messages.length > 0 ? (
+                ) : (
                     messages.map((msg) => (
                         <div key={msg.id} className={`flex items-end gap-3 ${msg.uid === user.uid ? 'justify-end' : 'justify-start'} ${msg.isBot ? 'justify-center' : ''}`}>
                             {msg.uid !== user.uid && !msg.isBot && (
                                 <Avatar className="h-8 w-8 border">
-                                    <AvatarImage src={msg.photoURL} alt={msg.displayName} />
+                                    <AvatarImage src={msg.photoURL || undefined} alt={msg.displayName} />
                                     <AvatarFallback><UserCircle className="h-5 w-5" /></AvatarFallback>
                                 </Avatar>
                             )}
@@ -296,16 +317,12 @@ export default function SpecialChatPage() {
                             </div>
                             {msg.uid === user.uid && !msg.isBot && (
                                  <Avatar className="h-8 w-8 border">
-                                    <AvatarImage src={msg.photoURL} alt={msg.displayName} />
-                                    <AvatarFallback>{user.displayName?.substring(0, 2) || user.email?.substring(0, 2) || 'Me'}</AvatarFallback>
+                                    <AvatarImage src={user.photoURL || undefined} alt={user.displayName || user.email || 'Me'} />
+                                    <AvatarFallback>{(user.email || 'Me').substring(0, 2).toUpperCase()}</AvatarFallback>
                                 </Avatar>
                             )}
                         </div>
                     ))
-                ) : (
-                    <div className="flex h-full items-center justify-center text-muted-foreground">
-                        <p>Belum ada pesan. Jadilah yang pertama!</p>
-                    </div>
                 )}
                 <div ref={messagesEndRef} />
             </div>
@@ -324,7 +341,12 @@ export default function SpecialChatPage() {
               </form>
             </div>
             </>
-        )
+        );
+    }
+
+    // Fallback case: user exists but profile doesn't. Show pending.
+    if(user && !userProfile) {
+        return <PendingApproval />;
     }
 
     return <AuthForm />;
@@ -348,7 +370,7 @@ export default function SpecialChatPage() {
                         <CardDescription className="text-muted-foreground">Ruang diskusi eksklusif untuk anggota terverifikasi.</CardDescription>
                         </div>
                     </div>
-                    {user && <Button onClick={handleLogout} variant="outline">Logout</Button>}
+                    {user && userProfile?.approvalStatus === 'approved' && <Button onClick={handleLogout} variant="outline">Logout</Button>}
                   </div>
                 </CardHeader>
               </Card>
