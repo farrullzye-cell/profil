@@ -82,6 +82,12 @@ const nextConfig: NextConfig = {
         hostname: 'd28onjpxqm95em.cloudfront.net',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'asset.kgnewsroom.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

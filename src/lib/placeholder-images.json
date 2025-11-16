@@ -117,7 +117,7 @@
     {
       "id": "portfolio-sunset-3",
       "description": "City skyline silhouette",
-      "imageUrl": "https://images.unsplash.com/photo-1524234103328-1b4b10499b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1524234103328-1b4b10499b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "city silhouette"
     },
     {
@@ -291,7 +291,7 @@
     {
       "id": "greenday-header",
       "description": "Green Day band members",
-      "imageUrl": "https://images.unsplash.com/photo-1629821321948-3a3a73836776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxHcmVlbiUyMERheSUyMGJhbmR8ZW58MHx8fHwxNzY1NjY1NDMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://asset.kgnewsroom.com/photo/pre/2024/01/27/16251987-886a-4c6f-b618-afafeb886313_jpg.jpg",
       "imageHint": "band portrait"
     }
   ]
