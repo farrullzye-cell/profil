@@ -16,6 +16,9 @@ import { useCollection, useFirestore } from '@/firebase';
 import { collection, addDoc, serverTimestamp, query, orderBy, type DocumentData } from 'firebase/firestore';
 import { formatDistanceToNow } from 'date-fns';
 import { id } from 'date-fns/locale';
+import { errorEmitter } from '@/firebase/error-emitter';
+import { FirestorePermissionError } from '@/firebase/errors';
+
 
 interface Review extends DocumentData {
   id: string;
@@ -48,34 +51,55 @@ export default function ReviewPage() {
   const { data: reviews, loading: reviewsLoading } = useCollection<Review>(reviewsQuery);
 
   const handleSubmit = async () => {
-    if (!firestore) {
+    if (!firestore || !reviewsCollection) {
         toast({ variant: "destructive", title: "Error", description: "Tidak dapat terhubung ke database." });
         return;
     }
-    setIsSubmitting(true);
-    try {
-      await addDoc(collection(firestore, 'reviews'), {
-        rating,
-        review,
-        createdAt: serverTimestamp()
-      });
-      toast({
-        title: 'Terima Kasih!',
-        description: 'Penilaian Anda berhasil dikirim dan akan ditampilkan.',
-      });
-      setRating(0);
-      setHoverRating(0);
-      setReview('');
-    } catch (error) {
-      console.error("Error adding document: ", error);
-      toast({
-        variant: "destructive",
-        title: "Gagal Mengirim",
-        description: "Terjadi kesalahan saat mengirim penilaian Anda. Silakan coba lagi.",
-      });
-    } finally {
-        setIsSubmitting(false);
+    if (rating === 0) {
+      toast({ variant: "destructive", title: "Rating kosong", description: "Mohon berikan rating bintang." });
+      return;
     }
+
+    setIsSubmitting(true);
+    
+    const newReview = {
+      rating,
+      review,
+      createdAt: serverTimestamp()
+    };
+
+    addDoc(reviewsCollection, newReview)
+    .then(() => {
+        toast({
+            title: 'Terima Kasih!',
+            description: 'Penilaian Anda berhasil dikirim dan akan ditampilkan.',
+        });
+        setRating(0);
+        setHoverRating(0);
+        setReview('');
+    })
+    .catch((error) => {
+        console.error("Error adding document: ", error);
+        
+        // Handle permission errors specifically
+        if (error.code === 'permission-denied') {
+            const permissionError = new FirestorePermissionError({
+                path: 'reviews',
+                operation: 'create',
+                requestResourceData: newReview,
+            });
+            errorEmitter.emit('permission-error', permissionError);
+        } else {
+            toast({
+                variant: "destructive",
+                title: "Gagal Mengirim",
+                description: "Terjadi kesalahan saat mengirim penilaian Anda. Silakan coba lagi.",
+            });
+        }
+    })
+    .finally(() => {
+        setIsSubmitting(false);
+    });
   };
 
   return (
