@@ -185,7 +185,7 @@ export default function AvengedSevenfoldPage() {
                     </div>
 
                     {selectedSong && (
-                        <DialogContent className="max-h-[90svh] max-w-2xl rounded-2xl border-none bg-neutral-900/90 p-0 text-white backdrop-blur-2xl flex flex-col">
+                        <DialogContent className="flex max-h-[90svh] max-w-2xl flex-col rounded-2xl border-none bg-neutral-900/90 p-0 text-white backdrop-blur-2xl">
                            <DialogHeader className="sr-only">
                              <DialogTitle>Detail Lagu: {selectedSong.title}</DialogTitle>
                              <DialogDescription>Deskripsi mendalam tentang lagu {selectedSong.title} oleh Avenged Sevenfold.</DialogDescription>
@@ -245,5 +245,3 @@ export default function AvengedSevenfoldPage() {
     </SidebarProvider>
   );
 }
-
-    
