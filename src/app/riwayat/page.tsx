@@ -1,45 +1,52 @@
 
 'use client';
 
+import React, { useState, useEffect } from 'react';
 import { AppHeader } from '@/components/app-header';
 import { AppSidebar } from '@/components/app-sidebar';
 import { AppFooter } from '@/components/app-footer';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Flame, Briefcase, GraduationCap } from 'lucide-react';
+import { Flame, GraduationCap, Coffee, Cake } from 'lucide-react';
 
-const historyItems = [
-    {
-        icon: <GraduationCap className="h-6 w-6 text-primary" />,
-        period: "2010 - 2014",
-        title: "Sarjana Teknologi Pangan",
-        subtitle: "Universitas Gadjah Mada",
-        description: "Mempelajari dasar-dasar ilmu pangan, termasuk kimia dan mikrobiologi, yang kemudian menjadi fondasi pemahaman mendalam tentang proses fermentasi dan ekstraksi pada kopi."
-    },
-    {
-        icon: <Briefcase className="h-6 w-6 text-primary" />,
-        period: "2015 - 2017",
-        title: "Quality Control Specialist",
-        subtitle: "Perusahaan Makanan & Minuman",
-        description: "Mengasah kemampuan analisis sensorik dan kontrol kualitas, memastikan konsistensi produk. Pengalaman ini sangat berharga dalam mengevaluasi profil biji kopi."
-    },
-    {
-        icon: <GraduationCap className="h-6 w-6 text-primary" />,
-        period: "2017",
-        title: "Sertifikasi Q-Grader",
-        subtitle: "Coffee Quality Institute",
-        description: "Secara resmi mendapatkan lisensi untuk menilai kualitas kopi arabika secara profesional. Sebuah pencapaian penting dalam perjalanan menjadi seorang ahli kopi."
-    },
-    {
-        icon: <Briefcase className="h-6 w-6 text-primary" />,
-        period: "2018 - Sekarang",
-        title: "Head Barista & Roaster",
-        subtitle: "Kopi Kita Roastery",
-        description: "Memimpin tim barista, mengembangkan profil sangrai, dan mengkurasi biji kopi dari seluruh nusantara. Berbagi hasrat dan pengetahuan kopi kepada komunitas."
+const RiwayatPage: React.FC = () => {
+  const [age, setAge] = useState<number | null>(null);
+
+  useEffect(() => {
+    const birthDate = new Date('2006-06-06');
+    const today = new Date();
+    let currentAge = today.getFullYear() - birthDate.getFullYear();
+    const monthDifference = today.getMonth() - birthDate.getMonth();
+    if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+      currentAge--;
     }
-];
+    setAge(currentAge);
+  }, []);
 
-export default function RiwayatPage() {
+  const historyItems = [
+    {
+        icon: <Cake className="h-6 w-6 text-primary" />,
+        period: "Juni 2006",
+        title: "Lahir ke Dunia",
+        subtitle: "Awal dari sebuah perjalanan",
+        description: "Sebuah babak baru dimulai. Dunia dengan segala rasa dan aromanya menanti untuk dijelajahi."
+    },
+    {
+        icon: <GraduationCap className="h-6 w-6 text-primary" />,
+        period: "2021 - 2024",
+        title: "Pendidikan SMA",
+        subtitle: "Masa Penemuan",
+        description: "Di tengah kesibukan akademis, ketertarikan pada dunia di luar buku pelajaran mulai tumbuh. Kunjungan sesekali ke kedai kopi lokal membuka mata pada kompleksitas rasa yang tak terduga."
+    },
+    {
+        icon: <Coffee className="h-6 w-6 text-primary" />,
+        period: "2024 - Sekarang",
+        title: "Memasuki Dunia Kopi",
+        subtitle: "Perjalanan Seorang Pemula",
+        description: `Di usia ${age || '19'} tahun, saya memutuskan untuk mendalami hobi ini lebih serius. Dari sekadar penikmat, saya mulai belajar menyeduh sendiri, bereksperimen, dan mencatat setiap hasilnya. Sebuah perjalanan yang baru dimulai.`
+    }
+  ];
+
   return (
     <SidebarProvider>
       <AppSidebar />
@@ -54,7 +61,7 @@ export default function RiwayatPage() {
                         <Flame className="h-8 w-8 text-primary" />
                         <div>
                         <CardTitle className="text-3xl font-bold text-primary">Linimasa Perjalanan</CardTitle>
-                        <CardDescription className="text-muted-foreground">Jejak langkah dalam pendidikan dan karir yang membentuk Arul Faathir.</CardDescription>
+                        <CardDescription className="text-muted-foreground">Jejak langkah awal yang membentuk Arul Faathir.</CardDescription>
                         </div>
                     </div>
                     </CardHeader>
@@ -87,3 +94,5 @@ export default function RiwayatPage() {
     </SidebarProvider>
   );
 }
+
+export default RiwayatPage;
