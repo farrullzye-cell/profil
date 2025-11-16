@@ -17,7 +17,8 @@ import {
   ChevronDown,
   Music,
   Guitar,
-  Users
+  Users,
+  Star,
 } from 'lucide-react';
 
 import {
@@ -45,6 +46,7 @@ export function AppSidebar() {
     { icon: Sparkles, label: 'Keahlian', href: '/keahlian' },
     { icon: LayoutGrid, label: 'Portofolio', href: '/portofolio' },
     { icon: Flame, label: 'Riwayat', href: '/riwayat' },
+    { icon: Star, label: 'Review', href: '/review' },
   ];
   
   const coffeeMenuItems = [

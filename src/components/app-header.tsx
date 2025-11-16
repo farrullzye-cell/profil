@@ -2,6 +2,7 @@
 'use client';
 
 import { Menu, MoreVertical, Phone, Search, Share2, Star } from 'lucide-react';
+import Link from 'next/link';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,7 +14,6 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { useSidebar } from '@/components/ui/sidebar';
 import { useToast } from '@/hooks/use-toast';
-import { RatingDialog } from './rating-dialog';
 
 export function AppHeader() {
   const { toggleSidebar } = useSidebar();
@@ -94,26 +94,26 @@ export function AppHeader() {
             <span className="sr-only">Panggil</span>
           </Button>
         </a>
-        <RatingDialog>
-            <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon">
-                <MoreVertical className="h-5 w-5" />
-                <span className="sr-only">Opsi lainnya</span>
-                </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-                <DropdownMenuItem onSelect={(e) => e.preventDefault()}>
-                    <Star className="mr-2 h-4 w-4" />
-                    <span>Beri Penilaian</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={handleShare}>
-                    <Share2 className="mr-2 h-4 w-4" />
-                    <span>Bagikan Halaman</span>
-                </DropdownMenuItem>
-            </DropdownMenuContent>
-            </DropdownMenu>
-        </RatingDialog>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="ghost" size="icon">
+              <MoreVertical className="h-5 w-5" />
+              <span className="sr-only">Opsi lainnya</span>
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuItem asChild>
+              <Link href="/review">
+                <Star className="mr-2 h-4 w-4" />
+                <span>Beri Penilaian</span>
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={handleShare}>
+              <Share2 className="mr-2 h-4 w-4" />
+              <span>Bagikan Halaman</span>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
     </header>
   );
