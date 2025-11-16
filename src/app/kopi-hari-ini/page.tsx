@@ -19,16 +19,19 @@ const PouringCoffeeLoader = () => {
                 position: relative;
                 margin: 20px auto;
               }
+              .cup-container {
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+              }
               .cup {
                 width: 80px;
                 height: 40px;
                 border: 4px solid hsl(var(--primary));
                 border-top: none;
                 border-radius: 0 0 40px 40px;
-                position: absolute;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
+                position: relative; /* Changed to relative */
                 overflow: hidden; /* This will contain the liquid */
               }
               .handle {
@@ -38,7 +41,7 @@ const PouringCoffeeLoader = () => {
                 border-left: none;
                 border-radius: 0 24px 24px 0;
                 position: absolute;
-                right: -28px;
+                right: -28px; /* Adjusted to account for border */
                 top: 4px;
               }
               .coffee {
@@ -96,13 +99,10 @@ const PouringCoffeeLoader = () => {
             <div className="coffee-loader">
                 <div className="steam"></div>
                 <div className="pour"></div>
-                <div className="cup">
-                    <div className="coffee"></div>
-                </div>
-                {/* Handle is outside the cup div to position correctly */}
-                <div style={{position: 'absolute', bottom: '20px', left: '50%', transform: 'translateX(-50%)'}}>
-                    <div style={{position: 'relative', width: '80px'}}>
-                         <div className="handle"></div>
+                <div className="cup-container">
+                    <div className="cup">
+                        <div className="coffee"></div>
+                        <div className="handle"></div>
                     </div>
                 </div>
             </div>
