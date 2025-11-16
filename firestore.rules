@@ -2,10 +2,10 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Allow public read access to messages, but no writes
+    // Allow public read and write access to messages
     match /messages/{messageId} {
       allow read: if true;
-      allow write: if false; // Initially locked down
+      allow write: if true;
     }
   }
 }
