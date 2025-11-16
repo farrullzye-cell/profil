@@ -105,7 +105,7 @@
     {
       "id": "portfolio-coffee-3",
       "description": "Morning coffee ritual",
-      "imageUrl": "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBjb2ZmZWV8ZW58MHx8fHwxNzY0NTI0MzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBjb2ZmZWV8ZW58MHx8fHwxNzY0NTI0MzYyfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "morning coffee"
     },
     {
@@ -147,13 +147,13 @@
     {
       "id": "semarang-coffee-5",
       "description": "A cozy small coffee shop corner",
-      "imageUrl": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3p5JTIwY29mZmVlJTIwc2hvcHxlbnwwfHx8fDE3NjUzMzYxMjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3p5JTIwY29mZmVlJTIwc2hvcHxlbnwwfHx8fDE3NjUzMzYxMjR8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "cozy coffee"
     },
     {
       "id": "semarang-coffee-6",
       "description": "Iced coffee to go",
-      "imageUrl": "https://images.unsplash.com/photo-1579989970950-8c20e4a7c85a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpY2VkJTIwY29mZmVlJTIwdGFrZWF3YXl8ZW58MHx8fHwxNzY1MzMzODE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579989970950-8c20e4a7c85a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpY2VkJTIwY29mZmVlJTIwdGFrZWF3YXl8ZW58MHx8fHwxNzY1MzMzODE5fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "iced coffee"
     },
     {
@@ -195,7 +195,7 @@
     {
       "id": "journey-sidamo-4",
       "description": "An Ethiopian woman performing a traditional coffee ceremony",
-      "imageUrl": "https://images.unsplash.com/photo-1582845600994-3ac7a326079b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxldGhpb3BpYW4lMjBjb2ZmZWUlMjBjZXJlbW9ueXxlbnwwfHx8fDE3NjU0MjMzMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1582845600994-3ac7a326079b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxldGhpb3BpYW4lMjBjb2ZmZWUlMjBjZXJlbW9ueXxlbnwwfHx8fDE3NjU0MjMzMzR8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "coffee ceremony"
     },
     {
@@ -203,6 +203,30 @@
       "description": "Vast coffee plantation in the mountains of Colombia",
       "imageUrl": "https://images.unsplash.com/photo-1589920155694-1b15003b306b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2xvbWJpYW4lMjBjb2ZmZWUlMjBwbGFudGF0aW9ufGVufDB8fHx8MTc2NTQyMzM1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "colombian plantation"
+    },
+    {
+      "id": "a7x-city-of-evil",
+      "description": "Album art for City of Evil",
+      "imageUrl": "https://i.imgur.com/3gXpT5o.jpeg",
+      "imageHint": "avenged sevenfold city"
+    },
+    {
+      "id": "a7x-avenged-sevenfold",
+      "description": "Album art for Avenged Sevenfold self-titled album",
+      "imageUrl": "https://i.imgur.com/3bJ4h2u.jpeg",
+      "imageHint": "avenged sevenfold album"
+    },
+    {
+      "id": "a7x-nightmare",
+      "description": "Album art for Nightmare",
+      "imageUrl": "https://i.imgur.com/C9zH22I.jpeg",
+      "imageHint": "avenged sevenfold nightmare"
+    },
+    {
+      "id": "a7x-hail-to-the-king",
+      "description": "Album art for Hail to the King",
+      "imageUrl": "https://i.imgur.com/uDk24k2.jpeg",
+      "imageHint": "avenged sevenfold king"
     }
   ]
 }
