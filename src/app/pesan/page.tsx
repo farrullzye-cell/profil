@@ -1,7 +1,7 @@
 
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 import { AppHeader } from '@/components/app-header';
 import { AppSidebar } from '@/components/app-sidebar';
 import { AppFooter } from '@/components/app-footer';
@@ -11,40 +11,46 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { PenSquare, Send, UserCircle } from 'lucide-react';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { formatDistanceToNow } from 'date-fns';
 import { id } from 'date-fns/locale';
 import { useToast } from '@/hooks/use-toast';
+import { useAuth, useFirestore } from '@/firebase';
+import { useCollection } from '@/firebase/firestore/use-collection';
+import { addDoc, collection, serverTimestamp, query, orderBy } from 'firebase/firestore';
+import { FirestorePermissionError } from '@/firebase/errors';
+import { errorEmitter } from '@/firebase/error-emitter';
 
 interface Message {
-  id: number;
+  id: string;
   name: string;
   message: string;
-  timestamp: string;
+  createdAt: {
+    seconds: number;
+    nanoseconds: number;
+  } | null;
 }
 
-const STORAGE_KEY = 'feedback-messages';
-
 export default function PesanPage() {
-  const [messages, setMessages] = useState<Message[]>([]);
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
-  const [isClient, setIsClient] = useState(false);
   const { toast } = useToast();
+  const { user } = useAuth();
+  const firestore = useFirestore();
 
-  useEffect(() => {
-    setIsClient(true);
-    try {
-      const storedMessages = localStorage.getItem(STORAGE_KEY);
-      if (storedMessages) {
-        setMessages(JSON.parse(storedMessages));
-      }
-    } catch (error) {
-      console.error("Gagal memuat pesan dari localStorage:", error);
-    }
-  }, []);
+  const messagesCollection = useMemo(() => {
+    if (!firestore) return null;
+    return collection(firestore, 'messages');
+  }, [firestore]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const messagesQuery = useMemo(() => {
+    if (!messagesCollection) return null;
+    return query(messagesCollection, orderBy('createdAt', 'desc'));
+  }, [messagesCollection]);
+
+  const { data: messages, loading } = useCollection<Message>(messagesQuery);
+  
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim() || !message.trim()) {
       toast({
@@ -54,30 +60,34 @@ export default function PesanPage() {
       });
       return;
     }
+    if (!firestore || !messagesCollection) {
+        toast({ variant: 'destructive', title: 'Error', description: 'Firestore is not initialized.' });
+        return;
+    }
 
-    const newMessage: Message = {
-      id: Date.now(),
+    const newMessage = {
       name,
       message,
-      timestamp: new Date().toISOString(),
+      createdAt: serverTimestamp(),
     };
 
-    const updatedMessages = [newMessage, ...messages];
-    setMessages(updatedMessages);
-
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedMessages));
-    } catch (error) {
-        console.error("Gagal menyimpan pesan ke localStorage:", error);
-    }
-    
-    setName('');
-    setMessage('');
-
-    toast({
-      title: "Pesan Terkirim!",
-      description: "Terima kasih atas feedback Anda.",
-    });
+    addDoc(messagesCollection, newMessage)
+      .then(() => {
+        setName('');
+        setMessage('');
+        toast({
+          title: "Pesan Terkirim!",
+          description: "Terima kasih atas feedback Anda.",
+        });
+      })
+      .catch((serverError) => {
+        const permissionError = new FirestorePermissionError({
+            path: messagesCollection.path,
+            operation: 'create',
+            requestResourceData: newMessage,
+        });
+        errorEmitter.emit('permission-error', permissionError);
+      });
   };
 
   return (
@@ -135,7 +145,11 @@ export default function PesanPage() {
                     <CardDescription>Kumpulan pesan dari para pengunjung.</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                    {isClient && messages.length > 0 ? (
+                    {loading ? (
+                       <div className="text-center text-muted-foreground py-8">
+                            <p>Memuat pesan...</p>
+                        </div>
+                    ) : messages && messages.length > 0 ? (
                         messages.map((msg) => (
                             <div key={msg.id} className="flex items-start gap-4">
                                 <Avatar className="h-10 w-10 border">
@@ -145,7 +159,7 @@ export default function PesanPage() {
                                     <div className="flex items-center justify-between">
                                         <p className="font-semibold text-primary">{msg.name}</p>
                                         <p className="text-xs text-muted-foreground">
-                                            {formatDistanceToNow(new Date(msg.timestamp), { addSuffix: true, locale: id })}
+                                            {msg.createdAt ? formatDistanceToNow(new Date(msg.createdAt.seconds * 1000), { addSuffix: true, locale: id }) : 'beberapa saat lalu'}
                                         </p>
                                     </div>
                                     <div className="mt-1 rounded-lg bg-muted/50 p-3 text-muted-foreground">
@@ -156,7 +170,7 @@ export default function PesanPage() {
                         ))
                     ) : (
                         <div className="text-center text-muted-foreground py-8">
-                            <p>{isClient ? "Belum ada pesan yang diterima." : "Memuat pesan..."}</p>
+                            <p>Belum ada pesan yang diterima.</p>
                         </div>
                     )}
                 </CardContent>
