@@ -47,33 +47,6 @@ const portfolioItems = [
   },
 ];
 
-const journeyItems = [
-    {
-        icon: <Leaf className="h-6 w-6 text-primary" />,
-        year: "Awal Mula",
-        title: "Pertemuan Pertama dengan Kopi",
-        description: "Semua berawal dari secangkir kopi hitam di sebuah kedai kecil. Bukan sekadar minuman, tapi sebuah epifani yang membuka dunia baru penuh rasa dan aroma."
-    },
-    {
-        icon: <BookOpen className="h-6 w-6 text-primary" />,
-        year: "Proses Belajar",
-        title: "Menjadi Murid Kopi",
-        description: "Melahap buku, mengikuti lokakarya, dan mengubah dapur menjadi laboratorium. Sebuah obsesi untuk memahami kopi dari biji hingga cangkir."
-    },
-    {
-        icon: <GitBranch className="h-6 w-6 text-primary" />,
-        year: "Petualangan",
-        title: "Menjelajahi Nusantara",
-        description: "Perjalanan dari Gayo hingga Ijen, bertemu para petani, dan belajar langsung dari sumbernya. Memahami bahwa kopi adalah cerita tentang tanah dan manusia."
-    },
-     {
-        icon: <Coffee className="h-6 w-6 text-primary" />,
-        year: "Saat Ini",
-        title: "Membagikan Seni Kopi",
-        description: "Berbagi hasrat dan pengetahuan melalui setiap seduhan, tulisan, dan interaksi. Menjadi narator cerita yang dibawa oleh setiap biji kopi."
-    }
-];
-
 const moodItems = [
     {
         icon: <Coffee className="h-5 w-5" />,
@@ -147,30 +120,6 @@ export default function PortofolioPage() {
                             <Button asChild variant="link" className="p-0">
                                 <Link href="/tentang-saya">Baca selengkapnya...</Link>
                             </Button>
-                        </div>
-                    </CardContent>
-                </Card>
-
-                {/* Journey Hidup */}
-                <Card>
-                    <CardHeader>
-                        <CardTitle>Journey Hidup</CardTitle>
-                        <CardDescription>Linimasa perjalanan dalam dunia kopi.</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                        <div className="relative pl-6 after:absolute after:inset-y-0 after:left-6 after:w-px after:bg-border">
-                            {journeyItems.map((item, index) => (
-                                <div key={index} className="relative mb-8 grid grid-cols-[auto_1fr] items-start gap-6">
-                                    <div className="z-10 flex h-12 w-12 items-center justify-center rounded-full bg-background ring-8 ring-background">
-                                        {item.icon}
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-muted-foreground">{item.year}</p>
-                                        <h4 className="text-lg font-semibold">{item.title}</h4>
-                                        <p className="mt-1 text-muted-foreground">{item.description}</p>
-                                    </div>
-                                </div>
-                            ))}
                         </div>
                     </CardContent>
                 </Card>
@@ -258,5 +207,3 @@ export default function PortofolioPage() {
     </SidebarProvider>
   );
 }
-
-    

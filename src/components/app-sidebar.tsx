@@ -33,7 +33,7 @@ export function AppSidebar() {
     { icon: User, label: 'Tentang Saya', href: '/tentang-saya' },
     { icon: Sparkles, label: 'Keahlian', href: '/keahlian' },
     { icon: LayoutGrid, label: 'Portofolio', href: '/portofolio' },
-    { icon: Flame, label: 'Riwayat', href: '#' },
+    { icon: Flame, label: 'Riwayat', href: '/riwayat' },
     { icon: BookText, label: 'Blog', href: '#' },
   ];
 
