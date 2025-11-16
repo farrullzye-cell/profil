@@ -69,9 +69,8 @@ const moodItems = [
 ];
 
 const quotes = [
-    "Setiap biji kopi punya cerita. Tugas saya adalah menjadi narator terbaiknya.",
-    "Di dalam secangkir kopi, kita tidak hanya menemukan rasa, tapi juga harmoni antara alam dan manusia.",
-    "Kesempurnaan secangkir kopi bukanlah tentang kerumitan, tapi tentang kejujuran rasa."
+    "Setiap biji kopi punya cerita. Tugas saya adalah menjadi pendengar yang baik.",
+    "Bukan tentang kesempurnaan, tapi tentang kemauan untuk terus mencoba dan belajar dari setiap seduhan."
 ]
 
 
@@ -100,7 +99,7 @@ export default function PortofolioPage() {
                         <Camera className="h-8 w-8 text-primary" />
                         <div>
                         <CardTitle className="text-3xl font-bold text-primary">Galeri Hidup</CardTitle>
-                        <p className="text-muted-foreground">Kumpulan momen visual, rasa, dan suasana.</p>
+                        <p className="text-muted-foreground">Kumpulan momen visual dari perjalanan kopi saya.</p>
                         </div>
                     </div>
                     </CardHeader>
@@ -115,7 +114,7 @@ export default function PortofolioPage() {
                         <Image src={userAvatar?.imageUrl || ''} alt="Arul Faathir" width={100} height={100} className="rounded-full border-4 border-primary" data-ai-hint="portrait person" />
                         <div>
                             <p className="text-muted-foreground">
-                            Saya seorang penikmat dan peracik kopi yang bersemangat, yang percaya bahwa setiap cangkir memiliki cerita. Perjalanan saya adalah tentang menjelajahi narasi tersebut, dari biji hingga seduhan terakhir.
+                            Saya seorang penikmat kopi yang baru memulai perjalanan di dunia rasa ini. Saya percaya setiap cangkir memiliki cerita unik, dan saya bersemangat untuk mempelajarinya, satu seduhan pada satu waktu.
                             </p>
                             <Button asChild variant="link" className="p-0">
                                 <Link href="/tentang-saya">Baca selengkapnya...</Link>
@@ -127,8 +126,8 @@ export default function PortofolioPage() {
                 {/* Koleksi Kopi & Mood */}
                 <Card>
                     <CardHeader>
-                        <CardTitle>Koleksi Kopi &amp; Mood</CardTitle>
-                        <CardDescription>Menemukan kopi yang tepat untuk setiap suasana.</CardDescription>
+                        <CardTitle>Menemukan Mood dalam Kopi</CardTitle>
+                        <CardDescription>Eksplorasi pribadi saya tentang bagaimana jenis kopi memengaruhi suasana hati.</CardDescription>
                     </CardHeader>
                     <CardContent className="grid gap-6 md:grid-cols-3">
                        {moodItems.map((item, index) => (
@@ -145,7 +144,7 @@ export default function PortofolioPage() {
                 {/* Quotes Pribadi */}
                  <Card>
                     <CardHeader>
-                        <CardTitle>Quotes Pribadi</CardTitle>
+                        <CardTitle>Pikiran Saat Ini</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
                         {quotes.map((quote, index) => (
@@ -161,7 +160,7 @@ export default function PortofolioPage() {
                 <Card>
                     <CardHeader>
                         <CardTitle>Galeri Kopi</CardTitle>
-                        <CardDescription>Momen-momen yang tertangkap kamera.</CardDescription>
+                        <CardDescription>Momen-momen yang tertangkap kamera selama perjalanan kopi saya.</CardDescription>
                     </CardHeader>
                     <CardContent>
                         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
