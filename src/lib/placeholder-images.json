@@ -21,8 +21,8 @@
     {
       "id": "hero-image-3",
       "description": "Placeholder for hero image with dark coffee/cafe theme",
-      "imageUrl": "https://images.unsplash.com/photo-1511920183353-3c9c93da694e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBiZWFuc3xlbnwwfHx8fDE3NjM0MTE0ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "coffee beans"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWCo9R7fcpWEXUJhH6qfhBISJzQCaKIy5N8K_rNDXTDiypHdqamK7gQA0&s=10",
+      "imageHint": "coffee latte"
     },
     {
       "id": "project-image-1",
