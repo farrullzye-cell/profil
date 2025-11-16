@@ -1,6 +1,6 @@
 'use client';
 
-import { Bookmark, MapPin, Phone, Search, Settings, User, Users } from 'lucide-react';
+import { Briefcase, Code, Mail, Search, User } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 import {
@@ -15,11 +15,9 @@ import {
 
 const menuItems = [
   { icon: User, label: 'My Profile', active: true },
-  { icon: Users, label: 'Contacts' },
-  { icon: Phone, label: 'Calls' },
-  { icon: MapPin, label: 'People Nearby' },
-  { icon: Bookmark, label: 'Saved Messages' },
-  { icon: Settings, label: 'Settings' },
+  { icon: Briefcase, label: 'Projects' },
+  { icon: Code, label: 'Skills' },
+  { icon: Mail, label: 'Contact' },
 ];
 
 export function AppSidebar() {

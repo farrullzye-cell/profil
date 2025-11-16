@@ -16,7 +16,7 @@ export function AppHeader() {
       <Button
         variant="ghost"
         size="icon"
-        className="h-9 w-9 shrink-0"
+        className="h-9 w-9 shrink-0 md:hidden"
         onClick={toggleSidebar}
       >
         <Menu className="h-5 w-5" />
@@ -26,13 +26,13 @@ export function AppHeader() {
         <Avatar className="h-10 w-10 border">
           <AvatarImage
             src={userAvatar?.imageUrl}
-            alt="User Name"
+            alt="Your Name"
             data-ai-hint={userAvatar?.imageHint}
           />
-          <AvatarFallback>UN</AvatarFallback>
+          <AvatarFallback>YN</AvatarFallback>
         </Avatar>
         <div>
-          <p className="text-sm font-semibold">User Name</p>
+          <p className="text-sm font-semibold">Your Name</p>
           <p className="text-xs text-muted-foreground">online</p>
         </div>
       </div>
