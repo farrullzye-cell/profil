@@ -93,6 +93,8 @@ export default function GreenDayPage() {
   const handleSelectSong = (song: Song) => {
     setSelectedSong(song);
   }
+  
+  const headerImage = useMemo(() => PlaceHolderImages.find(p => p.id === 'greenday-header'), []);
 
   return (
     <SidebarProvider>
@@ -102,16 +104,29 @@ export default function GreenDayPage() {
           <AppHeader />
           <main className="flex-1 overflow-y-auto p-4 md:p-8">
             <div className="mx-auto max-w-4xl space-y-8">
-                <Card className="overflow-hidden rounded-xl shadow-lg">
-                    <CardHeader className="bg-card p-6">
+                <Card className="relative h-56 overflow-hidden rounded-xl shadow-lg">
+                    {headerImage && (
+                        <>
+                            <Image
+                                src={headerImage.imageUrl}
+                                alt="Green Day band members"
+                                fill
+                                objectFit="cover"
+                                className="object-top"
+                                data-ai-hint={headerImage.imageHint}
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
+                        </>
+                    )}
+                    <div className="absolute bottom-0 p-6">
                         <div className="flex items-center gap-4">
-                            <Music className="h-8 w-8 text-primary" />
+                            <Music className="h-10 w-10 text-white" />
                             <div>
-                                <CardTitle className="text-3xl font-bold text-primary">Green Day</CardTitle>
-                                <CardDescription className="text-muted-foreground">Koleksi lagu favorit dari trio punk rock.</CardDescription>
+                                <h1 className="text-4xl font-bold text-white shadow-lg">Green Day</h1>
+                                <p className="text-lg text-neutral-200">Koleksi lagu favorit dari trio punk rock.</p>
                             </div>
                         </div>
-                    </CardHeader>
+                    </div>
                 </Card>
                 <Dialog>
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

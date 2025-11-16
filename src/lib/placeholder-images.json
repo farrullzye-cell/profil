@@ -287,6 +287,12 @@
       "description": "Album art for Insomniac",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_G35wIqY-32hA_agH-s73hXW3JgEaTqN-pA&s",
       "imageHint": "green day heart"
+    },
+    {
+      "id": "greenday-header",
+      "description": "Green Day band members",
+      "imageUrl": "https://images.unsplash.com/photo-1629821321948-3a3a73836776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxHcmVlbiUyMERheSUyMGJhbmR8ZW58MHx8fHwxNzY1NjY1NDMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "band portrait"
     }
   ]
 }
