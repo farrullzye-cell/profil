@@ -10,9 +10,9 @@ export default function Home() {
     <SidebarProvider>
       <AppSidebar />
       <SidebarInset>
-        <div className="flex h-svh flex-col bg-background">
+        <div className="flex min-h-svh flex-col bg-background">
           <AppHeader />
-          <main className="flex-1 overflow-y-auto">
+          <main className="flex-1">
             <ProfileSection />
           </main>
           <AppFooter />
