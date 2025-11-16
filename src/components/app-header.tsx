@@ -20,34 +20,34 @@ export function AppHeader() {
         onClick={toggleSidebar}
       >
         <Menu className="h-5 w-5" />
-        <span className="sr-only">Toggle Sidebar</span>
+        <span className="sr-only">Buka/Tutup Sidebar</span>
       </Button>
       <div className="hidden flex-1 cursor-pointer items-center gap-3 md:flex">
         <Avatar className="h-10 w-10 border">
           <AvatarImage
             src={userAvatar?.imageUrl}
-            alt="Your Name"
+            alt="Nama Anda"
             data-ai-hint={userAvatar?.imageHint}
           />
-          <AvatarFallback>YN</AvatarFallback>
+          <AvatarFallback>NA</AvatarFallback>
         </Avatar>
         <div>
-          <p className="text-sm font-semibold">Your Name</p>
-          <p className="text-xs text-muted-foreground">online</p>
+          <p className="text-sm font-semibold">Nama Anda</p>
+          <p className="text-xs text-muted-foreground">daring</p>
         </div>
       </div>
       <div className="flex flex-1 justify-end items-center gap-1">
         <Button variant="ghost" size="icon">
           <Search className="h-5 w-5" />
-          <span className="sr-only">Search</span>
+          <span className="sr-only">Cari</span>
         </Button>
         <Button variant="ghost" size="icon">
           <Phone className="h-5 w-5" />
-          <span className="sr-only">Call</span>
+          <span className="sr-only">Panggil</span>
         </Button>
         <Button variant="ghost" size="icon">
           <MoreVertical className="h-5 w-5" />
-          <span className="sr-only">More options</span>
+          <span className="sr-only">Opsi lainnya</span>
         </Button>
       </div>
     </header>

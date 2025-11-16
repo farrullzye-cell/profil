@@ -1,14 +1,8 @@
 'use client';
 
-import { Briefcase, Coffee, Mail, Search, User } from 'lucide-react';
+import { Mail, Search, User } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-} from '@/components/ui/sheet';
 import {
   Sidebar,
   SidebarContent,
@@ -20,8 +14,8 @@ import {
 } from '@/components/ui/sidebar';
 
 const menuItems = [
-  { icon: User, label: 'My Profile', active: true },
-  { icon: Mail, label: 'Contact' },
+  { icon: User, label: 'Profil Saya', active: true },
+  { icon: Mail, label: 'Kontak' },
 ];
 
 export function AppSidebar() {
@@ -31,7 +25,7 @@ export function AppSidebar() {
         <div className="relative">
           <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <SidebarInput
-            placeholder="Search"
+            placeholder="Cari"
             className="border-none bg-muted pl-9 focus-visible:ring-transparent"
           />
         </div>
