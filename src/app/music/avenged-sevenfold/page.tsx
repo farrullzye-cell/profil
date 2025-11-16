@@ -7,7 +7,7 @@ import { AppSidebar } from '@/components/app-sidebar';
 import { AppFooter } from '@/components/app-footer';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Guitar, Music, Play, Pause, Rewind, FastForward, Volume2, Cast, VolumeX, Volume1 } from 'lucide-react';
+import { Guitar, Music, Play, Pause, Rewind, FastForward, Volume2, Cast, VolumeX, Volume1, Mic, Drum, Quote } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useMemo, useState, useEffect } from 'react';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
@@ -22,6 +22,7 @@ const songsData = [
     year: '2007',
     albumId: 'a7x-avenged-sevenfold',
     duration: 481, // 8:01
+    description: "Sebuah epik teatrikal yang gelap dan berani, 'A Little Piece of Heaven' adalah mahakarya naratif yang menggabungkan orkestra megah dengan rock progresif. Ditulis oleh The Rev, lagu ini menceritakan kisah nekrofilia yang mengerikan dengan sentuhan humor hitam, menunjukkan kejeniusan musikalitas dan keberanian band dalam bereksperimen di luar batas genre metal. Aransemennya yang kompleks, dari brass section hingga paduan suara, menjadikannya salah satu lagu A7X yang paling ambisius dan tak terlupakan."
   },
   {
     title: 'Dear God',
@@ -29,6 +30,7 @@ const songsData = [
     year: '2007',
     albumId: 'a7x-avenged-sevenfold',
     duration: 396, // 6:36
+    description: "Menampilkan sisi yang lebih lembut dan introspektif, 'Dear God' adalah balada country rock yang menyentuh. Lagu ini mengungkapkan perasaan rindu dan kerentanan seseorang yang jauh dari orang yang dicintai. Dengan melodi gitar akustik yang hangat dan vokal M. Shadows yang penuh perasaan, lagu ini menjadi bukti fleksibilitas musikal Avenged Sevenfold dan kemampuan mereka untuk menulis lagu yang jujur dan emosional, jauh dari persona heavy metal mereka."
   },
   {
     title: 'So Far Away',
@@ -36,6 +38,7 @@ const songsData = [
     year: '2010',
     albumId: 'a7x-nightmare',
     duration: 327, // 5:27
+    description: "Sebuah elegi yang menyayat hati, 'So Far Away' adalah persembahan Avenged Sevenfold untuk mendiang drummer dan sahabat mereka, Jimmy 'The Rev' Sullivan. Liriknya yang ditulis oleh Synyster Gates mencerminkan rasa sakit kehilangan dan kenangan persahabatan abadi. Dengan melodi yang kuat dan solo gitar yang emosional, lagu ini menjadi hymne bagi siapa saja yang pernah kehilangan orang terkasih, menciptakan koneksi mendalam dengan pendengarnya."
   },
   {
     title: 'Natural Born Killer',
@@ -43,6 +46,7 @@ const songsData = [
     year: '2010',
     albumId: 'a7x-nightmare',
     duration: 315, // 5:15
+    description: "Salah satu lagu yang menampilkan kontribusi terakhir The Rev, 'Natural Born Killer' adalah nomor agresif yang didorong oleh departemen ritme yang luar biasa. Dengan pola drum yang kompleks dan vokal yang intens, lagu ini menangkap energi mentah dan kegilaan yang terkendali. Liriknya yang gelap, dipadukan dengan riff gitar yang tajam, menciptakan aura bahaya dan kekuatan primal yang menjadi ciri khas band."
   },
   {
     title: 'Seize the Day',
@@ -50,6 +54,7 @@ const songsData = [
     year: '2005',
     albumId: 'a7x-city-of-evil',
     duration: 334, // 5:34
+    description: "Sebuah power ballad klasik, 'Seize the Day' mengajak pendengar untuk menghargai waktu dan orang-orang di sekitar mereka. Lagu ini dibangun di atas progresi piano yang indah dan vokal M. Shadows yang kuat, memuncak dalam salah satu solo gitar Synyster Gates yang paling ikonik dan melodius. Video musiknya yang tragis semakin memperkuat pesan 'carpe diem' yang diusung, menjadikannya lagu yang tak lekang oleh waktu."
   },
   {
     title: 'Gunslinger',
@@ -57,6 +62,7 @@ const songsData = [
     year: '2007',
     albumId: 'a7x-avenged-sevenfold',
     duration: 251, // 4:11
+    description: "Dengan pengaruh country yang kental, 'Gunslinger' adalah ode untuk para prajurit di medan perang yang merindukan rumah. Lagu ini menggambarkan perjalanan pulang yang emosional, dipenuhi harapan untuk bertemu kembali dengan kekasih. Perpaduan gitar akustik dan riff elektrik yang membara menciptakan dinamika yang unik, menunjukkan kemampuan band untuk menceritakan kisah yang kuat melalui musik."
   },
   {
     title: 'Nightmare',
@@ -64,6 +70,7 @@ const songsData = [
     year: '2010',
     albumId: 'a7x-nightmare',
     duration: 374, // 6:14
+    description: "Sebagai lagu pembuka dari album yang sarat dengan kesedihan, 'Nightmare' adalah ledakan kemarahan dan kebingungan. Lagu ini adalah perjalanan sonik ke dalam kegelapan, dengan riff yang menghantui dan lirik yang menggambarkan neraka personal. Ini adalah lagu pertama yang dirilis setelah kepergian The Rev, dan energi serta intensitasnya seolah menjadi katarsis bagi band dan para penggemarnya."
   },
   {
     title: 'Afterlife',
@@ -71,6 +78,7 @@ const songsData = [
     year: '2007',
     albumId: 'a7x-avenged-sevenfold',
     duration: 351, // 5:51
+    description: "Menggabungkan riff metal yang cepat dengan aransemen string yang megah, 'Afterlife' adalah lagu yang mempertanyakan apa yang terjadi setelah kematian. Dengan dual-harmony gitar yang menjadi ciri khas, bridge yang diwarnai orkestra, dan lirik yang ditulis oleh The Rev, lagu ini adalah contoh sempurna dari gaya A7X yang unik: teatrikal, teknis, dan melodius. Sebuah perjalanan sonik dari dunia orang hidup ke alam baka."
   },
   {
     title: 'Buried Alive',
@@ -78,6 +86,7 @@ const songsData = [
     year: '2010',
     albumId: 'a7x-nightmare',
     duration: 404, // 6:44
+    description: "Lagu ini adalah sebuah perjalanan epik yang dimulai sebagai balada yang muram dan perlahan berubah menjadi badai heavy metal. 'Buried Alive' secara metaforis menggambarkan perasaan terjebak dalam kesedihan dan keputusasaan. Transformasi musiknya yang dramatis—dari petikan gitar bersih menjadi riff thrash metal yang brutal—mencerminkan pergulatan internal yang intens, menjadikannya salah satu komposisi A7X yang paling dinamis."
   },
   {
     title: 'Bat Country',
@@ -85,6 +94,7 @@ const songsData = [
     year: '2005',
     albumId: 'a7x-city-of-evil',
     duration: 311, // 5:11
+    description: "Terinspirasi oleh novel 'Fear and Loathing in Las Vegas', 'Bat Country' adalah ledakan energi yang liar dan tak terduga. Lagu ini menandai transisi besar dalam suara band, meninggalkan screaming metalcore untuk vokal yang lebih bersih dan struktur lagu yang lebih kompleks. Dengan riff pembuka yang ikonik dan solo gitar-bass yang gila, lagu ini menjadi hit terobosan yang melambungkan nama Avenged Sevenfold ke panggung dunia."
   },
   {
     title: 'Danger Line',
@@ -92,6 +102,7 @@ const songsData = [
     year: '2010',
     albumId: 'a7x-nightmare',
     duration: 328, // 5:28
+    description: "Sebuah narasi dari sudut pandang seorang prajurit di garis depan, 'Danger Line' adalah lagu yang kuat dan menyentuh. Liriknya yang menggambarkan saat-saat terakhir seorang prajurit terasa begitu nyata dan emosional. Outro lagu yang diisi dengan siulan melankolis di tengah suara tembakan menjadi penutup yang menghantui, meninggalkan kesan mendalam tentang pengorbanan dan tragedi perang."
   },
   {
     title: 'Hail to the King',
@@ -99,6 +110,7 @@ const songsData = [
     year: '2013',
     albumId: 'a7x-hail-to-the-king',
     duration: 305, // 5:05
+    description: "Sebuah tribut untuk para raksasa heavy metal klasik, 'Hail to the King' adalah hymne yang lugas, kuat, dan megah. Dengan tempo yang lebih lambat dan riff yang terinspirasi dari band seperti Metallica dan Megadeth, lagu ini adalah ajakan untuk ber-headbang. Kesederhanaan dan kekuatannya menjadikannya lagu yang sempurna untuk dinyanyikan bersama di arena besar, sebuah deklarasi status A7X sebagai raja baru di kancah metal modern."
   },
   {
     title: 'Shepherd of Fire',
@@ -106,23 +118,11 @@ const songsData = [
     year: '2013',
     albumId: 'a7x-hail-to-the-king',
     duration: 323, // 5:23
+    description: "Lagu pembuka album 'Hail to the King' ini langsung menyambut pendengar dengan atmosfer yang gelap dan firasat buruk. Dimulai dengan lonceng gereja dan hujan badai, 'Shepherd of Fire' membangun ketegangan sebelum meledak dengan riff yang berat dan groovy. Liriknya yang berbau satanik dan teatrikal, dipadukan dengan vokal M. Shadows yang menggeram, menciptakan aura kegelapan yang kental, seolah membuka gerbang neraka."
   }
 ];
 
 type Song = (typeof songsData)[0] & { placeholder: (typeof PlaceHolderImages)[0] | undefined };
-
-function formatTime(seconds: number) {
-    const minutes = Math.floor(seconds / 60);
-    const remainingSeconds = Math.floor(seconds % 60);
-    return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
-}
-
-const VolumeIcon = ({ volume }: { volume: number }) => {
-    if (volume === 0) return <VolumeX className="h-5 w-5 text-neutral-400"/>;
-    if (volume < 50) return <Volume1 className="h-5 w-5 text-neutral-400"/>;
-    return <Volume2 className="h-5 w-5 text-neutral-400"/>;
-};
-
 
 export default function AvengedSevenfoldPage() {
   const songsWithImages: Song[] = useMemo(() =>
@@ -132,63 +132,10 @@ export default function AvengedSevenfoldPage() {
     })), []);
 
   const [selectedSong, setSelectedSong] = useState<Song | null>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [progress, setProgress] = useState(0);
-  const [volume, setVolume] = useState([40]);
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
-
-
-  useEffect(() => {
-    let interval: NodeJS.Timeout;
-    if (isPlaying && selectedSong) {
-      interval = setInterval(() => {
-        setProgress(prev => {
-          if (prev >= 100) {
-            setIsPlaying(false);
-            return 100;
-          }
-          return prev + (100 / selectedSong.duration);
-        });
-      }, 1000);
-    }
-    return () => clearInterval(interval);
-  }, [isPlaying, selectedSong]);
-
-  useEffect(() => {
-    if (!isDialogOpen) {
-      // Reset state when dialog is closed
-      setSelectedSong(null);
-      setIsPlaying(false);
-      setProgress(0);
-    }
-  }, [isDialogOpen]);
 
   const handleSelectSong = (song: Song) => {
     setSelectedSong(song);
-    setProgress(0);
-    setIsPlaying(true); // Auto-play when a new song is selected
-    setIsDialogOpen(true);
   }
-
-  const handlePlayPause = () => {
-    if(progress >= 100) {
-        setProgress(0);
-        setIsPlaying(true);
-    } else {
-        setIsPlaying(prev => !prev);
-    }
-  }
-
-  const handleRewind = () => {
-    setProgress(prev => Math.max(0, prev - 5));
-  }
-
-  const handleFastForward = () => {
-    setProgress(prev => Math.min(100, prev + 5));
-  }
-
-  const currentTime = selectedSong ? (progress / 100) * selectedSong.duration : 0;
-  const remainingTime = selectedSong ? selectedSong.duration - currentTime : 0;
 
   return (
     <SidebarProvider>
@@ -209,7 +156,7 @@ export default function AvengedSevenfoldPage() {
                         </div>
                     </CardHeader>
                 </Card>
-                <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+                <Dialog>
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                         {songsWithImages.map((song, index) => (
                             <DialogTrigger asChild key={index} onClick={() => handleSelectSong(song)}>
@@ -223,8 +170,8 @@ export default function AvengedSevenfoldPage() {
                                                 objectFit="cover"
                                                 data-ai-hint={song.placeholder.imageHint}
                                             />
-                                            <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition-opacity group-hover:opacity-100">
-                                                <Play className="h-16 w-16 text-white fill-white" />
+                                            <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 transition-opacity group-hover:opacity-100">
+                                                <Music className="h-16 w-16 text-white" />
                                             </div>
                                         </div>
                                     )}
@@ -240,48 +187,51 @@ export default function AvengedSevenfoldPage() {
                     </div>
 
                     {selectedSong && (
-                        <DialogContent className="max-w-sm rounded-2xl border-none bg-neutral-900/80 p-6 text-white backdrop-blur-xl">
+                        <DialogContent className="max-w-2xl rounded-2xl border-none bg-neutral-900/90 p-0 text-white backdrop-blur-2xl">
                            <DialogHeader className="sr-only">
-                             <DialogTitle>Pemutar Musik: {selectedSong.title}</DialogTitle>
-                             <DialogDescription>Memutar lagu {selectedSong.title} oleh Avenged Sevenfold dari album {selectedSong.album}.</DialogDescription>
+                             <DialogTitle>Detail Lagu: {selectedSong.title}</DialogTitle>
+                             <DialogDescription>Deskripsi mendalam tentang lagu {selectedSong.title} oleh Avenged Sevenfold.</DialogDescription>
                            </DialogHeader>
-                           <div className="space-y-4">
+                           <div className="relative">
                                 {selectedSong.placeholder && (
+                                    <>
                                      <Image
                                         src={selectedSong.placeholder.imageUrl}
                                         alt={`Album art for ${selectedSong.album}`}
-                                        width={400}
-                                        height={400}
-                                        className="rounded-lg object-cover shadow-2xl"
+                                        width={800}
+                                        height={450}
+                                        className="h-56 w-full rounded-t-2xl object-cover"
                                         data-ai-hint={selectedSong.placeholder.imageHint}
                                     />
+                                     <div className="absolute inset-0 rounded-t-2xl bg-gradient-to-t from-neutral-900 via-neutral-900/70 to-transparent" />
+                                    </>
                                 )}
-                                <div>
-                                    <h3 className="text-2xl font-bold">{selectedSong.title}</h3>
-                                    <p className="text-lg text-neutral-300">Avenged Sevenfold</p>
+                                <div className="absolute bottom-0 p-6">
+                                     <h3 className="text-4xl font-bold tracking-tight">{selectedSong.title}</h3>
+                                     <p className="text-lg text-neutral-300">Avenged Sevenfold - {selectedSong.album} ({selectedSong.year})</p>
                                 </div>
-                                <div className="space-y-1">
-                                    <Progress value={progress} className="h-1 bg-neutral-600 [&>div]:bg-white"/>
-                                    <div className="flex justify-between text-xs font-mono text-neutral-400">
-                                        <span>{formatTime(currentTime)}</span>
-                                        <span>-{formatTime(remainingTime)}</span>
+                           </div>
+                           <div className="space-y-6 p-6 pt-4">
+                                <div className="flex items-start gap-4 rounded-lg bg-white/5 p-4">
+                                    <Quote className="h-6 w-6 shrink-0 translate-y-1 text-primary"/>
+                                    <p className="text-neutral-300 leading-relaxed italic">"{selectedSong.description}"</p>
+                                </div>
+                                <div className="grid grid-cols-3 gap-4 text-center">
+                                    <div className="rounded-lg bg-white/5 p-3">
+                                        <Mic className="mx-auto h-6 w-6 text-primary"/>
+                                        <p className="mt-1 text-sm font-semibold">M. Shadows</p>
+                                        <p className="text-xs text-neutral-400">Vokal</p>
                                     </div>
-                                </div>
-                                <div className="flex items-center justify-center gap-6">
-                                    <Button variant="ghost" size="icon" onClick={handleRewind} className="h-10 w-10 text-neutral-300 hover:bg-white/10 hover:text-white">
-                                        <Rewind className="h-8 w-8"/>
-                                    </Button>
-                                    <Button variant="ghost" size="icon" onClick={handlePlayPause} className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-black hover:bg-neutral-200">
-                                       {isPlaying ? <Pause className="h-10 w-10 fill-black" /> : <Play className="h-10 w-10 fill-black translate-x-0.5" />}
-                                    </Button>
-                                    <Button variant="ghost" size="icon" onClick={handleFastForward} className="h-10 w-10 text-neutral-300 hover:bg-white/10 hover:text-white">
-                                        <FastForward className="h-8 w-8"/>
-                                    </Button>
-                                </div>
-                                <div className="flex items-center gap-4 pt-2">
-                                    <VolumeIcon volume={volume[0]} />
-                                    <Slider value={volume} onValueChange={setVolume} max={100} step={1} className="w-full [&>span]:h-1 [&>span>span]:bg-white [&>span>span]:h-1 [&>span>span]:w-1 [&_button]:h-3 [&_button]:w-3 [&_button]:bg-white"/>
-                                    <Cast className="h-5 w-5 text-neutral-400"/>
+                                    <div className="rounded-lg bg-white/5 p-3">
+                                        <Guitar className="mx-auto h-6 w-6 text-primary"/>
+                                        <p className="mt-1 text-sm font-semibold">Synyster Gates</p>
+                                        <p className="text-xs text-neutral-400">Gitaris</p>
+                                    </div>
+                                     <div className="rounded-lg bg-white/5 p-3">
+                                        <Drum className="mx-auto h-6 w-6 text-primary"/>
+                                        <p className="mt-1 text-sm font-semibold">The Rev</p>
+                                        <p className="text-xs text-neutral-400">Drummer</p>
+                                    </div>
                                 </div>
                            </div>
                         </DialogContent>
