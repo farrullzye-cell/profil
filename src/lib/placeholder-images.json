@@ -69,7 +69,7 @@
     {
       "id": "portfolio-sunset-2",
       "description": "Pastel sky sunset",
-      "imageUrl": "https://images.unsplash.com/photo-1494537150333-90d2695595a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1494537150333-90d2695595a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "pastel sunset"
     },
     {
@@ -105,13 +105,13 @@
     {
       "id": "portfolio-coffee-3",
       "description": "Morning coffee ritual",
-      "imageUrl": "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBjb2ZmZWV8ZW58MHx8fHwxNzY0NTI0MzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBjb2ZmZWV8ZW58MHx8fHwxNzY0NTI0MzYyfDA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "morning coffee"
     },
     {
       "id": "portfolio-place-3",
       "description": "Old library",
-      "imageUrl": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBwbGFjZXxlbnwwfHx8fDE3NjQ1MjQ0NDF8MA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "old library"
     },
     {
@@ -227,6 +227,36 @@
       "description": "Looking out over a mountain range at sunrise, contemplating the journey ahead.",
       "imageUrl": "https://i.imgur.com/sC03p52.jpeg",
       "imageHint": "mountain sunrise"
+    },
+    {
+      "id": "slipknot-st",
+      "description": "Slipknot self-titled album",
+      "imageUrl": "https://i.imgur.com/gSnP4v2.jpeg",
+      "imageHint": "slipknot nonagram"
+    },
+    {
+      "id": "slipknot-iowa",
+      "description": "Slipknot Iowa album",
+      "imageUrl": "https://i.imgur.com/gSnP4v2.jpeg",
+      "imageHint": "slipknot nonagram"
+    },
+    {
+      "id": "slipknot-vol3",
+      "description": "Slipknot Vol. 3: (The Subliminal Verses) album",
+      "imageUrl": "https://i.imgur.com/gSnP4v2.jpeg",
+      "imageHint": "slipknot nonagram"
+    },
+    {
+      "id": "slipknot-ahig",
+      "description": "Slipknot All Hope Is Gone album",
+      "imageUrl": "https://i.imgur.com/gSnP4v2.jpeg",
+      "imageHint": "slipknot nonagram"
+    },
+    {
+      "id": "slipknot-gray",
+      "description": "Slipknot .5: The Gray Chapter album",
+      "imageUrl": "https://i.imgur.com/gSnP4v2.jpeg",
+      "imageHint": "slipknot nonagram"
     }
   ]
 }

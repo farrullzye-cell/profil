@@ -16,7 +16,8 @@ import {
   Sparkles,
   ChevronDown,
   Music,
-  Guitar
+  Guitar,
+  Users
 } from 'lucide-react';
 
 import {
@@ -56,7 +57,7 @@ export function AppSidebar() {
 
   const musicMenuItems = [
     { icon: Guitar, label: 'Avenged Sevenfold', href: '/music/avenged-sevenfold' },
-    { icon: Guitar, label: 'Slipknot', href: '/music/slipknot' },
+    { icon: Users, label: 'Slipknot', href: '/music/slipknot' },
   ];
 
   const [openCollapsible, setOpenCollapsible] = React.useState('Profil');
