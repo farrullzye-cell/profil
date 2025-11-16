@@ -3,7 +3,7 @@
     {
       "id": "user-avatar-1",
       "description": "Placeholder for user avatar",
-      "imageUrl": "https://images.unsplash.com/photo-1708426238272-994fcddabca4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMHBlcnNvbnxlbnwwfHx8fDE3NjMyMjcyODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/u3Vqkso.jpeg",
       "imageHint": "portrait person"
     },
     {
@@ -117,7 +117,7 @@
     {
       "id": "portfolio-sunset-3",
       "description": "City skyline silhouette",
-      "imageUrl": "https://images.unsplash.com/photo-1524234103328-1b4b10499b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1524234103328-1b4b10499b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "city silhouette"
     },
     {
@@ -147,13 +147,13 @@
     {
       "id": "semarang-coffee-5",
       "description": "A cozy small coffee shop corner",
-      "imageUrl": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3p5JTIwY29mZmVlJTIwc2hvcHxlbnwwfHx8fDE3NjUzMzYxMjR8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3p5JTIwY29mZmVlJTIwc2hvcHxlbnwwfHx8fDE3NjUzMzYxMjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cozy coffee"
     },
     {
       "id": "semarang-coffee-6",
       "description": "Iced coffee to go",
-      "imageUrl": "https://images.unsplash.com/photo-1579989970950-8c20e4a7c85a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpY2VkJTIwY29mZmVlJTIwdGFrZWF3YXl8ZW58MHx8fHwxNzY1MzMzODE5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579989970950-8c20e4a7c85a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpY2VkJTIwY29mZmVlJTIwdGFrZWF3YXl8ZW58MHx8fHwxNzY1MzMzODE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "iced coffee"
     },
     {
@@ -195,7 +195,7 @@
     {
       "id": "journey-sidamo-4",
       "description": "An Ethiopian woman performing a traditional coffee ceremony",
-      "imageUrl": "https://images.unsplash.com/photo-1582845600994-3ac7a326079b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxldGhpb3BpYW4lMjBjb2ZmZWUlMjBjZXJlbW9ueXxlbnwwfHx8fDE3NjU0MjMzMzR8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1582845600994-3ac7a326079b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxldGhpb3BpYW4lMjBjb2ZmZWUlMjBjZXJlbW9ueXxlbnwwfHx8fDE3NjU0MjMzMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "coffee ceremony"
     },
     {
