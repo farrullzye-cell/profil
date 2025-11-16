@@ -33,18 +33,6 @@ const PouringCoffeeLoader = () => {
                   background: hsl(var(--card));
                 }
 
-                .cup-handle {
-                  width: 28px;
-                  height: 28px;
-                  border: 4px solid hsl(var(--primary));
-                  border-left: none;
-                  border-radius: 0 28px 28px 0;
-                  position: absolute;
-                  bottom: 32px;
-                  left: 100px; /* Adjusted to position it next to the cup body */
-                  transform: translateX(-50%);
-                }
-
                 .coffee-drop {
                   width: 10px;
                   height: 20px;
@@ -76,7 +64,6 @@ const PouringCoffeeLoader = () => {
             `}</style>
             <div className="coffee-wrapper">
               <div className="cup-body"></div>
-              <div className="cup-handle"></div>
               <div className="coffee-drop"></div>
             </div>
         </>
