@@ -1,41 +1,159 @@
 
 'use client';
 
+import React, { useState, useEffect } from 'react';
 import { AppHeader } from '@/components/app-header';
 import { AppSidebar } from '@/components/app-sidebar';
 import { AppFooter } from '@/components/app-footer';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Coffee } from 'lucide-react';
+import { Separator } from '@/components/ui/separator';
+import { Coffee, Loader2, Thermometer, Cloud, Sun, CloudRain, Wind, BookOpen } from 'lucide-react';
+import { recommendCoffeeByWeather, type CoffeeRecommendationOutput } from '@/ai/flows/coffee-recommendation-flow';
+import { getWeather, WeatherCondition } from '@/services/weather-service';
+import { Badge } from '@/components/ui/badge';
+
+type RecommendationState = {
+  data: CoffeeRecommendationOutput | null;
+  weather: WeatherCondition | null;
+  loading: boolean;
+  error: string | null;
+};
+
+const WeatherIcon = ({ weather, className }: { weather: WeatherCondition | null, className?: string }) => {
+    if (!weather) return <Thermometer className={cn('h-6 w-6', className)} />;
+    switch (weather.condition) {
+        case 'Cerah': return <Sun className={cn('h-6 w-6 text-yellow-500', className)} />;
+        case 'Berawan': return <Cloud className={cn('h-6 w-6 text-sky-500', className)} />;
+        case 'Hujan': return <CloudRain className={cn('h-6 w-6 text-blue-500', className)} />;
+        default: return <Thermometer className={cn('h-6 w-6', className)} />;
+    }
+};
+
+import { cn } from "@/lib/utils";
 
 export default function KopiHariIniPage() {
-  return (
-    <SidebarProvider>
-      <AppSidebar />
-      <SidebarInset>
-        <div className="flex min-h-svh flex-col bg-background">
-          <AppHeader />
-          <main className="flex-1 overflow-y-auto p-4 md:p-8">
-            <div className="mx-auto max-w-4xl space-y-8">
-                <Card className="overflow-hidden rounded-xl shadow-lg">
-                    <CardHeader className="bg-card p-6">
-                        <div className="flex items-center gap-4">
-                            <Coffee className="h-8 w-8 text-primary" />
-                            <div>
-                                <CardTitle className="text-3xl font-bold text-primary">Kopi Hari Ini</CardTitle>
-                                <CardDescription className="text-muted-foreground">Rekomendasi dan cerita di balik kopi pilihan hari ini.</CardDescription>
-                            </div>
+    const [recommendation, setRecommendation] = useState<RecommendationState>({
+        data: null,
+        weather: null,
+        loading: true,
+        error: null,
+    });
+
+    useEffect(() => {
+        async function fetchRecommendation() {
+            try {
+                setRecommendation({ data: null, weather: null, loading: true, error: null });
+                
+                // 1. Get weather
+                const weatherData = await getWeather('Semarang');
+
+                // 2. Get coffee recommendation from AI
+                const result = await recommendCoffeeByWeather({
+                    city: 'Semarang',
+                    weather: weatherData.condition,
+                });
+
+                setRecommendation({ data: result, weather: weatherData, loading: false, error: null });
+            } catch (e) {
+                console.error(e);
+                setRecommendation({ 
+                    data: null, 
+                    weather: null,
+                    loading: false, 
+                    error: 'Gagal mendapatkan rekomendasi kopi. Silakan coba lagi nanti.' 
+                });
+            }
+        }
+        fetchRecommendation();
+    }, []);
+
+    const { data, weather, loading, error } = recommendation;
+
+    return (
+        <SidebarProvider>
+            <AppSidebar />
+            <SidebarInset>
+                <div className="flex min-h-svh flex-col bg-background">
+                    <AppHeader />
+                    <main className="flex-1 overflow-y-auto p-4 md:p-8">
+                        <div className="mx-auto max-w-2xl space-y-8">
+                            <Card className="overflow-hidden rounded-xl shadow-lg">
+                                <CardHeader className="bg-card p-6">
+                                    <div className="flex items-center gap-4">
+                                        <Coffee className="h-8 w-8 text-primary" />
+                                        <div>
+                                            <CardTitle className="text-3xl font-bold text-primary">Kopi Hari Ini</CardTitle>
+                                            <CardDescription className="text-muted-foreground">Rekomendasi AI berdasarkan cuaca di Semarang.</CardDescription>
+                                        </div>
+                                    </div>
+                                </CardHeader>
+                            </Card>
+
+                            {loading && (
+                                <div className="flex flex-col items-center justify-center rounded-xl border bg-card p-12 shadow-lg">
+                                    <Loader2 className="h-12 w-12 animate-spin text-primary" />
+                                    <p className="mt-4 text-lg font-semibold text-muted-foreground">Mencari inspirasi kopi untuk Anda...</p>
+                                    <p className="text-sm text-muted-foreground">Menyesuaikan dengan cuaca saat ini.</p>
+                                </div>
+                            )}
+
+                            {error && (
+                                <Card className="border-destructive bg-destructive/10 text-destructive-foreground">
+                                <CardContent className="p-6">
+                                    <p className="font-semibold">{error}</p>
+                                </CardContent>
+                                </Card>
+                            )}
+
+                            {data && weather && (
+                                <Card className="overflow-hidden rounded-xl shadow-lg transition-all animate-in fade-in-50">
+                                    <CardHeader className="bg-muted/50 p-6">
+                                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                                            <div className="flex items-center gap-3">
+                                                <WeatherIcon weather={weather} className="h-7 w-7" />
+                                                <div>
+                                                    <p className="text-sm text-muted-foreground">Cuaca di Semarang</p>
+                                                    <p className="text-xl font-bold text-foreground">{weather.condition}, {weather.temperature}°C</p>
+                                                </div>
+                                            </div>
+                                             <Badge variant="secondary" className="self-start sm:self-center">
+                                                Rekomendasi Hari Ini
+                                            </Badge>
+                                        </div>
+                                    </CardHeader>
+                                    <CardContent className="p-6 space-y-6">
+                                        <div>
+                                            <p className="text-sm font-semibold text-primary">Rekomendasi</p>
+                                            <h3 className="text-2xl font-bold text-accent">{data.coffeeName}</h3>
+                                        </div>
+                                        <p className="italic text-muted-foreground">"{data.reason}"</p>
+                                        
+                                        <Separator />
+
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                            <div className="space-y-2">
+                                                <h4 className="font-semibold flex items-center gap-2"><Wind className="h-5 w-5 text-primary" />Catatan Rasa</h4>
+                                                <div className="flex flex-wrap gap-2">
+                                                    {data.tastingNotes.map((note, index) => (
+                                                        <Badge key={index} variant="outline">{note}</Badge>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                            <div className="space-y-2">
+                                                <h4 className="font-semibold flex items-center gap-2"><BookOpen className="h-5 w-5 text-primary" />Saran Penyeduhan</h4>
+                                                <p className="text-muted-foreground">{data.brewingMethod}</p>
+                                            </div>
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            )}
+
                         </div>
-                    </CardHeader>
-                    <CardContent className="p-6">
-                        <p className="text-muted-foreground">Konten untuk halaman "Kopi Hari Ini" akan segera hadir. Di sini akan ditampilkan rekomendasi biji kopi, profil rasa, dan cerita menarik lainnya.</p>
-                    </CardContent>
-                </Card>
-            </div>
-          </main>
-          <AppFooter />
-        </div>
-      </SidebarInset>
-    </SidebarProvider>
-  );
+                    </main>
+                    <AppFooter />
+                </div>
+            </SidebarInset>
+        </SidebarProvider>
+    );
 }
