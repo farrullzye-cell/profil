@@ -100,6 +100,12 @@ const nextConfig: NextConfig = {
         hostname: 'superlive.id',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'openweathermap.org',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

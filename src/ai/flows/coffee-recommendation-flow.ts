@@ -3,8 +3,8 @@
  * @fileOverview Alur AI untuk merekomendasikan kopi berdasarkan cuaca.
  *
  * - recommendCoffeeByWeather - Fungsi untuk mendapatkan rekomendasi kopi.
- * - CoffeeRecommendationInputSchema - Skema input untuk alur.
- * - CoffeeRecommendationOutputSchema - Skema output untuk alur.
+ * - CoffeeRecommendationInput - Tipe input untuk fungsi.
+ * - CoffeeRecommendationOutput - Tipe output untuk fungsi.
  */
 
 import { ai } from '@/ai/genkit';
@@ -12,7 +12,7 @@ import { z } from 'zod';
 
 const CoffeeRecommendationInputSchema = z.object({
   city: z.string().describe('Kota saat ini, contoh: Semarang'),
-  weather: z.string().describe('Kondisi cuaca saat ini, contoh: Cerah, Hujan, Berawan'),
+  weather: z.string().describe('Kondisi cuaca saat ini, contoh: Cerah, Hujan, Berawan, Mendung'),
 });
 export type CoffeeRecommendationInput = z.infer<typeof CoffeeRecommendationInputSchema>;
 
@@ -44,6 +44,7 @@ Berdasarkan cuaca tersebut, berikan rekomendasi kopi yang paling pas untuk dinik
 - Jika cuaca panas atau cerah, rekomendasikan sesuatu yang menyegarkan seperti Cold Brew, Japanese Iced Coffee, atau biji kopi dengan profil rasa buah yang cerah.
 - Jika cuaca hujan atau dingin, rekomendasikan sesuatu yang hangat dan nyaman, seperti kopi dengan proses honey/natural, atau kopi tubruk dengan body tebal.
 - Jika cuaca berawan atau sejuk, berikan rekomendasi yang seimbang, mungkin pour over dengan biji medium roast.
+- Jika cuaca mendung, rekomendasikan kopi yang sedikit lebih kuat untuk membangkitkan semangat, seperti Americano atau kopi dengan proses washed yang clean.
 
 Pastikan output Anda sesuai dengan skema yang diminta.
 Hasilkan nama kopi, alasan, 3-4 catatan rasa, dan satu metode seduh yang paling disarankan.`,
