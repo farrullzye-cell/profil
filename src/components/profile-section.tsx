@@ -47,7 +47,7 @@ export function ProfileSection() {
         </Avatar>
 
         <h2 className="text-2xl font-bold">Arul Faathir</h2>
-        <p className="text-primary">@maestro_kopi</p>
+        <p className="text-primary">@arul_faathir</p>
         
         <div className="mt-4 flex justify-center gap-4">
           <a href="#" className="text-muted-foreground hover:text-primary">
@@ -220,7 +220,7 @@ export function ProfileSection() {
              <li className="flex items-center gap-4">
               <AtSign className="h-5 w-5 text-muted-foreground" />
                <div className="flex flex-col text-left">
-                <span className="text-foreground">@maestro_kopi</span>
+                <span className="text-foreground">@arul_faathir</span>
                 <span className="text-xs text-muted-foreground">Nama Pengguna</span>
               </div>
             </li>
@@ -242,5 +242,3 @@ export function ProfileSection() {
     </div>
   );
 }
-
-    

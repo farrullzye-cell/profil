@@ -28,11 +28,11 @@ export default function TentangSayaPage() {
                 <CardHeader className="bg-card p-0">
                   <div className="flex items-center gap-6 p-6">
                     <Avatar className="h-24 w-24 border-4 border-primary">
-                        {userAvatar && <AvatarImage src={userAvatar.imageUrl} alt="Maestro Kopi" data-ai-hint={userAvatar.imageHint} />}
-                        <AvatarFallback>MK</AvatarFallback>
+                        {userAvatar && <AvatarImage src={userAvatar.imageUrl} alt="Arul Faathir" data-ai-hint={userAvatar.imageHint} />}
+                        <AvatarFallback>AF</AvatarFallback>
                     </Avatar>
                     <div>
-                        <h1 className="text-3xl font-bold text-primary">Tentang Sang Maestro Kopi</h1>
+                        <h1 className="text-3xl font-bold text-primary">Tentang Arul Faathir</h1>
                         <p className="text-lg text-muted-foreground">Perjalanan Rasa, Aroma, dan Seni</p>
                     </div>
                   </div>

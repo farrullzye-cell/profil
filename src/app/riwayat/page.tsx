@@ -54,7 +54,7 @@ export default function RiwayatPage() {
                         <Flame className="h-8 w-8 text-primary" />
                         <div>
                         <CardTitle className="text-3xl font-bold text-primary">Linimasa Perjalanan</CardTitle>
-                        <CardDescription className="text-muted-foreground">Jejak langkah dalam pendidikan dan karir yang membentuk seorang maestro kopi.</CardDescription>
+                        <CardDescription className="text-muted-foreground">Jejak langkah dalam pendidikan dan karir yang membentuk Arul Faathir.</CardDescription>
                         </div>
                     </div>
                     </CardHeader>

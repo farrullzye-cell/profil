@@ -112,7 +112,7 @@ export default function PortofolioPage() {
                         <CardTitle>Tentang Saya</CardTitle>
                     </CardHeader>
                     <CardContent className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
-                        <Image src={userAvatar?.imageUrl || ''} alt="Maestro Kopi" width={100} height={100} className="rounded-full border-4 border-primary" data-ai-hint="portrait person" />
+                        <Image src={userAvatar?.imageUrl || ''} alt="Arul Faathir" width={100} height={100} className="rounded-full border-4 border-primary" data-ai-hint="portrait person" />
                         <div>
                             <p className="text-muted-foreground">
                             Saya seorang penikmat dan peracik kopi yang bersemangat, yang percaya bahwa setiap cangkir memiliki cerita. Perjalanan saya adalah tentang menjelajahi narasi tersebut, dari biji hingga seduhan terakhir.
