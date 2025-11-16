@@ -8,6 +8,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
 export function ProfileSection() {
   const heroImage = PlaceHolderImages.find((p) => p.id === 'hero-image-3');
@@ -24,13 +25,13 @@ export function ProfileSection() {
             alt="Header background"
             fill
             objectFit="cover"
-            objectPosition="center"
+            objectPosition="top"
             data-ai-hint={heroImage.imageHint}
           />
         )}
       </div>
 
-      <div className="relative -mt-16 rounded-t-3xl bg-card p-6 pt-20 text-center">
+      <div className="relative -mt-20 rounded-t-3xl bg-card p-6 pt-24 text-center">
         <Avatar className="absolute -top-14 left-1/2 h-28 w-28 -translate-x-1/2 border-4 border-card">
           {userAvatar && (
             <AvatarImage src={userAvatar.imageUrl} alt="Your Name" data-ai-hint={userAvatar.imageHint} />
@@ -96,75 +97,159 @@ export function ProfileSection() {
         <div className="text-left">
           <h3 className="mb-4 text-lg font-semibold">Skills</h3>
           <div className="space-y-6">
-            <div className="space-y-2">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <Coffee className="h-5 w-5" />
-                  <span className="font-medium">Espresso</span>
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="space-y-2 cursor-pointer">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <Coffee className="h-5 w-5" />
+                      <span className="font-medium">Espresso</span>
+                    </div>
+                    <span className="text-sm text-muted-foreground">95%</span>
+                  </div>
+                  <Progress value={95} />
                 </div>
-                <span className="text-sm text-muted-foreground">95%</span>
-              </div>
-              <Progress value={95} />
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-center justify-between">
-                 <div className="flex items-center gap-2">
-                    <Wind className="h-5 w-5" />
-                    <span className="font-medium">Aeropress</span>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Espresso</DialogTitle>
+                  <DialogDescription>
+                    Mastery in pulling the perfect espresso shot, with a rich crema, balanced acidity, and deep flavor. Understanding grind size, tamping pressure, and extraction time is key.
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="space-y-2 cursor-pointer">
+                  <div className="flex items-center justify-between">
+                     <div className="flex items-center gap-2">
+                        <Wind className="h-5 w-5" />
+                        <span className="font-medium">Aeropress</span>
+                    </div>
+                    <span className="text-sm text-muted-foreground">90%</span>
+                  </div>
+                  <Progress value={90} />
                 </div>
-                <span className="text-sm text-muted-foreground">90%</span>
-              </div>
-              <Progress value={90} />
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                    <Droplets className="h-5 w-5" />
-                    <span className="font-medium">Latte Art</span>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Aeropress</DialogTitle>
+                  <DialogDescription>
+                    Proficient in using the Aeropress for a clean, full-bodied cup. Experienced with both standard and inverted methods, and experimenting with different recipes.
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="space-y-2 cursor-pointer">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                        <Droplets className="h-5 w-5" />
+                        <span className="font-medium">Latte Art</span>
+                    </div>
+                    <span className="text-sm text-muted-foreground">80%</span>
+                  </div>
+                  <Progress value={80} />
                 </div>
-                <span className="text-sm text-muted-foreground">80%</span>
-              </div>
-              <Progress value={80} />
-            </div>
-             <div className="space-y-2">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                    <span className="font-medium">Bean Roasting</span>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Latte Art</DialogTitle>
+                  <DialogDescription>
+                    Skilled in steaming milk to the right texture and pouring intricate designs, from a simple heart to a rosetta. It's about combining art with the science of milk foam.
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="space-y-2 cursor-pointer">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                        <span className="font-medium">Bean Roasting</span>
+                    </div>
+                    <span className="text-sm text-muted-foreground">85%</span>
+                  </div>
+                  <Progress value={85} />
                 </div>
-                <span className="text-sm text-muted-foreground">85%</span>
-              </div>
-              <Progress value={85} />
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <Coffee className="h-5 w-5" />
-                  <span className="font-medium">Cortado</span>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Bean Roasting</DialogTitle>
+                  <DialogDescription>
+                    Experience in home roasting, understanding the roasting curve, and manipulating variables like heat and airflow to bring out the unique flavors of green coffee beans.
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="space-y-2 cursor-pointer">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <Coffee className="h-5 w-5" />
+                      <span className="font-medium">Cortado</span>
+                    </div>
+                    <span className="text-sm text-muted-foreground">92%</span>
+                  </div>
+                  <Progress value={92} />
                 </div>
-                <span className="text-sm text-muted-foreground">92%</span>
-              </div>
-              <Progress value={92} />
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <Coffee className="h-5 w-5" />
-                  <span className="font-medium">Ristretto</span>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Cortado</DialogTitle>
+                  <DialogDescription>
+                    A balanced drink with equal parts espresso and steamed milk. The skill lies in achieving the right milk texture to complement the espresso without overpowering it.
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="space-y-2 cursor-pointer">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <Coffee className="h-5 w-5" />
+                      <span className="font-medium">Ristretto</span>
+                    </div>
+                    <span className="text-sm text-muted-foreground">88%</span>
+                  </div>
+                  <Progress value={88} />
                 </div>
-                <span className="text-sm text-muted-foreground">88%</span>
-              </div>
-              <Progress value={88} />
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <Coffee className="h-5 w-5" />
-                  <span className="font-medium">Lungo</span>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Ristretto</DialogTitle>
+                  <DialogDescription>
+                    A "restricted" shot of espresso. It uses less water, resulting in a shorter, more concentrated, and sweeter shot compared to a standard espresso.
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="space-y-2 cursor-pointer">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <Coffee className="h-5 w-5" />
+                      <span className="font-medium">Lungo</span>
+                    </div>
+                    <span className="text-sm text-muted-foreground">85%</span>
+                  </div>
+                  <Progress value={85} />
                 </div>
-                <span className="text-sm text-muted-foreground">85%</span>
-              </div>
-              <Progress value={85} />
-            </div>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Lungo</DialogTitle>
+                  <DialogDescription>
+                    A "long" shot of espresso. It's pulled with more water, resulting in a larger, less intense, and more bitter coffee compared to a standard espresso.
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
 
@@ -212,5 +297,3 @@ export function ProfileSection() {
     </div>
   );
 }
-
-    
