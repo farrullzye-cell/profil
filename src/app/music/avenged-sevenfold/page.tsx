@@ -36,7 +36,7 @@ const songsData = [
     year: '2010',
     albumId: 'a7x-nightmare',
     duration: 327, // 5:27
-    description: "Sebuah elegi yang menyayat hati, 'So Far Away' adalah persembahan Avenged Sevenfold untuk mendiang drummer dan sahabat mereka, Jimmy 'The Rev' Sullivan. Liriknya yang ditulis oleh Synyster Gates mencerminkan rasa sakit kehilangan dan kenangan persahabatan abadi. Dengan melodi yang kuat dan solo gitar yang emosional, lagu ini menjadi hymne bagi siapa saja yang pernah kehilangan orang terkasih, menciptakan koneksi mendalam dengan pendengarnya."
+    description: "Sebuah elegi yang menyayat hati untuk mendiang drummer Jimmy 'The Rev' Sullivan yang meninggal pada tahun 2009. 'So Far Away' ditulis oleh Synyster Gates sebagai penghormatan pribadi yang mencerminkan rasa sakit kehilangan dan kenangan persahabatan abadi. Dengan melodi yang kuat dan salah satu solo gitar paling emosional dari Gates, lagu ini menjadi hymne universal bagi siapa saja yang pernah kehilangan orang terkasih, menciptakan koneksi mendalam dengan pendengarnya."
   },
   {
     title: 'Natural Born Killer',
@@ -185,7 +185,7 @@ export default function AvengedSevenfoldPage() {
                     </div>
 
                     {selectedSong && (
-                        <DialogContent className="max-w-2xl rounded-2xl border-none bg-neutral-900/90 p-0 text-white backdrop-blur-2xl grid grid-rows-[auto_minmax(0,1fr)] max-h-[90svh] overflow-hidden">
+                        <DialogContent className="grid max-h-[90svh] max-w-2xl grid-rows-[auto_minmax(0,1fr)] overflow-hidden rounded-2xl border-none bg-neutral-900/90 p-0 text-white backdrop-blur-2xl">
                            <DialogHeader className="sr-only">
                              <DialogTitle>Detail Lagu: {selectedSong.title}</DialogTitle>
                              <DialogDescription>Deskripsi mendalam tentang lagu {selectedSong.title} oleh Avenged Sevenfold.</DialogDescription>
@@ -245,6 +245,3 @@ export default function AvengedSevenfoldPage() {
     </SidebarProvider>
   );
 }
-
-
-    
