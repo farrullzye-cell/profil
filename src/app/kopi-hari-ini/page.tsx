@@ -16,6 +16,7 @@ const PouringCoffeeLoader = () => {
               .loader {
                 --cup: hsl(var(--card));
                 --coffee: hsl(var(--primary));
+                --accent-color: hsl(var(--accent));
                 --size: 220px;
                 width: var(--size);
                 height: var(--size);
@@ -91,7 +92,7 @@ const PouringCoffeeLoader = () => {
                     <stop offset="55%" stopColor="hsl(var(--primary))"/>
                     <stop offset="100%" stopColor="hsl(var(--accent))"/>
                   </linearGradient>
-                  <clipPath id="cupClip">
+                   <clipPath id="cupClip">
                     <path d="M24 44 C26 60, 66 60, 94 48 C98 46,104 36,102 30 C98 16,84 8,62 8 C40 8,22 16,18 28 C16 32,18 40,24 44 Z"/>
                   </clipPath>
                 </defs>
