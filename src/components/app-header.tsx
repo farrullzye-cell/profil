@@ -1,7 +1,7 @@
 
 'use client';
 
-import { Menu, MoreVertical, Phone, Search, Share2, Star } from 'lucide-react';
+import { Menu, MoreVertical, Phone, Search, Share2, Star, Coffee } from 'lucide-react';
 import Link from 'next/link';
 import {
   DropdownMenu,
@@ -14,6 +14,16 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { useSidebar } from '@/components/ui/sidebar';
 import { useToast } from '@/hooks/use-toast';
+import { 
+  AlertDialog, 
+  AlertDialogAction, 
+  AlertDialogContent, 
+  AlertDialogDescription, 
+  AlertDialogFooter, 
+  AlertDialogHeader, 
+  AlertDialogTitle, 
+  AlertDialogTrigger 
+} from '@/components/ui/alert-dialog';
 
 export function AppHeader() {
   const { toggleSidebar } = useSidebar();
@@ -84,10 +94,29 @@ export function AppHeader() {
         </div>
       </div>
       <div className="flex flex-1 justify-end items-center gap-1">
-        <Button variant="ghost" size="icon">
-          <Search className="h-5 w-5" />
-          <span className="sr-only">Cari</span>
-        </Button>
+        <AlertDialog>
+          <AlertDialogTrigger asChild>
+            <Button variant="ghost" size="icon">
+              <Search className="h-5 w-5" />
+              <span className="sr-only">Cari</span>
+            </Button>
+          </AlertDialogTrigger>
+          <AlertDialogContent>
+            <AlertDialogHeader>
+              <div className="flex justify-center mb-4">
+                <Coffee className="h-12 w-12 text-primary" />
+              </div>
+              <AlertDialogTitle className="text-center text-2xl font-bold text-primary">Fitur Sedang Ngopi!</AlertDialogTitle>
+              <AlertDialogDescription className="text-center text-muted-foreground">
+                Jangan diotak-atik website orang, fitur sedang maintenance. Arul lagi ngopi, wkwk.
+              </AlertDialogDescription>
+            </AlertDialogHeader>
+            <AlertDialogFooter>
+              <AlertDialogAction>Oke, Siap!</AlertDialogAction>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialog>
+
         <a href={`https://wa.me/${phoneNumber}?text=${message}`} target="_blank" rel="noopener noreferrer">
           <Button variant="ghost" size="icon">
             <Phone className="h-5 w-5" />
