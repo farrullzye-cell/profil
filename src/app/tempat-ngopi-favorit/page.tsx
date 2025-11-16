@@ -68,6 +68,13 @@ const coffeeShops = [
         address: 'Jl. Sriwijaya, Semarang',
         description: 'Buka 24 jam dengan fasilitas internet yang kencang, menjadikannya surga bagi para gamer dan mereka yang butuh tempat kerja hingga larut malam.',
         mapsUrl: 'https://maps.app.goo.gl/C2oE9hJg1L5fP5kS7'
+    },
+    {
+        id: 'semarang-coffee-9',
+        name: 'Kairos Coffee',
+        address: 'Jl. Letjen S. Parman, Semarang',
+        description: 'Salah satu pelopor specialty coffee di Semarang dengan interior yang modern dan industrial. Tempatnya luas dengan area outdoor yang asri.',
+        mapsUrl: 'https://maps.app.goo.gl/qYmCgA7hZ4XqVvG5A'
     }
 ];
 
@@ -92,13 +99,13 @@ export default function TempatNgopiFavoritPage() {
                             <MapPin className="h-8 w-8 text-primary" />
                             <div>
                                 <CardTitle className="text-3xl font-bold text-primary">Peta Kopi Semarang</CardTitle>
-                                <CardDescription className="text-muted-foreground">8 Rekomendasi Tempat Ngopi Favorit di Kota Lumpia.</CardDescription>
+                                <CardDescription className="text-muted-foreground">9 Rekomendasi Tempat Ngopi Favorit di Kota Lumpia.</CardDescription>
                             </div>
                         </div>
                     </CardHeader>
                 </Card>
 
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {shopsWithImages.map((shop) => (
                         <Card key={shop.id} className="flex flex-col overflow-hidden rounded-lg shadow-md transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl">
                             {shop.placeholder && (
@@ -106,7 +113,7 @@ export default function TempatNgopiFavoritPage() {
                                     <Image
                                         src={shop.placeholder.imageUrl}
                                         alt={`Foto ${shop.name}`}
-                                        layout="fill"
+                                        fill
                                         objectFit="cover"
                                         data-ai-hint={shop.placeholder.imageHint}
                                     />

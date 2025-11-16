@@ -117,7 +117,7 @@
     {
       "id": "portfolio-sunset-3",
       "description": "City skyline silhouette",
-      "imageUrl": "https://images.unsplash.com/photo-1524234103328-1b4b10499b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1524234103328-1b4b10499b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZXN0aGV0aWMlMjBzdW5zZXR8ZW58MHx8fHwxNzY0NTI0NDA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "city silhouette"
     },
     {
@@ -167,6 +167,12 @@
       "description": "People using laptops in a 24-hour cafe",
       "imageUrl": "https://images.unsplash.com/photo-1493106641515-7635e833f0b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYXRlJTIwbmlnaHQlMjBjb2ZmZWUlMjBzaG9wfGVufDB8fHx8MTc2NTMzNjE5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "late night"
+    },
+    {
+      "id": "semarang-coffee-9",
+      "description": "Interior of Kairos Coffee",
+      "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBzaG9wJTIwbW9kZXJufGVufDB8fHx8MTc2NTMzODg4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern cafe"
     }
   ]
 }
