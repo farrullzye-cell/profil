@@ -6,11 +6,13 @@ import {
   BookText,
   Flame,
   Home,
-  Mail,
-  Search,
-  Sparkles,
   User,
   LayoutGrid,
+  Coffee,
+  MapPin,
+  Route,
+  BarChart2,
+  Sparkles
 } from 'lucide-react';
 
 import {
@@ -36,18 +38,18 @@ export function AppSidebar() {
     { icon: Flame, label: 'Riwayat', href: '/riwayat' },
   ];
   
-  const contactMenuItems = [{ icon: Mail, label: 'Kontak', href: '#' }];
+  const coffeeMenuItems = [
+    { icon: Coffee, label: 'Kopi Hari Ini', href: '/kopi-hari-ini' },
+    { icon: BookText, label: 'Resep Kopi Simple', href: '/resep-kopi-simple' },
+    { icon: MapPin, label: 'Tempat Ngopi Favorit', href: '/tempat-ngopi-favorit' },
+    { icon: Route, label: 'Coffee Journey', href: '/coffee-journey' },
+    { icon: BarChart2, label: 'Kopi Mood Chart', href: '/kopi-mood-chart' },
+  ];
 
   return (
     <Sidebar collapsible="icon">
       <SidebarHeader className="border-b p-2">
-        <div className="relative">
-          <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-          <SidebarInput
-            placeholder="Cari"
-            className="border-none bg-muted pl-9 focus-visible:ring-transparent"
-          />
-        </div>
+        {/* Placeholder for future search functionality */}
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
@@ -77,9 +79,9 @@ export function AppSidebar() {
         </SidebarGroup>
 
         <SidebarGroup>
-          <SidebarGroupLabel>Lainnya</SidebarGroupLabel>
+          <SidebarGroupLabel>Tema Kopi</SidebarGroupLabel>
           <SidebarMenu>
-            {contactMenuItems.map((item, index) => (
+            {coffeeMenuItems.map((item, index) => (
               <SidebarMenuItem key={index}>
                 <Link href={item.href} passHref>
                   <SidebarMenuButton
