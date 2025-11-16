@@ -1,3 +1,4 @@
+
 'use client';
 
 import Image from 'next/image';
@@ -40,12 +41,12 @@ export function ProfileSection() {
       <div className="relative -mt-20 rounded-t-3xl bg-card p-6 pt-24 text-center">
         <Avatar className="absolute -top-14 left-1/2 h-28 w-28 -translate-x-1/2 border-4 border-card">
           {userAvatar && (
-            <AvatarImage src={userAvatar.imageUrl} alt="Nama Anda" data-ai-hint={userAvatar.imageHint} />
+            <AvatarImage src={userAvatar.imageUrl} alt="Arul Faathir" data-ai-hint={userAvatar.imageHint} />
           )}
-          <AvatarFallback>NA</AvatarFallback>
+          <AvatarFallback>AF</AvatarFallback>
         </Avatar>
 
-        <h2 className="text-2xl font-bold">Nama Anda</h2>
+        <h2 className="text-2xl font-bold">Arul Faathir</h2>
         <p className="text-primary">@maestro_kopi</p>
         
         <div className="mt-4 flex justify-center gap-4">

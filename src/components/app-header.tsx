@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Menu, MoreVertical, Phone, Search } from 'lucide-react';
@@ -26,13 +27,13 @@ export function AppHeader() {
         <Avatar className="h-10 w-10 border">
           <AvatarImage
             src={userAvatar?.imageUrl}
-            alt="Nama Anda"
+            alt="Arul Faathir"
             data-ai-hint={userAvatar?.imageHint}
           />
-          <AvatarFallback>NA</AvatarFallback>
+          <AvatarFallback>AF</AvatarFallback>
         </Avatar>
         <div>
-          <p className="text-sm font-semibold">Nama Anda</p>
+          <p className="text-sm font-semibold">Arul Faathir</p>
           <p className="text-xs text-muted-foreground">daring</p>
         </div>
       </div>
