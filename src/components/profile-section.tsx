@@ -2,7 +2,7 @@
 'use client';
 
 import Image from 'next/image';
-import { Github, Linkedin, Twitter, Mail, Info, Bell, Phone, Search, AtSign, Coffee, Wind, Droplets, ChevronDown } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail, Info, Bell, Phone, Search, AtSign, Coffee, Wind, Droplets, ChevronDown, Flame } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Separator } from '@/components/ui/separator';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -110,19 +110,19 @@ export function ProfileSection() {
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
                       <Coffee className="h-5 w-5" />
-                      <span className="font-medium">Espresso</span>
+                      <span className="font-medium">Ekstraksi Espresso</span>
                     </div>
                      <div className="flex items-center gap-2">
-                      <span className="text-sm text-muted-foreground">95%</span>
+                      <span className="text-sm text-muted-foreground">75%</span>
                       <ChevronDown className={cn("h-4 w-4 transition-transform", openCollapsible === 'espresso' && "rotate-180")} />
                     </div>
                   </div>
-                  <Progress value={95} />
+                  <Progress value={75} />
                 </div>
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <p className="text-sm text-muted-foreground">
-                  Ahli dalam mengekstrak shot espresso yang sempurna, dengan krema yang kaya, keasaman seimbang, dan rasa yang mendalam. Memahami ukuran gilingan, tekanan tamping, dan waktu ekstraksi adalah kuncinya.
+                  Mampu melakukan 'dialing-in' untuk menghasilkan shot espresso yang layak dengan krema yang stabil. Terus belajar untuk mencapai keseimbangan rasa yang lebih konsisten.
                 </p>
               </CollapsibleContent>
             </Collapsible>
@@ -133,19 +133,19 @@ export function ProfileSection() {
                   <div className="flex items-center justify-between">
                      <div className="flex items-center gap-2">
                         <Wind className="h-5 w-5" />
-                        <span className="font-medium">Aeropress</span>
+                        <span className="font-medium">Pour Over & Aeropress</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-sm text-muted-foreground">90%</span>
+                      <span className="text-sm text-muted-foreground">70%</span>
                       <ChevronDown className={cn("h-4 w-4 transition-transform", openCollapsible === 'aeropress' && "rotate-180")} />
                     </div>
                   </div>
-                  <Progress value={90} />
+                  <Progress value={70} />
                 </div>
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <p className="text-sm text-muted-foreground">
-                  Mahir menggunakan Aeropress untuk secangkir kopi yang bersih dan kaya rasa. Berpengalaman dengan metode standar maupun terbalik, dan bereksperimen dengan berbagai resep.
+                  Cukup terampil dalam metode seduh standar dan terbalik (inverted). Dapat memanipulasi variabel dasar untuk menyesuaikan hasil seduhan sesuai preferensi rasa.
                 </p>
               </CollapsibleContent>
             </Collapsible>
@@ -159,16 +159,16 @@ export function ProfileSection() {
                         <span className="font-medium">Seni Latte</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-sm text-muted-foreground">80%</span>
+                      <span className="text-sm text-muted-foreground">60%</span>
                       <ChevronDown className={cn("h-4 w-4 transition-transform", openCollapsible === 'latte-art' && "rotate-180")} />
                     </div>
                   </div>
-                  <Progress value={80} />
+                  <Progress value={60} />
                 </div>
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <p className="text-sm text-muted-foreground">
-                  Terampil dalam memanaskan susu hingga tekstur yang tepat dan menuangkan desain yang rumit, dari hati sederhana hingga rosetta. Ini tentang menggabungkan seni dengan ilmu busa susu.
+                 Mampu memanaskan susu hingga mencapai microfoam yang cukup baik. Sudah bisa membuat pola dasar seperti hati (heart) dan tulip sederhana, dan sedang berlatih untuk pola yang lebih kompleks.
                 </p>
               </CollapsibleContent>
             </Collapsible>
@@ -178,88 +178,20 @@ export function ProfileSection() {
                 <div className="space-y-2 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                        <span className="font-medium">Penyangraian Biji</span>
+                        <Flame className="h-5 w-5" />
+                        <span className="font-medium">Profil Penyangraian</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-sm text-muted-foreground">85%</span>
+                      <span className="text-sm text-muted-foreground">60%</span>
                       <ChevronDown className={cn("h-4 w-4 transition-transform", openCollapsible === 'bean-roasting' && "rotate-180")} />
                     </div>
                   </div>
-                  <Progress value={85} />
+                  <Progress value={60} />
                 </div>
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <p className="text-sm text-muted-foreground">
-                  Pengalaman dalam penyangraian di rumah, memahami kurva sangrai, dan memanipulasi variabel seperti panas dan aliran udara untuk mengeluarkan cita rasa unik dari biji kopi hijau.
-                </p>
-              </CollapsibleContent>
-            </Collapsible>
-
-            <Collapsible open={openCollapsible === 'cortado'} onOpenChange={(isOpen) => setOpenCollapsible(isOpen ? 'cortado' : null)}>
-              <CollapsibleTrigger className="w-full">
-                <div className="space-y-2 cursor-pointer">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <Coffee className="h-5 w-5" />
-                      <span className="font-medium">Cortado</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-sm text-muted-foreground">92%</span>
-                      <ChevronDown className={cn("h-4 w-4 transition-transform", openCollapsible === 'cortado' && "rotate-180")} />
-                    </div>
-                  </div>
-                  <Progress value={92} />
-                </div>
-              </CollapsibleTrigger>
-              <CollapsibleContent>
-                <p className="text-sm text-muted-foreground">
-                  Minuman seimbang dengan perbandingan espresso dan susu panas yang sama. Keahliannya terletak pada pencapaian tekstur susu yang tepat untuk melengkapi espresso tanpa mendominasinya.
-                </p>
-              </CollapsibleContent>
-            </Collapsible>
-
-            <Collapsible open={openCollapsible === 'ristretto'} onOpenChange={(isOpen) => setOpenCollapsible(isOpen ? 'ristretto' : null)}>
-              <CollapsibleTrigger className="w-full">
-                <div className="space-y-2 cursor-pointer">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <Coffee className="h-5 w-5" />
-                      <span className="font-medium">Ristretto</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-sm text-muted-foreground">88%</span>
-                      <ChevronDown className={cn("h-4 w-4 transition-transform", openCollapsible === 'ristretto' && "rotate-180")} />
-                    </div>
-                  </div>
-                  <Progress value={88} />
-                </div>
-              </CollapsibleTrigger>
-              <CollapsibleContent>
-                <p className="text-sm text-muted-foreground">
-                  Shot espresso yang "dibatasi". Menggunakan lebih sedikit air, menghasilkan shot yang lebih pendek, lebih pekat, dan lebih manis dibandingkan espresso standar.
-                </p>
-              </CollapsibleContent>
-            </Collapsible>
-
-            <Collapsible open={openCollapsible === 'lungo'} onOpenChange={(isOpen) => setOpenCollapsible(isOpen ? 'lungo' : null)}>
-              <CollapsibleTrigger className="w-full">
-                <div className="space-y-2 cursor-pointer">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <Coffee className="h-5 w-5" />
-                      <span className="font-medium">Lungo</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-sm text-muted-foreground">85%</span>
-                      <ChevronDown className={cn("h-4 w-4 transition-transform", openCollapsible === 'lungo' && "rotate-180")} />
-                    </div>
-                  </div>
-                  <Progress value={85} />
-                </div>
-              </CollapsibleTrigger>
-              <CollapsibleContent>
-                <p className="text-sm text-muted-foreground">
-                  Shot espresso yang "panjang". Diseduh dengan lebih banyak air, menghasilkan kopi yang lebih besar, kurang pekat, dan lebih pahit dibandingkan espresso standar.
+                  Memiliki pengetahuan dasar tentang profil sangrai dan fase-fase pentingnya. Sudah mulai mencoba mengembangkan profil sangrai sederhana untuk beberapa jenis biji kopi.
                 </p>
               </CollapsibleContent>
             </Collapsible>
@@ -310,3 +242,5 @@ export function ProfileSection() {
     </div>
   );
 }
+
+    
