@@ -19,6 +19,7 @@ import {
   Guitar,
   Users,
   Star,
+  Download,
 } from 'lucide-react';
 
 import {
@@ -36,6 +37,7 @@ import {
 } from '@/components/ui/sidebar';
 import { cn } from '@/lib/utils';
 import React from 'react';
+import { CvDownloadDialog } from './cv-download-dialog';
 
 export function AppSidebar() {
   const pathname = usePathname();
@@ -99,6 +101,23 @@ export function AppSidebar() {
                         </Link>
                     </SidebarMenuItem>
                     ))}
+                     <SidebarMenuItem>
+                        <CvDownloadDialog>
+                            <SidebarMenuButton
+                                asChild
+                                tooltip={{
+                                children: 'Download CV',
+                                side: 'right',
+                                align: 'center',
+                                }}
+                            >
+                                <div>
+                                <Download />
+                                <span>Download CV</span>
+                                </div>
+                            </SidebarMenuButton>
+                        </CvDownloadDialog>
+                    </SidebarMenuItem>
                 </SidebarMenu>
             </CollapsibleContent>
         </Collapsible>
