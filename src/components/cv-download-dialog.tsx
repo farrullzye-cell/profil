@@ -26,16 +26,11 @@ export function CvDownloadDialog({ children }: { children: React.ReactNode }) {
     if (password === 'ArulFaathir1223') {
       toast({
         title: 'Berhasil!',
-        description: 'CV Anda sedang diunduh.',
+        description: 'Membuka CV Anda di tab baru.',
       });
 
-      // Trigger download
-      const link = document.createElement('a');
-      link.href = '/cv-arul-faathir.pdf';
-      link.download = 'CV-Arul-Faathir.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      // Open the external link in a new tab
+      window.open('https://issuu.com/arul_fait/docs/cv_mohammad_arul_faathir_ervansyah', '_blank');
 
       setOpen(false); // Close dialog on success
       setPassword(''); // Reset password
@@ -62,9 +57,9 @@ export function CvDownloadDialog({ children }: { children: React.ReactNode }) {
           <div className="flex justify-center">
             <DownloadCloud className="h-12 w-12 text-primary" />
           </div>
-          <DialogTitle className="text-center text-2xl">Unduh Curriculum Vitae</DialogTitle>
+          <DialogTitle className="text-center text-2xl">Lihat Curriculum Vitae</DialogTitle>
           <DialogDescription className="text-center">
-            Untuk melanjutkan, silakan masukkan kata sandi untuk mengunduh CV.
+            Untuk melanjutkan, silakan masukkan kata sandi untuk melihat CV.
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">
@@ -85,7 +80,7 @@ export function CvDownloadDialog({ children }: { children: React.ReactNode }) {
         </div>
         <DialogFooter>
           <Button onClick={handleDownload} className="w-full">
-            Unduh CV
+            Buka CV
           </Button>
         </DialogFooter>
       </DialogContent>
